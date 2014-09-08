@@ -4,67 +4,235 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500|Quattrocento+Sans:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slicknav.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>EMC Central Onramp for Developer Enablement</title>
+    <title>EMC CODE | Central Onramp for Developer Enablement</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>EMC CODE</h1>
+        <a href="#top"><img src="images/emc_code_logo_stacked.png"></a><br> 
         <h2>Central Onramp for Developer Enablement</h2>
-        <a href="https://github.com/emccode" class="button"><small>Follow us on </small>GitHub</a>
+        <!-- <a href="https://github.com/emccode" class="button"><small>Follow us on </small>GitHub</a> -->
       </div>
     </header>
+    <nav id="nav-main">
+      <ul>
+        <li><a href="#sample_apps">SAMPLE APPLICATIONS</a></li>
+        <li><a href="#code_tools">EMC CODE & TOOLS</a></li>
+        <li><a href="#documentation">DOCUMENTATION</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#team">THE TEAM</a></li>
+        <li><a href="https://github.com/emccode"><img src="images/blacktocat.png" style="width: 20px; margin-bottom: -3px;"></a></li>
+      </ul>
+    </nav>
+    <div id="nav-trigger">
+      <span>Menu</span>
+    </div>
+    <nav id="nav-mobile"></nav>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-emc-code" class="anchor" href="#welcome-to-emc-code"><span class="octicon octicon-link"></span></a>Welcome to EMC CODE!</h3>
+    <a name="top"><div class="intro_background"></a>
+      <div id="content-wrapper">
+        <div class="clearfix introduction">
+          <section>
+            <h3>EMC believes in Open Source. CODE is here to share and collaborate with developers worldwide.</h3>
 
-<p>We at EMC believes in the Open Source community, and as such we want to share and collaborate with developers worldwide.
+            <ul class="section_box">
+              <li>
+                <a href="#sample_apps"><h2>SAMPLE APPLICATIONS</h2></a>
+                <a href="#sample_apps"><img src="images/applications-icon.png"></a><br>
+              </li>
+              <li>
+                <a href="#code_tools"><h2>EMC CODE & TOOLS</h2></a>
+                <a href="#code_tools"><img src="images/code-icon.png"></a><br>
+              </li>
+              <li>
+                <a href="#documentation"><h2>DOCUMENTATION</h2></a>
+                <a href="#documentation"><img src="images/notes-icon.png"></a><br>
+              </li>
+            </ul>
 
-<p>Some of our interesting projects are listed below:
-<h3>
-<a name="emc-vipr" class="anchor" href="#emc-vipr"><span class="octicon octicon-link"></span></a>EMC ViPR</h3>
+          </section>
+        </div>
+      </div>
+    </div>
 
-<p>A lightweight software platform that transforms your storage into a simple, extensible, and open platform to meet new, cloud-scale workloads. ViPR lets you deliver on-premises, fully automated storage services efficiently, and easily.</p>
+    <a name="sample_apps"><div class="sample_apps_background"></a>
+      <div id="content-wrapper">
+        <div class="clearfix introduction">
+          <section>
+            <h3>SAMPLE APPLICATIONS</h3>
+              <ul class="item_box">
+              <li>
+                <a href="https://github.com/mcowger/vipr-twitter">
+                  <div class="item_bg" style="background: url(images/items/viprtwitter.png) no-repeat center center; background-size: cover;">
+                  <h2>ViPR Twitter</h2>
+                  <div class="hover_text">
+                    <p>ViPR S3 demo with Flask that was used during a presentation at VMworld 2014</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/emcvipr/vipr-sync">
+                  <div class="item_bg" style="background: url(images/items/viprsync.png) no-repeat center center; background-size: cover;">
+                  <h2>ViPRSync</h2>
+                  <div class="hover_text">
+                    <p>A bulk copy utility that can move data between various systems in parallel</p>
+                  </div>
+                </a>  
+              </li>
+            </ul>
+          </section>
 
-<p>EMC ViPR Team's repo with several SDKs: <a href="https://github.com/emcvipr">https://github.com/emcvipr</a></p>
-<p>Quick ViPR S3 demo with Flask: <a href="https://github.com/mcowger/vipr-twitter">https://github.com/mcowger/vipr-twitter</a></p>
+        </div>
+      </div>
+    </div>
 
-<h3>
-<a name="emc-scaleio" class="anchor" href="#emc-scaleio"><span class="octicon octicon-link"></span></a>EMC ScaleIO</h3>
+    <a name="code_tools"><div class="code_tools_background"></a>
+      <div id="content-wrapper">
+        <div class="clearfix introduction">
+          <section>
+            <h3>EMC CODE & TOOLS</h3>
+              <ul class="item_box">
+              <li>
+                <a href="https://github.com/nctiggy/Vipruby">
+                  <div class="item_bg" style="background: url(images/items/vipruby.png) no-repeat center center; background-size: cover;">
+                  <h2>ViPRuby</h2>
+                  <div class="hover_text">
+                    <p>Ruby Library for ViPR Controller Functions</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/emcvipr/dataservices-sdk-java">
+                  <div class="item_bg" style="background: url(images/items/javavipr.png) no-repeat center center;background-size: cover;">
+                  <h2>ViPR Java SDK</h2>
+                  <div class="hover_text">
+                    <p>Java SDK for ViPR Object Data Services.</p>
+                  </div>
+                </a>  
+              </li>
+              <li>
+                <a href="https://github.com/emcvipr/dataservices-sdk-python">
+                  <div class="item_bg" style="background: url(images/items/pythonvipr.png) no-repeat center center; background-size: cover;">
+                  <h2>ViPR Python SDK</h2>
+                  <div class="hover_text">
+                    <p>Python SDK for ViPR Object Data Services.</p>
+                  </div>
+                </a>  
+              </li>
+              <li>
+                <a href="https://github.com/emcvipr/dataservices-sdk-dotnet">
+                  <div class="item_bg" style="background: url(images/items/netvipr.png) no-repeat center center; background-size: cover;">
+                  <h2>ViPR .NET SDK</h2>
+                  <div class="hover_text">
+                    <p>.NET 3.5 SDK for ViPR Data Services.</p>
+                  </div>
+                </a>  
+              </li>
+              <li>
+                <a href="https://github.com/virtualswede/vagrant-scaleio">
+                  <div class="item_bg" style="background: url(images/items/scaleiovagrant.png) no-repeat center center; background-size: cover;">
+                  <h2>vagrant-scaleio</h2>
+                  <div class="hover_text">
+                    <p>Vagrantfile to create a three VM EMC ScaleIO lab setup, read more on how to use it at http://purevirtual.eu</p>
+                  </div>
+                </a>  
+              </li>
+              <li>
+                <a href="https://github.com/kacole2/vipr_scripts">
+                  <div class="item_bg" style="background: url(images/items/rubyviprcode.png) no-repeat center center; background-size: cover;">
+                  <h2>ruby + vipr code</h2>
+                  <div class="hover_text">
+                    <p>Sample code that shows how to log-in to the ViPR Controller using Ruby. Also demonstrations the ease of the REST API to gather information and parse it to show different types of information.</p>
+                  </div>
+                </a>  
+              </li>
+            </ul>
 
-<p>Software-only server-based storage area network (SAN) that converges storage and compute resources to form a single-layer, enterprise-grade storage product. ScaleIO storage is elastic and delivers linearly scalable performance. Its scale-out server SAN architecture can grow from a few to thousands of servers.</p>
+          </section>
 
-<p>EMC ScaleIO running in Vagrant: <a href="https://github.com/virtualswede/vagrant-scaleio">https://github.com/virtualswede/vagrant-scaleio</a></p>
+        </div>
+      </div>
+    </div>
 
-        </section>
+    <a name="documentation"><div class="documentation_background"></a>
+      <div id="content-wrapper">
+        <div class="clearfix introduction">
+          <section>
+            <h3>DOCUMENTATION</h3>
+              <p>***TBD***</p>
 
-        <aside id="sidebar">
+          </section>
 
-        <!--
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        -->
+        </div>
+      </div>
+    </div>
 
-          <p>Reach out to some of our contributors directly on Twitter:
-          <br/>
-          <a href="http://twitter.com/bgracely">Brian Gracely</a><br/>
-          <a href="http://twitter.com/virtualswede">Jonas Rosland</a><br/>
-          <a href="http://twitter.com/kendrickcoleman">Kendrick Coleman</a><br/>
-          <a href="http://twitter.com/clintonskitson">Clinton Kitson</a><br/>
-          </p>
-        </aside>
+     <a name="about"><div class="about_background"></a>
+      <div id="content-wrapper">
+        <div class="clearfix introduction">
+          <section>
+            <h3>ABOUT CODE</h3>
+              <p>EMC's Central Onramp for Developer Enablement (CODE) is a location for open-source content. CODE is here to help developers get started with integrating into EMC product sets through multiple languages and frameworks. Look for more content to be continually added.</p>
+
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <a name="team"><div class="team_background"></a>
+      <div id="content-wrapper">
+        <div class="clearfix introduction">
+          <section>
+            <h3>TEAM CODE</h3>
+              <ul class="profile_box">
+              <li>
+                <a href="https://twitter.com/bgracely"><h2>BRIAN GRACELY</h2></a>
+                <a href="https://twitter.com/bgracely"><img src="images/profile/bgracely.jpeg" class="avatar"></a>
+                <a href="https://twitter.com/bgracely"><img src="images/profile/twittericon.png" class="avatar_icon"></a>
+                <a href="https://github.com/bgracely"><img src="images/profile/githubicon.png" class="avatar_icon" style="transition-delay: 0.1s;"></a>
+                <a href="http://www.thecloudcast.net/"><img src="images/profile/blogicon.png" class="avatar_icon" style="transition-delay: 0.2s;"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/clintonskitson"><h2>CLINT KITSON</h2></a>
+                <a href="https://twitter.com/clintonskitson"><img src="images/profile/ckitson.jpeg" class="avatar"></a>
+                <a href="https://twitter.com/clintonskitson"><img src="images/profile/twittericon.png" class="avatar_icon"></a>
+                <a href="https://github.com/clintonskitson"><img src="images/profile/githubicon.png" class="avatar_icon" style="transition-delay: 0.1s;"></a>
+                <a href="http://velemental.com/"><img src="images/profile/blogicon.png" class="avatar_icon" style="transition-delay: 0.2s;"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/virtualswede"><h2>JONAS ROSLAND</h2></a>
+                <a href="https://twitter.com/virtualswede"><img src="images/profile/jrosland.jpeg" class="avatar"></a>
+                <a href="https://twitter.com/virtualswede"><img src="images/profile/twittericon.png" class="avatar_icon"></a>
+                <a href="https://github.com/virtualswede"><img src="images/profile/githubicon.png" class="avatar_icon" style="transition-delay: 0.1s;"></a>
+                <a href="http://purevirtual.eu/"><img src="images/profile/blogicon.png" class="avatar_icon" style="transition-delay: 0.2s;"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/kendrickcoleman"><h2>KENDRICK COLEMAN</h2></a>
+                <a href="https://twitter.com/kendrickcoleman"><img src="images/profile/kcoleman.jpg" class="avatar"></a>
+                <a href="https://twitter.com/kendrickcoleman"><img src="images/profile/twittericon.png" class="avatar_icon"></a>
+                <a href="https://github.com/kacole2"><img src="images/profile/githubicon.png" class="avatar_icon" style="transition-delay: 0.1s;"></a>
+                <a href="http://kendrickcoleman.com/"><img src="images/profile/blogicon.png" class="avatar_icon" style="transition-delay: 0.2s;"></a>
+              </li>
+            </ul>
+
+          </section>
+
+        </div>
       </div>
     </div>
 
