@@ -10,31 +10,6 @@
   .inner {
     width: 100%;
   }
-
-  /*
-  header h1, header h2 {
-    width: 340px;
-  }
-  header h1 {
-    font-size: 60px;
-  }
-  header h2 {
-    font-size: 30px;
-  }
-  #main-content {
-    width: 490px;
-  }
-  #main-content h1:before,
-  #main-content h2:before,
-  #main-content h3:before,
-  #main-content h4:before,
-  #main-content h5:before,
-  #main-content h6:before {
-    content: none;
-    padding-right: 0;
-    margin-left: 0;
-  }
-  */
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -44,11 +19,25 @@
   }
 
   header {
+    width: 95px;
     position: absolute;
     height: 45px;
   }
   header h2 {
     display: none;
+  }
+
+  #nav-trigger {
+    display: block; 
+  }
+
+  nav#nav-main {
+    display: none; }
+
+  nav#nav-mobile {
+    display: block; 
+    width: 100%;
+    float: right;
   }
 
   .inner img {
@@ -71,69 +60,7 @@
     clear: left; 
   }
 
-  /*
-  header {
-    padding: 20px 0;
-  }
-  header .inner {
-    position: relative;
-  }
-  header h1, header h2 {
-    width: 100%;
-  }
-  header h1 {
-    font-size: 48px;
-  }
-  header h2 {
-    font-size: 24px;
-  }
-  header a.button {
-    background-image: none;
-    width: auto;
-    height: auto;
-    display: inline-block;
-    margin-top: 15px;
-    padding: 5px 10px;
-    position: relative;
-    text-align: center;
-    font-size: 13px;
-    line-height: 1;
-    background-color: #9ddcff;
-    color: #2879d0;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;                     
-    border-radius: 5px;    
-  }
-  header a.button small {
-    font-size: 13px;
-    display: inline;
-  }
-  #main-content,
-  aside#sidebar {
-    float: none;
-    width: 100% ! important;
-  }
-  aside#sidebar {
-    background-image: none;
-    margin-top: 20px;
-    border-top: solid 1px #ddd;
-    padding: 20px 0;
-    min-height: 0;
-  }
-  aside#sidebar a.button {
-    display: none;
-  }
-  #main-content h1:before,
-  #main-content h2:before,
-  #main-content h3:before,
-  #main-content h4:before,
-  #main-content h5:before,
-  #main-content h6:before {
-    content: none;
-    padding-right: 0;
-    margin-left: 0;
-  }
-  */
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -143,6 +70,10 @@
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+  .profile_box {
+    margin-left: -35px;
+  }
+
   .section_box li {
     width: 60%;
     float: left;
@@ -152,4 +83,5 @@
   .section_box li:nth-child(1n+2) {
     clear: left; 
   }
+
 }
