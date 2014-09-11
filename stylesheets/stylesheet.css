@@ -31,6 +31,19 @@ p {
   color: #E8E8E8;
 }
 
+a {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+  font-size: .93em;
+  color: #24C0EB;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 #content-wrapper {
   padding: 25px 1% 50px;
   max-width: 960px;
@@ -38,7 +51,7 @@ p {
   margin-right: auto;
 }
 
-.section_box, .item_box, .profile_box {
+.section_box, .item_box, .follow_us_box, .profile_box {
   list-style: none;
   margin-left: auto;
   margin-right: auto;
@@ -320,14 +333,14 @@ nav#nav-mobile a:hover {
   margin: 10px 1%;
   background: #E8E8E8;
   transition: all .5s ease-in-out;
-  border: solid 5px #24C0EB;
+  border: solid 3px #24C0EB;
   z-index: 1;
 }
 
 .item_box li h2 {
   font-size: 0.9em;
   text-align: center;
-  border-bottom: solid 5px #24C0EB;
+  border-bottom: solid 2px #24C0EB;
   padding: 5px 0;
   width: 100%;
   transition: all .5s ease-in-out;
@@ -350,9 +363,9 @@ nav#nav-mobile a:hover {
 .hover_text {
   display: none;
   position: absolute; 
-  top: 34px; 
+  top: 31px; 
   width: 100%; 
-  height: 218px;
+  height: 220px;
   background-color: rgba(33, 36, 35, 0.8);
   transition: all .5s ease-in-out;
 }
@@ -365,6 +378,28 @@ nav#nav-mobile a:hover {
   display: inline-block;
 }
 
+.follow_us_box li {
+  text-align: center;
+  width: 20%;
+  float: left;
+  margin: 0% 10%;
+  border: solid 2px transparent;
+  transition: all .5s ease-in-out;
+}
+
+.follow_us_box li img {
+  width: 75%;
+}
+
+.follow_us_box li:hover {
+  border: solid 2px #24C0EB;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.follow_us_box a:hover {
+  text-decoration: none;
+}
 
 .profile_box li {
   width: 125px;
@@ -378,7 +413,6 @@ nav#nav-mobile a:hover {
   color: #E8E8E8;
   padding: 3px 0;
   width: 100%;
-  transition: all .5s ease-in-out;
 }
 
 .profile_box li a {
@@ -401,7 +435,7 @@ nav#nav-mobile a:hover {
 }
 
 .avatar_icon {
-  width: 29px;
+  width: 26px;
   margin: 2px 0px 0px 2px;
   float: right;
 }
@@ -410,6 +444,10 @@ nav#nav-mobile a:hover {
   transform: translateX(5px);
   -ms-transform: translateX(5px); /* IE 9 */
   -webkit-transform: translateX(5px); /* Chrome, Safari, Opera */
+}
+
+.profile_box li:hover .avatar {
+  border-right: solid 3px #24C0EB;
 }
 
 /* MISC */
