@@ -363,15 +363,19 @@ nav#nav-mobile a:hover {
 .hover_text {
   display: none;
   position: absolute; 
-  top: 31px; 
+  top: 30px; 
   width: 100%; 
-  height: 220px;
+  height: 221px;
   background-color: rgba(33, 36, 35, 0.8);
   transition: all .5s ease-in-out;
 }
 
 .hover_text p {
   margin: 5px;
+}
+
+.contributer {
+  font-size: .76em;
 }
 
 .item_box li:hover .hover_text {
