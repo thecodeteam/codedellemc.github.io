@@ -119,11 +119,11 @@ nav#nav-main ul {
 
 nav#nav-main li {
   display: inline-block; 
-  margin-right: .2%;
- }
-
- nav#nav-main li a{
   z-index: 15;
+  margin-right: .2%;
+  margin-top: -25px;
+  transition: all .5s ease-in-out;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 0.77em;
@@ -147,9 +147,9 @@ nav#nav-main li {
   -webkit-box-shadow: 0px 0px 4px 0px #000000;
   -moz-box-shadow: 0px 0px 4px 0px #000000;
   box-shadow: 0px 0px 4px 0px #000000;
-}
+ }
 
-nav#nav-main li a:hover {
+nav#nav-main li:hover {
   border-bottom: 5px solid #24C0EB;
   transform: translateY(10px);
   -o-transform: translateY(10px); /* Mozilla */
@@ -158,11 +158,6 @@ nav#nav-main li a:hover {
   -webkit-transform: translateY(10px); /* Chrome, Safari, Opera */
 }
 
-#nav-trigger {
-  display: none;
-  text-align: right;
-  }
-  
 #nav-trigger span {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -462,4 +457,3 @@ nav#nav-mobile a:hover {
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
-
