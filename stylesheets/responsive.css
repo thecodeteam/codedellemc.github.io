@@ -84,4 +84,9 @@
     clear: left; 
   }
 
+  .follow_us_box li {
+    width: 30%;
+    margin: 0% 2.5%;
+  }
+
 }
