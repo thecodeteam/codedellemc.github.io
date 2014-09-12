@@ -12,7 +12,7 @@ body {
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.76em;
+  font-size: .76em;
   font-weight: 500;
   padding: 0;
 }
@@ -102,8 +102,8 @@ header h2 {
 
 .inner img {
   float: left;
-  width: 150px;
-  margin-left: 2%;
+  height: 70px;
+  margin-left: 3%;
 }
 
 nav#nav-main {
