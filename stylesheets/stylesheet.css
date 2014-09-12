@@ -159,6 +159,7 @@ nav#nav-main li:hover {
 }
 
 #nav-trigger span {
+  float: right;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #24C0EB;
@@ -166,6 +167,7 @@ nav#nav-main li:hover {
   padding: 10px 30px;
   cursor: pointer;
   text-transform: uppercase; 
+  background-color: rgba(50, 50, 50, 1);
 }
 #nav-trigger span:after {
   display: inline-block;
@@ -191,6 +193,7 @@ nav#nav-mobile {
 }
 
 nav#nav-mobile ul {
+  top: 40px;
   display: none;
   list-style-type: none;
   position: absolute;
@@ -199,7 +202,7 @@ nav#nav-mobile ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #3E3E3E;
+  background-color: rgba(50, 50, 50, 1);
   padding: .15em;
   border-radius: 8px;
   transition-duration: .5s; 
@@ -207,32 +210,25 @@ nav#nav-mobile ul {
 
 nav#nav-mobile li {
   display: block;
-  padding: 2px 0;
   margin: 0 2px;
-  border-bottom: solid 1px #000000; 
+  border-bottom: solid 1px #FFF; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #24C0EB;
+  font-size: 1.15em;
+  transition-duration: .5s;
+  padding: 10px 30px; 
 }
 
 nav#nav-mobile li:last-child {
   border-bottom: none; 
 }
 
-nav#nav-mobile a {
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  padding: .15em;
-  color: #24C0EB;
-  text-decoration: none;
-  font-size: 1.15em;
-  transition-duration: .5s;
-  padding: 10px 30px; 
-}
 
-nav#nav-mobile a:hover {
+nav#nav-mobile li:hover {
   color: #000;
   background-color: rgba(232, 228, 228, 1);
 }
-
 
 /****************************
   BACKGROUNDS
