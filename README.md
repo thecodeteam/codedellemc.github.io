@@ -5,3 +5,4 @@
 
 ####Things to do:
 - Swap out the folder icons 
+- Readd Kenny
