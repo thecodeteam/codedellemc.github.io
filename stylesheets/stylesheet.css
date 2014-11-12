@@ -207,6 +207,7 @@ nav#nav-mobile ul {
   padding: .15em;
   border-radius: 8px;
   transition-duration: .5s; 
+  z-index: 4;
 }
 
 nav#nav-mobile li {
