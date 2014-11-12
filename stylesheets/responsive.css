@@ -77,23 +77,11 @@
   .section_box li {
     width: 60%;
     float: left;
-    margin: 10px 10%;
-  }
-
-  .section_box li img {
-    margin-left: 5.5%;
-  }
-
-  .section_box li h2 {
-    margin-left: 6%;
+    margin: 10px 5%;
   }
 
   .section_box li:nth-child(1n+2) {
     clear: left; 
-  }
-  
-  .item_box {
-    margin-left: -14%;
   }
 
   .follow_us_box li {

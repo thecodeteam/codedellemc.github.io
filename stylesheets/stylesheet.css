@@ -284,15 +284,16 @@ nav#nav-mobile li:hover {
 .section_box li h2 {
   margin-top: 130px;
   margin-bottom: -140px;
-  margin-left: 13%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1em;
   text-align: center;
   background: #FFF;
   padding: 6px 0;
-  width: 171px;
+  width: 165px;
   transition: all .5s ease-in-out;
   z-index: 2;
-  position: relative
+  position: relative;
 }
 
 .section_box li a {
@@ -306,12 +307,12 @@ nav#nav-mobile li:hover {
 }
 
 .section_box li img {
-  margin-left: 12.5%;
+  margin-left: auto;
   margin-right: auto;
   width: 180px;
   transition: all .5s ease-in-out;
   z-index: 1;
-  position: relative
+  display: block;
 } 
 
 .section_box li:nth-child(5n+6) {
