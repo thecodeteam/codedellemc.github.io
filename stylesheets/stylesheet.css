@@ -290,7 +290,7 @@ nav#nav-mobile li:hover {
   padding: 6px 0;
   width: 171px;
   transition: all .5s ease-in-out;
-  z-index: 50;
+  z-index: 2;
   position: relative
 }
 
