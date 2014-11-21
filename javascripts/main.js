@@ -46,10 +46,10 @@ $( document ).ready(function() {
     }
 
     function getFollowerCount() {
-      console.log($.getJSON('twitter-proxy.php?url='+encodeURIComponent('users/show.json?screen_name=emccode'), function(d){
+      $.getJSON('twitter-proxy.php?url='+encodeURIComponent('users/show.json?screen_name=emccode'), function(d){
         console.log(d);
         $("#publicFollowerCount").text(d.followers_count); 
-      }));
+      });
     }
 
     function stickSideBar() {
