@@ -1,33 +1,50 @@
 
 /* #Media Queries
 ================================================== */
+/* Nice Big Banner and fix when screen gets smaller than 1276 */
+@media only screen and (max-width: 1290px) {
+  header img {
+    margin-top: -25px;
+  }
+
+  header h1 {
+    margin-top: -5px;
+  }
+
+}
+
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .inner {
-    width: 100%;
-  }
 }
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 765px) {
-  .inner {
-    width: 100%;
+  header {
+    width: 90px;
+    position: absolute;
+    height: 55px;
+    margin-top: 0px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 
-  header {
-    width: 95px;
-    position: absolute;
-    height: 45px;
+  header img {
+    width: 65px;
+    margin-left: 15%;
+    margin-top: -8px;
   }
-  header h2 {
+
+  header h1 {
     display: none;
   }
 
-  #nav-trigger {
+  #nav-trigger span {
     display: block; 
   }
 
@@ -39,28 +56,10 @@
     width: 100%;
   }
 
-  .inner img {
-    width: 55px;
-    margin-left: 20%;
-  }
-
   .intro_background {
-    padding-top: 25px; 
+    padding-top: 0; 
   }
 
-  .section_box li {
-    width: 40%;
-    float: left;
-    margin: 10px 1%;
-  }
-
-  .section_box li:nth-child(2n+3) {
-    clear: left; 
-  }
-
-  .profile_box li:nth-child(2n+3) {
-    clear: left; 
-  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -70,23 +69,14 @@
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  .profile_box {
-    margin-left: -35px;
+  #content, #sidebar {
+    float: none;
+    width: auto;
+    position: relative;
   }
 
-  .section_box li {
-    width: 60%;
-    float: left;
-    margin: 10px 5%;
-  }
-
-  .section_box li:nth-child(1n+2) {
-    clear: left; 
-  }
-
-  .follow_us_box li {
-    width: 30%;
-    margin: 0% 2.5%;
+  .item_box {
+    margin-left: -15%;
   }
 
 }
