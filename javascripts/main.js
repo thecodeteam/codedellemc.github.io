@@ -106,7 +106,7 @@ $( document ).ready(function() {
                           url: repoApi + "/contributors",
                           success: function(contributorData) {
                             $.each(contributorData, function() {
-                              tooltipHtml += '<a href="' + this.html_url + '" title="Contributions: ' + this.contributions + '"><img src="' + this.avatar_url + '" class="contributorAvatar avatarTooltip"></a>';
+                              tooltipHtml += '<a href="' + this.html_url + '" title="' + this.login + ' has ' + this.contributions + ' contributions"><img src="' + this.avatar_url + '" class="contributorAvatar avatarTooltip"></a>';
                             })
                           }
                         });
