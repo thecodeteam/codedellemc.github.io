@@ -8,20 +8,14 @@ $( document ).ready(function() {
         $(".hiddenUL").children().remove();
 
         var html = '<h3>' + classSearch + '</h3>';
-        html += '<ul class="item_box">';
+        html += '<ul class="item_box"></ul>';
         $(".hiddenUL").append(html);
 
         $( ".item_box li" ).each(function() {
-          $( this ).show();
           if ( $( this ).hasClass(classSearch) ) {
             $(window).scrollTop(525);
-            $(this).clone().appendTo( $(".hiddenUL").children().eq(1) );
-
-          } else {
-
-            //$(this).hide();
-
-          }
+            $(this).clone().appendTo( $(".hiddenUL ul") );
+          } 
         });
         tooltipDisplay();
       });  
