@@ -1,0 +1,219 @@
+/* http://emccode.github.io
+   v1.0 | 20140907
+   License: none (public domain)
+*/
+
+/****************************
+  COMMON STYLES
+****************************/
+body {
+  background: #101624; /* Old browsers */
+  background: -moz-linear-gradient(left,  #101624 0%, #060d1e 40%, #050c1b 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#101624), color-stop(40%,#060d1e), color-stop(100%,#050c1b)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #101624 0%,#060d1e 40%,#050c1b 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #101624 0%,#060d1e 40%,#050c1b 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #101624 0%,#060d1e 40%,#050c1b 100%); /* IE10+ */
+  background: linear-gradient(to right,  #101624 0%,#060d1e 40%,#050c1b 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101624', endColorstr='#050c1b',GradientType=1 ); /* IE6-9 */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Exo', sans-serif;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 2.76em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.76em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 25px 0px 10px;
+}
+
+p, td {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+  font-size: .95em;
+  color: #FFFFFF;
+}
+
+a {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+  font-size: .96em;
+  color: #3F3F3F;
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+}
+
+a:hover {
+  /*color: #32a7e4;*/
+  color: #FFFFFF;
+}
+
+#content-wrapper {
+  padding: 25px 0% 50px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+/****************************
+  STRUCTURE
+****************************/
+
+.intro_background {
+  width: 100%;
+  height: 100vh;
+  background: url('../../images/devopsEMCworld/bg_blur.png') no-repeat top left;
+  -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+
+.mainLeft {
+  margin-top: 20%;
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.mainRight {
+  margin-top: 25%;
+  width: 75%;
+  height: 100%;
+  float: right;
+  color: white;
+}
+
+/**************************
+  MENU
+**************************/
+#menu, #speakers, #contact {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  display: inline-block;
+  padding: 1%;
+}
+
+#menu li a {
+  font-family: 'Exo', sans-serif;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  border: 3px solid #132950;
+  transition: all .25s ease-in-out;
+}
+
+#menu li a:hover {
+  border: 3px solid #1c3b73;
+}
+/********************
+  Agenda
+********************/
+table {
+  width: 100%;
+}
+table, th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    background: #FFFFFF
+}
+th,td {
+    padding: 15px;
+    color: #000000
+}
+
+/*******************
+  Speakers
+*******************/
+#speakers li {
+  margin: 2%;
+  width: 25%;
+  display: inline-block;
+  border: 3px solid #132950;
+  transition: all .25s ease-in-out;
+}
+
+#speakers li:hover {
+  border: 3px solid #1c3b73;
+}
+
+#speakers li img{
+  width: 100%;
+}
+/*******************
+  Contact
+*******************/
+#contact li {
+  display: inline-block;
+  width: 30%;
+  padding: 2.5% 33%;
+}
+
+#contact li:nth-child(1n){
+    clear:left;
+}
+
+.contactContainer {
+  width: 100%;
+}
+
+.contactLeft {
+  width: 40%;
+  float: left;
+}
+
+.contactRight {
+  text-align: left;
+  padding-left: 2%;
+  width: 55%;
+  float: left;
+  font-size: 1.5em;
+}
+#contact li  img{
+  width: 100%;
+}
+
+/* MISC */
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
