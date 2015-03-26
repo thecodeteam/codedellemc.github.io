@@ -3,22 +3,42 @@
 ================================================== */
 /* Nice Big Banner and fix when screen gets smaller than 1276 */
 @media only screen and (max-width: 1300px) {
-  header img {
-    margin-top: -25px;
+  .inner {
+    width: 90%;
+    padding: 0 5%;
   }
 
-  header h1 {
-    margin-top: -5px;
+  #bannerText {
+    width: 90%;
+    float: left;
   }
-
 }
 
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) {
+  .inner {
+    width: 95%;
+    padding: 0 2.5%;
+  }
+
+  #bannerText {
+    width: 80%;
+    float: right;
+  }
+
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+    header {
+      margin-top: 0px;
+      padding: 10px 0 40px 0;
+    }
+
+    #bannerImage {
+      margin-top: -5px;;
+    }
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -34,14 +54,16 @@
     border-bottom-left-radius: 5px;
   }
 
-  header img {
-    width: 65px;
-    margin-left: 15%;
-    margin-top: -8px;
+  #bannerText{
+    display: none;
   }
 
-  header h1 {
-    display: none;
+  #bannerImage {
+    margin: -12px 0 0 2px;
+  }
+
+  #bannerImage img {
+    width: 80px;
   }
 
   #nav-trigger span {
