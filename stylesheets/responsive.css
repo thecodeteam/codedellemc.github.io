@@ -12,6 +12,15 @@
     width: 90%;
     float: left;
   }
+
+  #content, #footer {
+      width: 60%;
+  }
+
+  #sidebar
+  {
+      width: 32%;
+  }
 }
 
 
@@ -25,6 +34,15 @@
   #bannerText {
     width: 80%;
     float: right;
+  }
+
+  #content, #footer {
+      width: 55%;
+  }
+
+  #sidebar
+  {
+      width: 37%;
   }
 
 }
@@ -86,7 +104,17 @@
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  
+  #sidebar {
+    float: none;
+    width: auto;
+    position: relative;
+  }
+
+  #content {
+    float: none;
+    width: 100%;
+    position: relative;
+  }
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
