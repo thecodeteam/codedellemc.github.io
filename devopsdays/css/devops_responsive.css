@@ -26,6 +26,10 @@
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+  .intro_background {
+    height: 100vh;
+}
+
   .mainLeft {
     margin: 0;
     width: 60%;
