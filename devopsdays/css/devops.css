@@ -89,7 +89,7 @@ a:hover {
 
 .intro_background {
   width: 100%;
-  height: 100vh;
+ /* height: 100vh; */ 
   background: url('../images/bg_blur.png') no-repeat top left;
   -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
