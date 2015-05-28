@@ -33,13 +33,17 @@ h3 {
 h4 {
   font-size: 1em;
   font-weight: 400;
-  margin: 25px 0px 10px;
+  margin: 20px 0px 8px;
 }
 
 p, td {
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 400;
   font-size: .95em;
+}
+
+ul {
+  margin: 0;
 }
 
 a {
