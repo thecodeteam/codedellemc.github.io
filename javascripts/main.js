@@ -39,13 +39,6 @@ $( document ).ready(function() {
       $("#publicMemberCount").text(responseObj.length);     
     }
 
-    function getFollowerCount() {
-      console.log($.getJSON('twitter-proxy.php?url='+encodeURIComponent('users/show.json?screen_name=emccode'), function(d){
-        console.log(d);
-        $("#publicFollowerCount").text(d.followers_count); 
-      }));
-    }
-
     function stickSideBar() {
       if ($(window).width() < 600) {
          $("#sidebar").unstick;
@@ -130,6 +123,18 @@ $( document ).ready(function() {
       });
     }
 
+    function twitterFollows(){
+      $.getJSON( "http://dashboard.emccode.com/widgets/twitter_user_followers.json", function( data ) {
+        $("#twitterFollowerCount").text(data.current);
+      });
+    }
+
+    function newsletterSubscribers(){
+      $.getJSON( "http://dashboard.emccode.com/widgets/constant_contact_subscribers.json", function( data ) {
+        $("#newsletterSubscriberCount").text(data.current);
+      });
+    }
+
     var repoRequest = new XMLHttpRequest();
     repoRequest.onload = getRepoCount;
     repoRequest.open('get', 'https://api.github.com/orgs/emccode', true)
@@ -140,11 +145,12 @@ $( document ).ready(function() {
     memberCountRequest.open('get', 'https://api.github.com/orgs/emccode/members', true)
     memberCountRequest.send()
 
-    getFollowerCount();
     tagButtons();
     clearTagButton();
     stickSideBar();
     mobileNavEC();
+    twitterFollows();
+    newsletterSubscribers();
 
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
