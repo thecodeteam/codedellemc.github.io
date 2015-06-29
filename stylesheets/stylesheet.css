@@ -407,6 +407,13 @@ TAGS
   color: #ffffff;
 }
 
+.badgeGoogleGroupRight {
+  padding: 1px 6px 2px 6px;
+  border-radius: 0 3px 3px 0;
+  background: #d34937;
+  color: #ffffff;
+}
+
 /****************************
   BOXES
 ****************************/
