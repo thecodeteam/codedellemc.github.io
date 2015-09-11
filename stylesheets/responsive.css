@@ -60,7 +60,7 @@
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 767px) {
   header {
     width: 90px;
     position: absolute;
