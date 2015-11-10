@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+
     function tagButtons(){
       $( ".btn" ).click(function(event) {
         event.preventDefault();
@@ -15,15 +15,37 @@ $( document ).ready(function() {
           if ( $( this ).hasClass(classSearch) ) {
             $(window).scrollTop(525);
             $(this).clone().appendTo( $(".hiddenUL ul") );
-          } 
+          }
         });
         tooltipDisplay();
-      });  
+      });
+      $( ".btnf" ).click(function(event) {
+        event.preventDefault();
+        var classSearch = $(this).text();
+
+        $(".hiddenUL").children().remove();
+
+        var html = '<h3>' + classSearch + '</h3>';
+        html += '<ul class="item_box"></ul>';
+        $(".hiddenUL").append(html);
+
+        $( ".item_box li" ).each(function() {
+          if ( $( this ).hasClass(classSearch) ) {
+            $(window).scrollTop(525);
+            $(this).clone().appendTo( $(".hiddenUL ul") );
+          }
+        });
+        tooltipDisplay();
+      });
       tooltipDisplay();
     }
-    
+
     function clearTagButton(){
       $( ".clearBtn" ).click(function(event) {
+        event.preventDefault();
+        $(".hiddenUL").children().remove();
+      });
+      $( ".clearBtnf" ).click(function(event) {
         event.preventDefault();
         $(".hiddenUL").children().remove();
       });
@@ -36,7 +58,7 @@ $( document ).ready(function() {
 
     function getMemberCount() {
       var responseObj = JSON.parse(this.responseText);
-      $("#publicMemberCount").text(responseObj.length);     
+      $("#publicMemberCount").text(responseObj.length);
     }
 
     function stickSideBar() {
@@ -168,4 +190,3 @@ $( document ).ready(function() {
     });
 
 });
-
