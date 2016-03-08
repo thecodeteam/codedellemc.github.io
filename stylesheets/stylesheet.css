@@ -460,7 +460,7 @@ TAGS
   padding: 1px 6px 2px 6px;
   border-radius: 0 3px 3px 0;
   background: #ffffff;
-  color: #000;
+  color: #000000;
 }
 
 .badgeTwitterRight {
@@ -621,3 +621,22 @@ background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
+
+
+/****************************
+  XTREMIO PAGE
+****************************/
+.xtremio_background {
+  width: 100%;
+  height: 100%;
+  padding-top: 125px;
+  background: url('../images/xtremio/bg02.png') no-repeat top left;
+  -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+
+.xtremio_h2 {
+  color: #FFF;
+}
