@@ -100,6 +100,15 @@
     padding-top: 0; 
   }
 
+  .xtremio_background {
+    padding-top: 0;
+    background: url('../images/xtremio/bg02-mobile.png') no-repeat top left;
+    -webkit-background-size: cover; /* For WebKit*/
+      -moz-background-size: cover;    /* Mozilla*/
+      -o-background-size: cover;      /* Opera*/
+      background-size: cover;         /* Generic*/
+  }
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
