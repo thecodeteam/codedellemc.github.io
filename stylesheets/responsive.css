@@ -102,7 +102,25 @@
 
   .xtremio_background {
     padding-top: 0;
-    background: url('../images/xtremio/bg02-mobile.png') no-repeat top left;
+    background: url('../images/xtremio/bg02-mobile.jpg') no-repeat top left;
+    -webkit-background-size: cover; /* For WebKit*/
+      -moz-background-size: cover;    /* Mozilla*/
+      -o-background-size: cover;      /* Opera*/
+      background-size: cover;         /* Generic*/
+  }
+
+  .scaleio_background {
+    padding-top: 0;
+    background: url('../images/scaleio/scaleio_bg_mobile.jpg') no-repeat top left;
+    -webkit-background-size: cover; /* For WebKit*/
+      -moz-background-size: cover;    /* Mozilla*/
+      -o-background-size: cover;      /* Opera*/
+      background-size: cover;         /* Generic*/
+  }
+
+  .isilon_background {
+    padding-top: 0;
+    background: url('../images/isilon/isilon_bg_mobile.jpg') no-repeat top left;
     -webkit-background-size: cover; /* For WebKit*/
       -moz-background-size: cover;    /* Mozilla*/
       -o-background-size: cover;      /* Opera*/
