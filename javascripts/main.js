@@ -146,13 +146,13 @@ $( document ).ready(function() {
     }
 
     function twitterFollows(){
-      $.getJSON( "http://dashboard.emccode.com/widgets/twitter_user_followers.json", function( data ) {
+      $.getJSON( "//dashboard.emccode.com/widgets/twitter_user_followers.json", function( data ) {
         $("#twitterFollowerCount").text(data.current);
       });
     }
 
     function newsletterSubscribers(){
-      $.getJSON( "http://dashboard.emccode.com/widgets/constant_contact_subscribers.json", function( data ) {
+      $.getJSON( "//dashboard.emccode.com/widgets/constant_contact_subscribers.json", function( data ) {
         $("#newsletterSubscriberCount").text(data.current);
       });
     }
