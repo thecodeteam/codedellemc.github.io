@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
         $( ".item_box li" ).each(function() {
           if ( $( this ).hasClass(classSearch) ) {
-            $(window).scrollTop(525);
+            $(window).scrollTop(800);
             $(this).clone().appendTo( $(".hiddenUL ul") );
           }
         });
@@ -31,7 +31,7 @@ $( document ).ready(function() {
 
         $( ".item_box li" ).each(function() {
           if ( $( this ).hasClass(classSearch) ) {
-            $(window).scrollTop(525);
+            $(window).scrollTop(800);
             $(this).clone().appendTo( $(".hiddenUL ul") );
           }
         });
