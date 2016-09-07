@@ -51,10 +51,12 @@ $( document ).ready(function() {
       });
     }
 
+    /* NO LONGER NEED REPO COUNT
     function getRepoCount() {
       var responseObj = JSON.parse(this.responseText);
       $("#publicRepoCount").text(responseObj.public_repos);
     }
+    */
 
     function getMemberCount() {
       var responseObj = JSON.parse(this.responseText);
@@ -157,14 +159,16 @@ $( document ).ready(function() {
       });
     }
 
+    /* NO LONGER NEED REPO COUNT
     var repoRequest = new XMLHttpRequest();
     repoRequest.onload = getRepoCount;
-    repoRequest.open('get', 'https://api.github.com/orgs/emccode', true)
+    repoRequest.open('get', 'https://api.github.com/orgs/codedellemc', true)
     repoRequest.send()
+    */
 
     var memberCountRequest = new XMLHttpRequest();
     memberCountRequest.onload = getMemberCount;
-    memberCountRequest.open('get', 'https://api.github.com/orgs/emccode/members', true)
+    memberCountRequest.open('get', 'https://api.github.com/orgs/codedellemc/members', true)
     memberCountRequest.send()
 
     tagButtons();
