@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    	
+        <meta charset="UTF-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+        <link rel="profile" href="http://gmpg.org/xfn/11"/>
+        <link rel="pingback" href="/xmlrpc.php"/>
+
+                <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        
+	<title>{code} by Dell EMC at DockerCon 17</title>
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at DockerCon 17 Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at DockerCon 17 Comments Feed" href="/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.6' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='fair_edge_default_style-css'  href='/wp-content/themes/fair/style.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_modules_plugins-css'  href='/wp-content/themes/fair/assets/css/plugins.min.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_modules-css'  href='/wp-content/themes/fair/assets/css/modules.min.css?ver=4.7.3' type='text/css' media='all' />
+<style id='fair_edge_modules-inline-css' type='text/css'>
+.page-id-2122 .edgtf-content .edgtf-content-inner > .edgtf-container > .edgtf-container-inner, .page-id-2122 .edgtf-content .edgtf-content-inner > .edgtf-full-width > .edgtf-full-width-inner { padding: 0;}
+
+    
+.edgtf-header-standard .edgtf-right-from-main-menu-widget{
+    display: none;
+}
+
+.edgtf-home-holder .edgtf-ptf-filter-follow-hover {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    bottom: -2px;
+    border-top: 2px solid #387ce0;
+    -webkit-transition: width .4s,left .9s cubic-bezier(.19,.65,.02,.93);
+    transition: width .4s,left .9s cubic-bezier(.19,.65,.02,.93);
+}
+
+.edgtf-home-holder .vc_column-inner {
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 601px) {
+     .edgtf-home-holder .edgtf-portfolio-filter-holder-inner > ul {
+        position: relative;
+        padding-bottom: 2px;
+    }
+
+    .edgtf-home-holder .edgtf-portfolio-filter-holder .edgtf-portfolio-filter-holder-inner ul li span:after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .edgtf-home-holder .edgtf-ptf-filter-follow-hover {
+        display: none !important;
+    }
+}
+
+.edgtf-btn {
+    border-radius: 0px;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Roboto !important;
+}
+.fa-slack {
+vertical-align: middle;
+}
+.fa-slideshare {
+vertical-align: middle;
+}
+</style>
+<link rel='stylesheet' id='edgtf_font_awesome-css'  href='/wp-content/themes/fair/assets/css/font-awesome/css/font-awesome.min.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_font_elegant-css'  href='/wp-content/themes/fair/assets/css/elegant-icons/style.min.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_linea_icons-css'  href='/wp-content/themes/fair/assets/css/linea-icons/style.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_simple_line_icons-css'  href='/wp-content/themes/fair/assets/css/simple-line-icons/simple-line-icons.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_ico_moon-css'  href='/wp-content/themes/fair/assets/css/icomoon/css/icomoon.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_style_dynamic-css'  href='/wp-content/themes/fair/assets/css/style_dynamic.css?ver=1492019296' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_modules_responsive-css'  href='/wp-content/themes/fair/assets/css/modules-responsive.min.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_blog_responsive-css'  href='/wp-content/themes/fair/assets/css/blog-responsive.min.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_style_dynamic_responsive-css'  href='/wp-content/themes/fair/assets/css/style_dynamic_responsive.css?ver=1492019296' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.12' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_google_fonts-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=1.0.0' type='text/css' media='all' />
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.6'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.3" />
+<link rel="canonical" href="/" />
+<link rel='shortlink' href='/' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F&#038;format=xml" />
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1491949112644{padding-top: 7% !important;padding-bottom: 6.4% !important;background-color: #f3f3f3 !important;}.vc_custom_1491959968329{padding-top: 10% !important;padding-bottom: 5% !important;background-image: url(/wp-content/uploads/2016/06/speaking-dockercon.jpg?id=10880) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1491959977598{padding-top: 10% !important;padding-bottom: 5% !important;background-color: #ffffff !important;}.vc_custom_1492014939736{padding-right: 11% !important;}.vc_custom_1491952010361{padding-right: 11% !important;}.vc_custom_1491951885460{padding-right: 11% !important;}.vc_custom_1491952273871{padding-right: 11% !important;}.vc_custom_1465378735902{padding-top: 48px !important;padding-bottom: 23px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="home page-template page-template-full-width page-template-full-width-php page page-id-2122 edgt-core-1.0 fair-ver-1.0 edgtf-smooth-scroll edgtf-smooth-page-transitions edgtf-mimic-ajax edgtf-header-standard edgtf-sticky-header-on-scroll-down-up edgtf-default-mobile-header edgtf-sticky-up-mobile-header edgtf-dropdown-animate-height edgtf-light-header edgtf-header-style-on-scroll edgtf-fullscreen-search edgtf-search-fade edgtf-side-menu-slide-from-right wpb-js-composer js-comp-ver-4.12 vc_responsive">
+<section class="edgtf-side-menu right">
+		<div class="edgtf-close-side-menu-holder">
+		<div class="edgtf-close-side-menu-holder-inner">
+			<a href="#" target="_self" class="edgtf-close-side-menu">
+				<span aria-hidden="true" class="icon_close"></span>
+			</a>
+		</div>
+	</div>
+	</section>
+
+<div class="edgtf-smooth-transition-loader edgtf-mimic-ajax">
+    <div class="edgtf-st-loader">
+        <div class="edgtf-st-loader1">
+            <div class="pulse"></div>        </div>
+    </div>
+</div>
+
+<div class="edgtf-wrapper">
+	    <div class="edgtf-wrapper-inner">
+        <div class="edgtf-fullscreen-search-holder">
+	<div class="edgtf-fullscreen-search-close-container">
+		<div class="edgtf-search-close-holder">
+			<a class="edgtf-fullscreen-search-close" href="javascript:void(0)">
+				<span class="icon_close"></span>
+			</a>
+		</div>
+	</div>
+	<div class="edgtf-fullscreen-search-table">
+		<div class="edgtf-fullscreen-search-cell">
+			<div class="edgtf-fullscreen-search-inner">
+				<form action="/" class="edgtf-fullscreen-search-form" method="get">
+					<div class="edgtf-form-holder">
+						<div class="edgtf-field-holder">
+							<input type="text"  name="s" class="edgtf-search-field" autocomplete="off" placeholder="Search"/>
+							<div class="edgtf-line"></div>
+							<input type="submit" class="edgtf-search-submit" value="&#xe986;" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="edgtf-page-header">
+        <div class="edgtf-menu-area" style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(255, 255, 255, 0.00)">
+        			            <div class="edgtf-vertical-align-containers">
+                <div class="edgtf-position-left">
+                    <div class="edgtf-position-left-inner">
+                        
+<div class="edgtf-logo-wrapper">
+    <a href="/" style="height: 401px;">
+        <img class="edgtf-normal-logo" src="/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="logo"/>
+        <img class="edgtf-dark-logo" src="/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-White.png" alt="light logo"/>    </a>
+</div>
+
+                    </div>
+                </div>
+                <div class="edgtf-position-right">
+                    <div class="edgtf-position-right-inner">
+                        
+<nav class="edgtf-main-menu edgtf-drop-down edgtf-default-nav">
+    <ul id="menu-dockercon-menu" class="clearfix"><li id="nav-menu-item-10882" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#speaking#speaking"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Speaking Sessions</span></span><span class="plus"></span></span></a></li>
+<li id="nav-menu-item-10883" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#catalyst#catalyst"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">{code} Catalyst</span></span><span class="plus"></span></span></a></li>
+<li id="nav-menu-item-10884" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#party#party"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">DockerCon Party</span></span><span class="plus"></span></span></a></li>
+</ul></nav>
+
+                                            </div>
+                </div>
+            </div>
+            </div>
+        
+<div class="edgtf-sticky-header">
+        <div class="edgtf-sticky-holder">
+                <div class="edgtf-vertical-align-containers">
+                <div class="edgtf-position-left">
+                    <div class="edgtf-position-left-inner">
+                        
+<div class="edgtf-logo-wrapper">
+    <a href="/" style="height: 125px;">
+        <img class="edgtf-normal-logo" src="/wp-content/uploads/2017/04/code-at-docker.png" alt="logo"/>
+        <img class="edgtf-dark-logo" src="/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-White.png" alt="light logo"/>    </a>
+</div>
+
+                    </div>
+                </div>
+                <div class="edgtf-position-right">
+                    <div class="edgtf-position-right-inner">
+						
+<nav class="edgtf-main-menu edgtf-drop-down edgtf-sticky-nav">
+    <ul id="menu-dockercon-menu-1" class="clearfix"><li id="sticky-nav-menu-item-10882" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#speaking#speaking"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Speaking Sessions</span></span><span class="plus"></span></span></a></li>
+<li id="sticky-nav-menu-item-10883" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#catalyst#catalyst"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">{code} Catalyst</span></span><span class="plus"></span></span></a></li>
+<li id="sticky-nav-menu-item-10884" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#party#party"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">DockerCon Party</span></span><span class="plus"></span></span></a></li>
+</ul></nav>
+
+						<div class="edgtf-sticky-right-from-main-menu-holder">
+												</div>
+                    </div>
+                </div>
+            </div>
+                </div>
+</div>
+
+</header>
+
+
+<header class="edgtf-mobile-header">
+    <div class="edgtf-mobile-header-inner">
+                <div class="edgtf-mobile-header-holder">
+            <div class="edgtf-grid">
+                <div class="edgtf-vertical-align-containers">
+                                            <div class="edgtf-mobile-menu-opener">
+                            <a href="javascript:void(0)">
+                    <span class="edgtf-mobile-opener-icon-holder">
+                        <i class="edgtf-icon-font-awesome fa fa-bars" ></i>                    </span>
+                            </a>
+                        </div>
+                                                                <div class="edgtf-position-center">
+                            <div class="edgtf-position-center-inner">
+                                
+<div class="edgtf-mobile-logo-wrapper">
+    <a href="/" style="height: 125px">
+        <img src="/wp-content/uploads/2017/04/code-at-docker.png" alt="mobile logo"/>
+    </a>
+</div>
+
+                            </div>
+                        </div>
+                                        <div class="edgtf-position-right">
+                        <div class="edgtf-position-right-inner">
+                                                    </div>
+                    </div>
+                </div> <!-- close .edgtf-vertical-align-containers -->
+            </div>
+        </div>
+        
+<nav class="edgtf-mobile-nav">
+    <div class="edgtf-grid">
+        <ul id="menu-dockercon-menu-2" class=""><li id="mobile-menu-item-10882" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#speaking#speaking" class=""><span>Speaking Sessions</span></a></li>
+<li id="mobile-menu-item-10883" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#catalyst#catalyst" class=""><span>{code} Catalyst</span></a></li>
+<li id="mobile-menu-item-10884" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#party#party" class=""><span>DockerCon Party</span></a></li>
+</ul>    </div>
+</nav>
+
+    </div>
+</header> <!-- close .edgtf-mobile-header -->
+
+
+
+                    <a id='edgtf-back-to-top'  href='#'>
+                <span class="edgtf-icon-stack">
+                     <span aria-hidden="true" class="edgtf-icon-font-elegant arrow_carrot-up" ></span>                </span>
+            </a>
+                
+        <div class="edgtf-content" style="margin-top: -80px">
+                        <div class="edgtf-content-inner">
+<div class="edgtf-full-width">
+<div class="edgtf-full-width-inner">
+						<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_revslider_element wpb_content_element"><link href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C600" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
+	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
+<ul>	<!-- SLIDE  -->
+	<li data-index="rs-1" data-transition="notransition" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="/wp-content/uploads/2017/04/austin-tx-blk-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="/wp-content/uploads/2017/04/austin-tx-blk.jpg"  alt="" title="austin-tx-blk"  width="1777" height="921" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-1-layer-4" 
+			 data-x="['left','left','left','left']" data-hoffset="['1','12','40','23']" 
+			 data-y="['top','top','top','top']" data-voffset="['272','112','170','110']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:1200;e:Power3.easeOut;" 
+			 data-transform_out="s:2;" 
+			data-start="230" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 5;"><img src="/wp-content/uploads/2017/04/dockercon17.png" alt="" width="772" height="116" data-ww="['359px','359px','359px','359px']" data-hh="['54px','54px','54px','54px']" data-no-retina> </div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption fair-poppins-title   tp-resizeme" 
+			 id="slide-1-layer-1" 
+			 data-x="['left','left','left','left']" data-hoffset="['0','13','40','23']" 
+			 data-y="['top','top','top','top']" data-voffset="['359','163','252','167']" 
+						data-fontsize="['80','100','75','48']"
+			data-lineheight="['100','110','90','60']"
+			data-fontweight="['300','400','400','600']"
+			data-width="['717','706','526','331']"
+			data-height="['207','332','272','none']"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:1200;e:Power3.easeOut;" 
+			 data-transform_out="s:30;" 
+			data-start="700" 
+			data-splitin="words" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			data-elementdelay="0.1" 
+			
+			style="z-index: 6; min-width: 717px; max-width: 717px; max-width: 207px; max-width: 207px; white-space: normal; font-size: 80px; line-height: 100px; font-weight: 300;font-family:Roboto;text-align:left;letter-spacing:-2px;">Meet REX-Ray and the {code} team </div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption fair-subtitle   tp-resizeme" 
+			 id="slide-1-layer-2" 
+			 data-x="['left','left','left','left']" data-hoffset="['2','13','45','24']" 
+			 data-y="['top','top','top','top']" data-voffset="['581','500','526','368']" 
+						data-fontsize="['20','20','20','18']"
+			data-fontweight="['300','400','400','400']"
+			data-width="['682','477','482','437']"
+			data-height="['92','none','61','none']"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:1000;e:Power3.easeOut;" 
+			 data-transform_out="s:1.875;" 
+			data-start="1230" 
+			data-splitin="lines" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			data-elementdelay="0.1" 
+			
+			style="z-index: 7; min-width: 682px; max-width: 682px; max-width: 92px; max-width: 92px; white-space: normal; font-size: 20px; font-weight: 300;font-family:Roboto;">April 17-20, 2017 meet REX-Ray, the leading container storage orchestration engine for cloud native workloads at DockerCon in Austin, TX </div>
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss=".tp-caption.fair-poppins-title,.fair-poppins-title{color:rgba(255,255,255,1.00);font-size:120px;line-height:130px;font-weight:500;font-style:normal;font-family:Poppins;padding:0 0 0 0px;text-decoration:none;text-align:center;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}.tp-caption.fair-subtitle,.fair-subtitle{color:rgba(255,255,255,1.00);font-size:17px;line-height:30px;font-weight:400;font-style:normal;font-family:Open Sans;padding:0 0 0 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+						/******************************************
+				-	PREPARE PLACEHOLDER FOR SLIDER	-
+			******************************************/
+
+			var setREVStartSize=function(){
+				try{var e=new Object,i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+					e.c = jQuery('#rev_slider_1_1');
+					e.responsiveLevels = [1240,1024,778,480];
+					e.gridwidth = [1300,1100,778,480];
+					e.gridheight = [868,768,960,720];
+							
+					e.sliderLayout = "fullwidth";
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};
+			
+			setREVStartSize();
+			
+						var tpj=jQuery;
+			
+			var revapi1;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_1_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_1_1");
+				}else{
+					revapi1 = tpj("#rev_slider_1_1").show().revolution({
+						sliderType:"hero",
+jsFileLocation:"/wp-content/plugins/revslider/public/assets/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:5000,
+						navigation: {
+						},
+						responsiveLevels:[1240,1024,778,480],
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:[1300,1100,778,480],
+						gridheight:[868,768,960,720],
+						lazyType:"none",
+						parallax: {
+							type:"mouse",
+							origo:"enterpoint",
+							speed:6000,
+							levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+							type:"mouse",
+						},
+						shadow:0,
+						spinner:"off",
+						autoHeight:"off",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+		</script>
+		</div><!-- END REVOLUTION SLIDER --></div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1491949112644 edgtf-content-aligment-center edgtf-grid-section" style=""><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-countdown"  id="countdown6821" data-year="2017" data-month="4" data-day="17" data-hour="7" data-minute="0" data-timezone="0" data-month-label="Months" data-day-label="Days" data-hour-label="Hours" data-minute-label="Minutes" data-second-label="Seconds" data-digit-size="" data-label-size="" data-label-color=""></div></div></div></div></div></div></div><div data-edgtf-anchor="speaking" data-edgtf-parallax-speed="1" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1491959968329 edgtf-content-aligment-center edgtf-parallax-section-holder edgtf-parallax-section-holder-touch-disabled edgtf-grid-section edgtf-full-screen-height-parallax edgtf-vertical-middle-align" style="background-image:url();"><div class="edgtf-parallax-content-outer"><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h2 style="text-align: left;"><span style="color: #ffffff;">Speaking Sessions</span></h2>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_circle  vc_box_border_grey"><img class="vc_single_image-img" width="122" height="122"  src="https://pbs.twimg.com/profile_images/445673277705314305/UnHCV6Xo.jpeg" /></div>
+		</figure>
+	</div>
+<div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Hands-On Docker for Raspberry Pi Workshop</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Presented By Jonas Rosland, Open Source Community Manager, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Monday, April 17th, 12-3PM PST<br />
+	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1492014939736">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">The Raspberry Pi is a low-energy microcomputer the size of a credit-card and has sold over 10 million units educating children and inspiring makers alike. With the Pi, you&#8217;ll be building, shipping and running Docker containers in no time and learning how to interact with physical hardware to create your own IoT devices. You will also get a chance to play with Docker Swarm on your Pi to deploy a microservice. And, you will take home a free Raspberry Pi Zero kit, including a super bright Pimoroni Blinkt! 8-LED RGB add-on.<br />
+Experience required: Programming experience is not required but a basic understanding of Python is helpful. The examples use Docker, some shell scripting and Python but we will have a guide for you to follow. Teaching assistants will be on-hand to help &amp; answer questions.</span></p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="http://2017.dockercon.com/workshops/" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_circle  vc_box_border_grey"><img class="vc_single_image-img" width="122" height="122"  src="http://2017.dockercon.com/wp-content/uploads/sites/3/2017/03/Kendrick-Coleman.jpg" /></div>
+		</figure>
+	</div>
+<div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Make Stateful Applications Highly Available<br />
+with Docker Swarm Mode<br />
+</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Presented By Kendrick Coleman, Developer Advocate, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Wednesday, April 19th, 10:20-10:40AM PST | Gordon's Theater, EH-4 &amp; EH-5<br />
+	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1491952010361">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">Many of today&#8217;s “containers in production” applications are ephemeral and have a short life-span, but what do you about those containers that store data? Is there such a thing as a &#8220;dataless&#8221; datacenter? The next phase of container maturity is being able to take any application, whether it’s a database, key:value store, or a random java app your company built, containerize it and persist data. This session will look at native high-availability using automated recovery of Minecraft with Docker Swarm Mode and REX-Ray, an open source project from the {code} team by Dell EMC. Containers are ready to overtake the virtual machine as the next unit of infrastructure.</span></p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 41px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://dockercon.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=107252" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_circle  vc_box_border_grey"><img class="vc_single_image-img" width="122" height="122"  src="https://pbs.twimg.com/profile_images/807273324736692225/TFHuR3dF.jpg" /></div>
+		</figure>
+	</div>
+<div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Finally! An Open Solution to Solve Persistent Storage<br />
+</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Presented By Clint Kitson, Technical Director, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Wednesday, April 19th, 1:30PM-1:50PM PST | Ecosystem 1<br />
+	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1491951885460">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">Storage implementations are changing every few months. From driver interfaces to managed plugins and the store, code is continually being updated to adhere with new attempts at solving “the storage problem”. Good thing for you, there is an option that allows you to focus on your platform while ensuring interoperability with cloud native platforms. Get a deep-dive into REX-Ray that brings Docker Plugin compatibility to your platform, takes advantage of built-in features such as high availability and a CLI for operations, and solves the persistent storage problem for all.<br />
+</span></p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://dockercon.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=115566" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_circle  vc_box_border_grey"><img class="vc_single_image-img" width="122" height="122"  src="http://2017.dockercon.com/wp-content/uploads/sites/3/2017/02/Aaron-Spiegel.jpeg" /></div>
+		</figure>
+	</div>
+<div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Prepare to Bare it All with InfraKit<br />
+</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Presented By Aaron Spiegel, {code} Catalyst &amp; Developer Advocate, Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Wednesday, April 19th, 12:20-12:40PM PST | Gordon's Theater, EH-4 &amp; EH-5 	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1491952273871">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">The need to run virtual machines is diminishing as more companies move to a container first strategy for applications. With combined technologies to control infrastructure and orchestration, now is the time to return to bare-metal servers and banish costly snowflake deployments with immutable infrastructure.  If you’ve ever dreamed of running your own bare-metal infrastructure come learn how an open source project that provides vendor-agnostic automation of servers, integrates into InfraKit to provide bare-metal consumption from native toolsets ready to run containers.</span></p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://dockercon.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=107253" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div></div></div></div></div></div></div></div><div data-edgtf-anchor="catalyst" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1491959977598 edgtf-content-aligment-center edgtf-grid-section" style=""><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h2 style="text-align: left;">This Year&#8217;s {code} Catalyst Speaking Sessions</h2>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 32px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section vc_custom_1465378735902 edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-animation-holder edgtf-animation-holder-init" data-animation-type="fade_in_up" data-animation-delay="100">
+	
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<div class="edgtf-team main-info-below-image edgtf-image-rounded">
+	<div class="edgtf-team-inner">
+					<div class="edgtf-team-image" style="margin: 0 15px 0 15px;">
+                <img width="800" height="800" src="/wp-content/uploads/2016/06/aaron-spiegel.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2016/06/aaron-spiegel.png 800w, /wp-content/uploads/2016/06/aaron-spiegel-150x150.png 150w, /wp-content/uploads/2016/06/aaron-spiegel-300x300.png 300w, /wp-content/uploads/2016/06/aaron-spiegel-768x768.png 768w, /wp-content/uploads/2016/06/aaron-spiegel-550x550.png 550w" sizes="(max-width: 800px) 100vw, 800px">                			</div>
+		
+					<div class="edgtf-team-info">
+									<div class="edgtf-team-title-holder normal">
+													<h4 class="edgtf-team-name">
+								Aaron Spiegel							</h4>
+																			<p class="edgtf-team-position">Dell EMC</p>
+											</div>
+				
+									<div class="edgtf-team-text">
+						<div class="edgtf-team-text-inner">
+							<div class="edgtf-team-description">
+								<p><a href="https://dockercon.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=107253">Prepare to Bare it<br/> All with InfraKit</a><br/>Wednesday April 19th, 12:20 - 12:40PM<br/> Community Theater</p>
+							</div>
+						</div>
+					</div>
+				
+						<div class="edgtf-team-social-holder-between">
+				<div class="edgtf-team-social normal">
+					<div class="edgtf-team-social-inner">
+						<div class="edgtf-team-social-wrapp">
+
+							
+    <span class="edgtf-icon-shortcode normal">
+                    <a href="https://twitter.com/spiegela" target="_blank">
+        
+        <i class="edgtf-icon-font-awesome fa fa-twitter edgtf-icon-element" style=""     font-size: 18px !important;></i>
+                    </a>
+            </span>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+					</div>
+	</div>
+</div>
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-animation-holder edgtf-animation-holder-init" data-animation-type="fade_in_up" data-animation-delay="100">
+	
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<div class="edgtf-team main-info-below-image edgtf-image-rounded">
+	<div class="edgtf-team-inner">
+					<div class="edgtf-team-image" style="margin: 0 15px 0 15px;">
+                <img width="325" height="325" src="/wp-content/uploads/2016/06/laura-frank.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2016/06/laura-frank.png 325w, /wp-content/uploads/2016/06/laura-frank-150x150.png 150w, /wp-content/uploads/2016/06/laura-frank-300x300.png 300w" sizes="(max-width: 325px) 100vw, 325px">                			</div>
+		
+					<div class="edgtf-team-info">
+									<div class="edgtf-team-title-holder normal">
+													<h4 class="edgtf-team-name">
+								Laura Frank							</h4>
+																			<p class="edgtf-team-position">Codeship</p>
+											</div>
+				
+									<div class="edgtf-team-text">
+						<div class="edgtf-team-text-inner">
+							<div class="edgtf-team-description">
+								<p><a href="https://dockercon.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=108525">Everything You Thought You Already Knew About Orchestration</a><br/>Tuesday April 18th, 2:55 - 3:35PM<br/>
+Breakout
+</p>
+							</div>
+						</div>
+					</div>
+				
+						<div class="edgtf-team-social-holder-between">
+				<div class="edgtf-team-social normal">
+					<div class="edgtf-team-social-inner">
+						<div class="edgtf-team-social-wrapp">
+
+							
+    <span class="edgtf-icon-shortcode normal">
+                    <a href="https://twitter.com/rhein_wein" target="_blank">
+        
+        <i class="edgtf-icon-font-awesome fa fa-twitter edgtf-icon-element" style=""></i>
+                    </a>
+            </span>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+					</div>
+	</div>
+</div>
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-animation-holder edgtf-animation-holder-init" data-animation-type="fade_in_up" data-animation-delay="100">
+	
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<div class="edgtf-team main-info-below-image edgtf-image-rounded">
+	<div class="edgtf-team-inner">
+					<div class="edgtf-team-image" style="margin: 0 15px 0 15px;">
+                <img width="500" height="500" src="/wp-content/uploads/2016/06/mike-coleman.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2016/06/mike-coleman.png 500w, /wp-content/uploads/2016/06/mike-coleman-150x150.png 150w, /wp-content/uploads/2016/06/mike-coleman-300x300.png 300w" sizes="(max-width: 500px) 100vw, 500px">                			</div>
+		
+					<div class="edgtf-team-info">
+									<div class="edgtf-team-title-holder normal">
+													<h4 class="edgtf-team-name">
+								Mike Coleman							</h4>
+																			<p class="edgtf-team-position">Docker</p>
+											</div>
+				
+									<div class="edgtf-team-text">
+						<div class="edgtf-team-text-inner">
+							<div class="edgtf-team-description">
+								<p><a href="https://dockercon.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=108532">Docker?!? But I'm <br/>a SysAdmin</a><br/>Tuesday April 18th, 2:55 - 3:35PM<br/> Breakout</p>
+							</div>
+						</div>
+					</div>
+				
+						<div class="edgtf-team-social-holder-between">
+				<div class="edgtf-team-social normal">
+					<div class="edgtf-team-social-inner">
+						<div class="edgtf-team-social-wrapp">
+
+							
+    <span class="edgtf-icon-shortcode normal">
+                    <a href="https://twitter.com/mikegcoleman" target="_blank">
+        
+        <i class="edgtf-icon-font-awesome fa fa-twitter edgtf-icon-element" style=""></i>
+                    </a>
+            </span>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+					</div>
+	</div>
+</div>
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-animation-holder edgtf-animation-holder-init" data-animation-type="fade_in_up" data-animation-delay="100">
+	
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<div class="edgtf-team main-info-below-image edgtf-image-rounded">
+	<div class="edgtf-team-inner">
+					<div class="edgtf-team-image" style="margin: 0 15px 0 15px;">
+                <img width="438" height="438" src="/wp-content/uploads/2016/06/Phil-estes.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2016/06/Phil-estes.png 438w, /wp-content/uploads/2016/06/Phil-estes-150x150.png 150w, /wp-content/uploads/2016/06/Phil-estes-300x300.png 300w" sizes="(max-width: 438px) 100vw, 438px">                			</div>
+		
+					<div class="edgtf-team-info">
+									<div class="edgtf-team-title-holder normal">
+													<h4 class="edgtf-team-name">
+								Phil Estes							</h4>
+																			<p class="edgtf-team-position">IBM</p>
+											</div>
+				
+									<div class="edgtf-team-text">
+						<div class="edgtf-team-text-inner">
+							<div class="edgtf-team-description">
+								<p><a href="https://dockercon.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=106613">Empower Your Docker Containers<br/> with Watson</a><br/>Tuesday April 18th, 12:40 - 1:00PM<br/> Community Theater</p>
+							</div>
+						</div>
+					</div>
+				
+						<div class="edgtf-team-social-holder-between">
+				<div class="edgtf-team-social normal">
+					<div class="edgtf-team-social-inner">
+						<div class="edgtf-team-social-wrapp">
+
+							
+    <span class="edgtf-icon-shortcode normal">
+                    <a href="https://twitter.com/estesp" target="_blank">
+        
+        <i class="edgtf-icon-font-awesome fa fa-twitter edgtf-icon-element" style=""></i>
+                    </a>
+            </span>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+					</div>
+	</div>
+</div>
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div></div></div></div></div></div></div></div><div data-edgtf-anchor="party" class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  style="background-image: url(/wp-content/uploads/2016/06/docker-container-bar.jpg)">
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-831683" style="padding: 16.4% 30% 12.3% 26%">
+						<style type="text/css" data-type="edgtf-elements-custom-padding" scoped="scoped">
+
+									@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+						.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-831683 {
+							padding: 16.5% 18% 15.4% 16% !important;
+						}
+					}
+													@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+						.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-831683 {
+							padding: 20.5% 17% 16.4% 16% !important;
+						}
+					}
+												@media only screen and (min-width: 768px) and (max-width: 1024px) {
+					.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-831683 {
+						padding: 16.5% 12% 13.4% 13% !important;
+					}
+				}
+												@media only screen and (min-width: 600px) and (max-width: 768px) {
+					.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-831683 {
+						padding: 19.5% 12% 14.4% 13% !important;
+					}
+				}
+												@media only screen and (min-width: 480px) and (max-width: 600px) {
+					.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-831683 {
+						padding: 16.5% 11% 12.4% 14%  !important;
+					}
+				}
+													@media only screen and (max-width: 480px) {
+						.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-831683 {
+							padding: 16.5% 11% 12.4% 14%  !important;
+						}
+					}
+				
+			</style>
+						
+<h2 class="edgtf-section-title" style="color:#ffffff">
+		Kick Your Heels Up With Us!	</h2><div class="vc_empty_space"  style="height: 32px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">Be sure to stop by and join Rancher Labs and {code} by Dell EMC for a fun evening of live music, food, cocktails, and conversation, and meet Docker users from around the world on Wednesday, April 19th, 7:30PM PST at the Container Bar&#8230;space is limited, so RSVP today!</span></p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 32px" ><span class="vc_empty_space_inner"></span></div>
+<a href="http://goo.gl/UeUQeQ" target="_self"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">RSVP to Join Us</span>
+    </a>		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-415646" style="padding: 0">
+						<div class="edgtf-google-map-holder">
+	<div class="edgtf-google-map" id="edgtf-map-2567684" data-addresses='["90 Rainey St, Austin, TX 78701"]' data-custom-map-style=true data-color-overlay=#393939 data-saturation=-100 data-lightness=-50 data-zoom=16 data-pin=/wp-content/uploads/2016/06/code-PartyInvite-header.png data-unique-id=2567684 data-scroll-wheel=false data-height=600></div>
+			<div class="edgtf-google-map-overlay"></div>
+	</div>
+		</div>
+	</div>
+	</div></div></div></div></div></div></div>
+			
+				</div>
+</div>
+</div> <!-- close div.content_inner -->
+</div>  <!-- close div.content -->
+
+<footer >
+	<div class="edgtf-footer-inner clearfix">
+
+		
+<div class="edgtf-footer-bottom-holder">
+	<div class="edgtf-footer-bottom-holder-inner">
+					<div class="edgtf-container">
+				<div class="edgtf-container-inner">
+
+		<div class="edgtf-column-inner">
+	<div id="text-23" class="widget edgtf-footer-text widget_text">			<div class="textwidget"><br/>
+<br/>
+{code} by Dell EMC is an open source initiative focused on building a community around software-based infrastructure.</div>
+		</div><div id="text-7" class="widget edgtf-footer-text widget_text">			<div class="textwidget">
+    <span class="edgtf-icon-shortcode normal" style="margin: 0 21px 0 0" data-hover-color="#057db7" data-color="#858585">
+                    <a href="https://twitter.com/codedellemc" target="_blank" >
+        
+        <span class="edgtf-icon-ico-moon icomoon-icon-twitter edgtf-icon-element" style="color: #858585;font-size:20px" ></span>
+                    </a>
+            </span>
+
+
+    <span class="edgtf-icon-shortcode normal" style="margin: 0 20px 0 0" data-hover-color="#057db7" data-color="#858585">
+                    <a href="http://community.codedellemc.com/" target="_self" >
+        
+        <i class="edgtf-icon-font-awesome fa fa-slack edgtf-icon-element" style="color: #858585;font-size:20px" ></i>
+                    </a>
+            </span>
+
+
+    <span class="edgtf-icon-shortcode normal" style="margin: 0 23px 0 0" data-hover-color="#057db7" data-color="#858585">
+                    <a href="https://github.com/codedellemc" target="_blank" >
+        
+        <span class="edgtf-icon-ico-moon icomoon-icon-github edgtf-icon-element" style="color: #858585;font-size:20px" ></span>
+                    </a>
+            </span>
+
+
+    <span class="edgtf-icon-shortcode normal" style="margin: 0 24px 0 0" data-hover-color="#057db7" data-color="#858585">
+                    <a href="https://www.youtube.com/playlist?list=PLbssOJyyvHuWiBQAg9EFWH570timj2fxt" target="_blank" >
+        
+        <span class="edgtf-icon-ico-moon icomoon-icon-youtube edgtf-icon-element" style="color: #858585;font-size:20px" ></span>
+                    </a>
+            </span>
+
+
+    <span class="edgtf-icon-shortcode normal" style="margin: 0 20px 0 0" data-hover-color="#057db7" data-color="#858585">
+                    <a href="http://community.codedellemc.com/" target="_self" >
+        
+        <i class="edgtf-icon-font-awesome fa fa-slideshare edgtf-icon-element" style="color: #858585;font-size:20px" ></i>
+                    </a>
+            </span>
+
+
+<br/>
+<br/></div>
+		</div></div>				</div>
+			</div>
+				</div>
+	</div>
+
+	</div>
+</footer>
+
+</div> <!-- close div.edgtf-wrapper-inner  -->
+</div> <!-- close div.edgtf-wrapper -->
+		<script type="text/javascript">
+			function revslider_showDoubleJqueryError(sliderID) {
+				var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+				errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+				errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+				errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+				errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+					jQuery(sliderID).show().html(errorMessage);
+			}
+		</script>
+		<script type='text/javascript' src='/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Download File":"Download File","Download Video":"Download Video","Play":"Play","Pause":"Pause","Captions\/Subtitles":"Captions\/Subtitles","None":"None","Time Slider":"Time Slider","Skip back %1 seconds":"Skip back %1 seconds","Video Player":"Video Player","Audio Player":"Audio Player","Volume Slider":"Volume Slider","Mute Toggle":"Mute Toggle","Unmute":"Unmute","Mute":"Mute","Use Up\/Down Arrow keys to increase or decrease volume.":"Use Up\/Down Arrow keys to increase or decrease volume.","Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds."}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.22.0'></script>
+<script type='text/javascript' src='/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.3'></script>
+<script type='text/javascript' src='/wp-content/themes/fair/assets/js/third-party.min.js?ver=4.7.3'></script>
+<script type='text/javascript' src='/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=4.12'></script>
+<script type='text/javascript' src='/wp-content/themes/fair/assets/js/smoothPageScroll.js?ver=4.7.3'></script>
+<script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyDriJOCCvCvkiptdfSy_m4JFLgWLN4FJd4&#038;ver=4.7.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var edgtfGlobalVars = {"vars":{"edgtfAddForAdminBar":0,"edgtfElementAppearAmount":-150,"edgtfFinishedMessage":"No more posts","edgtfMessage":"Loading new posts...","edgtfTopBarHeight":0,"edgtfStickyHeaderHeight":60,"edgtfStickyHeaderTransparencyHeight":60,"edgtfStickyScrollAmount":0,"edgtfLogoAreaHeight":0,"edgtfMenuAreaHeight":80,"edgtfMobileHeaderHeight":78}};
+var edgtfPerPageVars = {"vars":{"edgtfStickyScrollAmount":1100,"edgtfPassepartout":0,"edgtfHeaderTransparencyHeight":0}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/themes/fair/assets/js/modules.min.js?ver=4.7.3'></script>
+<script type='text/javascript'>
+(function($) {
+     landingPagePtfFilterFollowHover();
+
+    function landingPagePtfFilterFollowHover() {
+    	if ($('.edgtf-home-holder').length) {
+    		var ptfFilter = $('.edgtf-home-holder').find('.edgtf-portfolio-filter-holder ul');
+
+			ptfFilter.append('<li class="edgtf-ptf-filter-follow-hover"></li>');
+
+
+			var ptfLine = ptfFilter.find('.edgtf-ptf-filter-follow-hover'),
+			    filterItems = ptfFilter.find('> li:not(.edgtf-ptf-filter-follow-hover)');
+
+			ptfLine.css('left', filterItems.first().offset().left - ptfFilter.offset().left);
+			ptfLine.css('width', filterItems.first().outerWidth());
+
+			filterItems.each(function(){
+			    var filterItem = $(this),
+			        filterItemWidth = filterItem.outerWidth(),
+			        ptfFilterOffset = ptfFilter.offset().left,
+			        filterItemOffset = filterItem.offset().left - ptfFilterOffset;
+
+			    filterItem.mouseenter(function(){
+			        ptfLine.css('width', filterItemWidth);
+			        ptfLine.css('left', filterItemOffset);
+			    });
+			});
+
+			ptfFilter.mouseleave(function(){
+			    ptfLine.css('width', ptfFilter.find('.active').outerWidth());
+			    ptfLine.css('left', ptfFilter.find('.active').offset().left - ptfFilter.offset().left);
+			});
+
+    	}
+	}
+})(jQuery);
+
+
+</script>
+<script type='text/javascript' src='/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var edgtfLike = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/themes/fair/assets/js/like.js?ver=1.0'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"46fa6ffa74","applicationID":"43632673","transactionName":"ZgQBZkJVXBVYUk1eDV9OIlFEXV0IFldMWw4cFgpWRFw=","queueTime":0,"applicationTime":417,"atts":"SkMCEApPTxs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

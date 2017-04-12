@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1024px){
+	/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles-responsive.php fair_edge_design_responsive_styles function */
+.edgtf-section.edgtf-parallax-section-holder,.touch .edgtf-parallax-section-holder.edgtf-parallax-section-holder-touch-disabled { height: auto !important;min-height: 140px;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/header.inc fair_edge_header_top_bar_responsive_styles function */
+.edgtf-top-bar { height: 0;display: none;}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+	}
+
+@media only screen and (max-width: 480px){
+	}
