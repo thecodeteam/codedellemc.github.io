@@ -1,0 +1,31 @@
+/*
+Theme Name: Fair
+Theme URI: http://fair.edge-themes.com/
+Description: A Fresh Multipurpose Theme for Creative Businesses & Individuals
+Author: Edge Themes
+Author URI: http://demo.edge-themes.com
+Version: 1.0
+License: GNU General Public License
+License URI: licence/GPL.txt
+Text Domain: fair
+Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-menu, featured-images, flexible-header, post-formats, sticky-post, translation-ready
+
+CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
+
+*/
+.edgtf-mobile-header .edgtf-mobile-logo-wrapper a {
+    line-height: 80px;
+}
+@media only screen and (max-width: 1024px) {
+.edgtf-mobile-header .edgtf-mobile-logo-wrapper a {
+    max-height: 80px;
+}
+.edgtf-mobile-header .edgtf-mobile-logo-wrapper img  {
+    height: 100%;
+    width: auto;
+    max-height: 50px;
+}
+h2 {
+line-height: 44px;
+}
+}

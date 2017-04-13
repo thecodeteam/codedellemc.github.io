@@ -1,0 +1,182 @@
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-preload-background { background-image: url(/wp-content/themes/fair/assets/img/preload_pattern.png) !important;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+body { font-family: Roboto;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+h1, h2, h3, h4, .edgtf-404-page .edgtf-page-not-found .edgtf-number-holder, nav.edgtf-fullscreen-menu ul li a, nav.edgtf-fullscreen-menu ul li ul li a, .edgtf-search-cover .edgtf-form-holder input[type="text"], .edgtf-search-cover input:focus, .edgtf-fullscreen-search-holder .edgtf-search-field, .edgtf-fullscreen-search-opened .edgtf-form-holder .edgtf-search-field, .edgtf-portfolio-single-holder .edgtf-portfolio-single-nav a, .edgtf-counter-holder .edgtf-counter, .countdown-amount, .edgtf-progress-bar .edgtf-progress-number-wrapper .edgtf-progress-number, .edgtf-testimonials.edgtf-testimonials-type-simple .edgtf-testimonial-text, .edgtf-price-table .edgtf-price-table-inner ul li.edgtf-table-prices .edgtf-price, .edgtf-pie-chart-holder .edgtf-to-counter, .edgtf-pie-chart-holder .edgtf-percent-sign, .edgtf-process-holder .edgtf-process-item-holder .edgtf-pi-number-holder .edgtf-pi-number, blockquote .edgtf-blockquote-text, .edgtf-banner .edgtf-banner-info .edgtf-banner-content-holder span.edgtf-banner-content, .edgtf-numbered-boxes-holder .edgtf-numbered-box .edgtf-numbered-box-number , .edgtf-blog-single-navigation .edgtf-blog-single-prev a .edgtf-single-navigation-text, .edgtf-blog-single-navigation .edgtf-blog-single-next a .edgtf-single-navigation-text { font-family: Roboto;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a, .edgtf-comment-holder .edgtf-comment-text .comment-edit-link:hover, .edgtf-comment-holder .edgtf-comment-text .comment-reply-link:hover, .edgtf-comment-holder .edgtf-comment-text .replay:hover, #submit_comment:hover, .post-password-form input[type=submit]:hover, input.wpcf7-form-control.wpcf7-submit:hover, .edgtf-main-menu ul li.edgtf-active-item a, .edgtf-main-menu ul li:hover a, .edgtf-main-menu>ul>li.edgtf-active-item>a, body:not(.edgtf-menu-item-first-level-bg-color) .edgtf-main-menu>ul>li:hover>a, .edgtf-mobile-header .edgtf-mobile-nav a:hover, .edgtf-mobile-header .edgtf-mobile-nav h4:hover, .edgtf-mobile-header .edgtf-mobile-menu-opener a:hover, footer .widget .tagcloud a:hover, .edgtf-side-menu-button-opener:hover, .edgtf-side-menu .tagcloud a:hover, nav.edgtf-fullscreen-menu ul li ul li a:hover, .edgtf-search-cover .edgtf-search-close a:hover, .edgtf-team .edgtf-team-social-wrapp .edgtf-icon-shortcode a:hover, .edgtf-team.main-info-below-image .edgtf-team-social-wrapp .edgtf-icon-shortcode a:hover, .edgtf-message .edgtf-message-inner a.edgtf-close, .edgtf-ordered-list ol>li:before, .edgtf-icon-list-item .edgtf-icon-list-icon-holder-inner i, .edgtf-icon-list-item .edgtf-icon-list-icon-holder-inner span, .edgtf-accordion-holder .edgtf-title-holder .edgtf-accordion-mark, .edgtf-blog-list-holder .edgtf-item-categories-section a:hover, .edgtf-blog-slider .edgtf-item-categories-section a:hover, .edgtf-dropcaps, .edgtf-portfolio-slider-holder .edgtf-portfolio-list-holder.owl-carousel .owl-buttons .edgtf-next-icon i, .edgtf-portfolio-slider-holder .edgtf-portfolio-list-holder.owl-carousel .owl-buttons .edgtf-prev-icon i, .edgtf-portfolio-filter-holder .edgtf-portfolio-filter-holder-inner ul li.active span, .edgtf-portfolio-filter-holder .edgtf-portfolio-filter-holder-inner ul li.current span, .edgtf-social-share-holder.edgtf-list li a:hover, .edgtf-sidebar .widget ul li>a:hover, .edgtf-sidebar .widget .recentcomments:hover a, .edgtf-sidebar .widget .tagcloud a:hover, .edgtf-sidebar .widget.widget_archive li:hover, .edgtf-sidebar .widget.widget_calendar #next a, .edgtf-sidebar .widget.widget_calendar #prev a, .edgtf-blog-holder article.sticky .edgtf-post-title a, .edgtf-blog-holder article .edgtf-post-info .edgtf-post-info-category a:hover, .edgtf-blog-holder article .edgtf-post-info-bottom .edgtf-post-info-bottom-left a:hover, .edgtf-blog-holder.edgtf-blog-type-masonry article .edgtf-post-info a:hover, .edgtf-blog-holder.edgtf-blog-type-narrow article .edgtf-post-info a:hover, .edgtf-blog-holder.edgtf-blog-type-masonry-gallery article.format-link.edgtf-masonry-gallery-item-skin-dark .edgtf-post-title a:hover, .edgtf-blog-holder.edgtf-blog-type-masonry-gallery article.format-quote.edgtf-masonry-gallery-item-skin-dark .edgtf-post-title a:hover, .edgtf-woocommerce-page .price>.amount, .edgtf-woocommerce-page ins, .woocommerce .price>.amount, .woocommerce ins, .edgtf-single-product-wrapper-top .edgtf-tabs.edgtf-horizontal-tab .edgtf-tabs-nav li.ui-state-active a, .edgtf-single-product-wrapper-top .edgtf-tabs.edgtf-horizontal-tab .edgtf-tabs-nav li.ui-state-hover a, .edgtf-shopping-cart-dropdown ul li a:hover, .star-rating span, .edgtf-blog-list-holder.edgtf-boxes .edgtf-item-image:hover~.edgtf-item-text-holder .edgtf-item-title, .product-type-grouped .edgtf-single-product-summary p.price { color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-light-header .edgtf-top-bar .widget .edgtf-icon-shortcode>a:hover, .edgtf-top-bar-light .edgtf-top-bar .widget .edgtf-icon-shortcode>a:hover, .edgtf-dark-header .edgtf-top-bar .widget .edgtf-icon-shortcode>a:hover, .edgtf-top-bar-dark .edgtf-top-bar .widget .edgtf-icon-shortcode>a:hover { color: #057db7!important;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+::selection { background: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+::-moz-selection { background: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-st-loader .pulse, .edgtf-st-loader .double_pulse .double-bounce1, .edgtf-st-loader .double_pulse .double-bounce2, .edgtf-st-loader .cube, .edgtf-st-loader .rotating_cubes .cube1, .edgtf-st-loader .rotating_cubes .cube2, .edgtf-st-loader .stripes>div, .edgtf-st-loader .wave>div, .edgtf-st-loader .two_rotating_circles .dot1, .edgtf-st-loader .two_rotating_circles .dot2, .edgtf-st-loader .five_rotating_circles .container1>div, .edgtf-st-loader .five_rotating_circles .container2>div, .edgtf-st-loader .five_rotating_circles .container3>div, .edgtf-st-loader .atom .ball-1:before, .edgtf-st-loader .atom .ball-2:before, .edgtf-st-loader .atom .ball-3:before, .edgtf-st-loader .atom .ball-4:before, .edgtf-st-loader .clock .ball:before, .edgtf-st-loader .mitosis .ball, .edgtf-st-loader .lines .line1, .edgtf-st-loader .lines .line2, .edgtf-st-loader .lines .line3, .edgtf-st-loader .lines .line4, .edgtf-st-loader .fussion .ball, .edgtf-st-loader .fussion .ball-1, .edgtf-st-loader .fussion .ball-2, .edgtf-st-loader .fussion .ball-3, .edgtf-st-loader .fussion .ball-4, .edgtf-st-loader .wave_circles .ball, .edgtf-st-loader .pulse_circles .ball, #submit_comment, .post-password-form input[type=submit], input.wpcf7-form-control.wpcf7-submit, .edgtf-slick-slider-navigation-style .edgtf-slick-dots li.slick-active, .slick-slider .edgtf-slick-dots li.slick-active, #edgtf-back-to-top>span, .edgtf-header-vertical .edgtf-vertical-menu>ul>li>a:before, .edgtf-header-vertical .edgtf-vertical-menu>ul>li>a:after, .edgtf-fullscreen-menu-opener:hover .edgtf-line, .edgtf-fullscreen-menu-opener.opened:hover .edgtf-line:after, .edgtf-fullscreen-menu-opener.opened:hover .edgtf-line:before, .edgtf-icon-shortcode.circle, .edgtf-icon-shortcode.square, .edgtf-progress-bar .edgtf-progress-content-outer .edgtf-progress-content, .edgtf-price-table.edgtf-active .edgtf-table-title, .edgtf-pie-chart-doughnut-holder .edgtf-pie-legend ul li .edgtf-pie-color-holder, .edgtf-pie-chart-pie-holder .edgtf-pie-legend ul li .edgtf-pie-color-holder, .edgtf-carousel-holder .edgtf-carousel-item-holder .edgtf-carousel-first-image-holder.edgtf-underline .edgtf-carousel-underline, .edgtf-image-gallery .owl-pagination .owl-page.active span, .edgtf-dropcaps.edgtf-circle, .edgtf-dropcaps.edgtf-square, .edgtf-portfolio-list-holder-outer article.edgtf-hover-push .edgtf-item-text-overlay, .edgtf-sidebar .edgtf-widget-title:after, .edgtf-blog-audio-holder .mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, .edgtf-blog-audio-holder .mejs-container .mejs-controls .mejs-time-rail .mejs-time-current, .edgtf-woocommerce-page .product .edgtf-product-badge.edgtf-onsale, .woocommerce .product .edgtf-product-badge.edgtf-onsale, .edgtf-woocommerce-page .product .edgtf-btn.add_to_cart_button:hover, .edgtf-woocommerce-page .product .edgtf-btn.added_to_cart:hover, .woocommerce .product .edgtf-btn.add_to_cart_button:hover, .woocommerce .product .edgtf-btn.added_to_cart:hover, .edgtf-btn.add_to_cart_button, .edgtf-btn.added_to_cart, .edgtf-woocommerce-page .edgtf-quantity-buttons .edgtf-quantity-minus:hover, .edgtf-woocommerce-page .edgtf-quantity-buttons .edgtf-quantity-plus:hover, .woocommerce-account input[type=submit]:hover, .woocommerce-checkout input[type=submit]:hover, .woocommerce.widget button, .woocommerce.widget input[type=submit], .edgtf-team.main-info-below-image:not(.edgtf-image-rounded) .edgtf-team-social-wrapp:before, .edgtf-fullscreen-menu-opener:hover .edgtf-line, .edgtf-blog-holder.edgtf-blog-type-masonry article .edgtf-blog-slide-info-line-holder .edgtf-blog-slide-info-line, #edgtf-back-to-top:before, .edgtf-btn.edgtf-btn-solid-two, .edgtf-portfolio-list-holder-outer article.edgtf-hover-launch .edgtf-portfolio-link-launch { background-color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-bg):hover, .edgtf-btn.edgtf-btn-outline-white:not(.edgtf-btn-custom-hover-bg):hover { background-color: #057db7!important;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-st-loader .pulse_circles .ball, #respond input[type=text]:focus, #respond textarea:focus, .post-password-form input[type=password]:focus, .wpcf7-form-control.wpcf7-date:focus, .wpcf7-form-control.wpcf7-number:focus, .wpcf7-form-control.wpcf7-quiz:focus, .wpcf7-form-control.wpcf7-select:focus, .wpcf7-form-control.wpcf7-text:focus, .wpcf7-form-control.wpcf7-textarea:focus, #submit_comment, .post-password-form input[type=submit], input.wpcf7-form-control.wpcf7-submit, .edgtf-slick-slider-navigation-style .edgtf-slick-dots li.slick-active, .slick-slider .edgtf-slick-dots li.slick-active, .edgtf-testimonials.edgtf-testimonials-light .edgtf-slick-dots li.slick-active, .edgtf-image-gallery .edgtf-image-gallery-slider .slick-dots li.slick-active .edgtf-slick-dot-inner, .edgtf-single-product-related-products-holder .edgtf-separator, .edgtf-single-product-wrapper-top .edgtf-tabs.edgtf-horizontal-tab .edgtf-tabs-nav li.ui-state-active a, .edgtf-single-product-wrapper-top .edgtf-tabs.edgtf-horizontal-tab .edgtf-tabs-nav li.ui-state-hover a, .woocommerce-account input[type=submit]:hover, .woocommerce-checkout input[type=submit]:hover, .woocommerce.widget button, .woocommerce.widget input[type=submit], .woocommerce.widget input[type=search]:focus, .edgtf-btn.edgtf-btn-solid-two, .edgtf-drop-down .edgtf-menu-narrow .edgtf-menu-second .edgtf-menu-inner ul .edgtf-narrow-menu-line, .edgtf-drop-down .edgtf-menu-wide .edgtf-wide-menu-line, .edgtf-header-vertical .edgtf-vertical-menu ul .edgtf-vertical-menu-line, .edgtf-header-vertical .edgtf-vertical-menu>ul>li>a .edgtf-item-outer:after { border-color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-border-hover):hover, .edgtf-btn.edgtf-btn-outline-white:not(.edgtf-btn-custom-border-hover):hover, .edgtf-image-gallery .edgtf-image-gallery-slider .slick-dots li.slick-active .edgtf-slick-dot-inner { border-color: #057db7!important;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-tabs .edgtf-tabs-nav li.ui-state-active a, .edgtf-tabs .edgtf-tabs-nav li.ui-state-hover a, .edgtf-accordion-holder .edgtf-title-holder.ui-state-active, .edgtf-accordion-holder .edgtf-title-holder.ui-state-hover, .edgtf-sidebar .widget .edgtf-search-wrapper input[type=text]:focus, .edgtf-separator, .woocommerce-account .woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link.is-active a, .woocommerce-account .woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link:hover a { border-bottom-color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-video-button-play .edgtf-video-button-wrapper .edgtf-video-button-icon { border-left-color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-main-menu .edgtf-main-menu-line { border-top-color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+::selection { background: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+::-moz-selection { background: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
+.edgtf-boxed .edgtf-wrapper { background-attachment: fixed;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_h1_styles function */
+h1 { font-family: Roboto;font-size: 40px;line-height: 11px;text-transform: none;font-weight: 300;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_h2_styles function */
+h2 { font-family: Roboto;font-size: 30px;line-height: 44px;text-transform: none;font-weight: 300;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_h3_styles function */
+h3 { font-family: Roboto;font-size: 25px;font-weight: 300;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_h4_styles function */
+h4 { font-family: Roboto;font-size: 20px;text-transform: uppercase;font-weight: 900;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_h5_styles function */
+h5 { font-family: Roboto;font-size: 20px;font-weight: 300;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_h6_styles function */
+h6 { font-family: Roboto;font-size: 12px;font-weight: 900;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_text_styles function */
+p { font-family: Roboto;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_smooth_page_transition_styles function */
+.edgtf-smooth-transition-loader { background-color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_smooth_page_transition_styles function */
+.edgtf-st-loader .pulse, .edgtf-st-loader .double_pulse .double-bounce1, .edgtf-st-loader .double_pulse .double-bounce2, .edgtf-st-loader .cube, .edgtf-st-loader .rotating_cubes .cube1, .edgtf-st-loader .rotating_cubes .cube2, .edgtf-st-loader .stripes > div, .edgtf-st-loader .wave > div, .edgtf-st-loader .two_rotating_circles .dot1, .edgtf-st-loader .two_rotating_circles .dot2, .edgtf-st-loader .five_rotating_circles .container1 > div, .edgtf-st-loader .five_rotating_circles .container2 > div, .edgtf-st-loader .five_rotating_circles .container3 > div, .edgtf-st-loader .atom .ball-1:before, .edgtf-st-loader .atom .ball-2:before, .edgtf-st-loader .atom .ball-3:before, .edgtf-st-loader .atom .ball-4:before, .edgtf-st-loader .clock .ball:before, .edgtf-st-loader .mitosis .ball, .edgtf-st-loader .lines .line1, .edgtf-st-loader .lines .line2, .edgtf-st-loader .lines .line3, .edgtf-st-loader .lines .line4, .edgtf-st-loader .fussion .ball, .edgtf-st-loader .fussion .ball-1, .edgtf-st-loader .fussion .ball-2, .edgtf-st-loader .fussion .ball-3, .edgtf-st-loader .fussion .ball-4, .edgtf-st-loader .wave_circles .ball, .edgtf-st-loader .pulse_circles .ball { background-color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/fullscreenmenu/custom-styles/fullscreen-menu.php fair_edge_fullscreen_menu_general_styles function */
+.edgtf-fullscreen-menu-holder { background-color: rgba(0,0,0,0.85);}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/header.inc fair_edge_header_standard_menu_area_styles function */
+.edgtf-header-standard .edgtf-page-header .edgtf-logo-wrapper a { max-height: 72px;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/header.inc fair_edge_header_standard_menu_area_styles function */
+.edgtf-header-standard .edgtf-page-header .edgtf-menu-area { background-color: rgba(0, 0, 0, .6);height: 80px;border-bottom-color: rgba(0, 0, 0, 0.1);}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/header.inc fair_edge_header_standard_menu_area_styles function */
+.edgtf-header-standard .edgtf-right-from-main-menu-holder { border-left-color: rgba(0, 0, 0, 0.1);}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/header.inc fair_edge_header_full_screen_menu_area_styles function */
+.edgtf-header-full-screen .edgtf-page-header .edgtf-menu-area { background-color: rgba(0, 0, 0, .8);}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/header.inc fair_edge_sticky_header_styles function */
+.edgtf-page-header .edgtf-sticky-header .edgtf-sticky-holder { background-color: rgba(0, 0, 0, .5);}
+
+
+        
+        
+        
+        
+	            
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                
+        
+                
+        /* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/mobile-header.php fair_edge_mobile_header_general_styles function */
+.edgtf-mobile-header .edgtf-mobile-header-inner { background-color: #000000;border-bottom-color: rgba(0, 0, 0, .4);}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/mobile-header.php fair_edge_mobile_navigation_styles function */
+.edgtf-mobile-header .edgtf-mobile-nav { background-color: #000000;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/mobile-header.php fair_edge_mobile_navigation_styles function */
+.edgtf-mobile-header .edgtf-mobile-nav a, .edgtf-mobile-header .edgtf-mobile-nav h4 { color: #ffffff;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/mobile-header.php fair_edge_mobile_navigation_styles function */
+.edgtf-mobile-header .edgtf-mobile-nav a:hover, .edgtf-mobile-header .edgtf-mobile-nav h4:hover { color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/sidearea/custom-styles/sidearea.php fair_edge_side_area_slide_from_right_type_style function */
+.edgtf-side-menu-slide-from-right .edgtf-side-menu { right: -400px;width: 400px;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/sidearea/custom-styles/sidearea.php fair_edge_side_area_slide_from_right_type_style function */
+.edgtf-side-menu-slide-from-right .edgtf-wrapper .edgtf-cover { background-color: #000000;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/sidearea/custom-styles/sidearea.php fair_edge_side_area_slide_from_right_type_style function */
+.edgtf-side-menu-slide-from-right.edgtf-right-side-menu-opened .edgtf-wrapper .edgtf-cover { opacity: 0.38;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/sidearea/custom-styles/sidearea.php fair_edge_side_area_alignment function */
+.edgtf-side-menu-slide-from-right .edgtf-side-menu, .edgtf-side-menu-slide-with-content .edgtf-side-menu, .edgtf-side-area-uncovered-from-content .edgtf-side-menu { text-align: center;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/title/custom-styles/title.php fair_edge_title_area_typography_style function */
+.edgtf-title .edgtf-title-holder .edgtf-title-subtitle-holder h1 { font-family: Roboto;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/title/custom-styles/title.php fair_edge_title_area_typography_style function */
+.edgtf-title .edgtf-title-holder .edgtf-subtitle { font-family: Roboto;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/title/custom-styles/title.php fair_edge_title_area_typography_style function */
+.edgtf-title .edgtf-title-holder .edgtf-breadcrumbs a, .edgtf-title .edgtf-title-holder .edgtf-breadcrumbs span { font-family: Roboto;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/shortcodes/button/custom-styles/custom-styles.php fair_edge_button_typography_styles function */
+.edgtf-btn { font-family: Roboto;text-transform: none;font-style: normal;letter-spacing: 0px;font-weight: 400;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/shortcodes/button/custom-styles/custom-styles.php fair_edge_button_solid_styles function */
+.edgtf-btn.edgtf-btn-solid { color: #ffffff;border-color: #057db7;background-color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/shortcodes/button/custom-styles/custom-styles.php fair_edge_button_solid_styles function */
+.edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-color):hover { color: #ffffff!important;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/shortcodes/button/custom-styles/custom-styles.php fair_edge_button_solid_styles function */
+.edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-bg):hover { background-color: #0372a0!important;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/shortcodes/button/custom-styles/custom-styles.php fair_edge_button_solid_styles function */
+.edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-bg):hover { border-color: #0372a0!important;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/shortcodes/button/custom-styles/custom-styles.php fair_edge_button_solid_two_styles function */
+.edgtf-btn.edgtf-btn-solid-two { background-color: #000000;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/shortcodes/button/custom-styles/custom-styles.php fair_edge_button_solid_two_styles function */
+.edgtf-btn.edgtf-btn-solid-two:not(.edgtf-btn-custom-hover-bg):hover { background-color: #057db7!important;}
+
