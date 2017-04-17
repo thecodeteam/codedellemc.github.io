@@ -148,13 +148,13 @@ $( document ).ready(function() {
     }
 
     function twitterFollows(){
-      $.getJSON( "//dashboard.emccode.com/widgets/twitter_user_followers.json", function( data ) {
+      $.getJSON( "//dashboard.codedellemc.com/widgets/twitter_user_followers.json", function( data ) {
         $("#twitterFollowerCount").text(data.current);
       });
     }
 
     function newsletterSubscribers(){
-      $.getJSON( "//dashboard.emccode.com/widgets/constant_contact_subscribers.json", function( data ) {
+      $.getJSON( "//dashboard.codedellemc.com/widgets/constant_contact_subscribers.json", function( data ) {
         $("#newsletterSubscriberCount").text(data.current);
       });
     }

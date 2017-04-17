@@ -463,6 +463,20 @@ TAGS Focus
   color: #000000;
 }
 
+.badgeYouTubeRight {
+  padding: 1px 6px 2px 6px;
+  border-radius: 0 3px 3px 0;
+  background: #ff0000;
+  color: #000000;
+}
+
+.badgeSlideshareRight {
+  padding: 1px 6px 2px 6px;
+  border-radius: 0 3px 3px 0;
+  background: #0000ff;
+  color: #000000;
+}
+
 .badgeTwitterRight {
   padding: 1px 6px 2px 6px;
   border-radius: 0 3px 3px 0;
