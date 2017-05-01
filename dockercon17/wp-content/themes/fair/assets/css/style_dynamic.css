@@ -1,5 +1,5 @@
 /* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
-.edgtf-preload-background { background-image: url(/wp-content/themes/fair/assets/img/preload_pattern.png) !important;}
+.edgtf-preload-background { background-image: url(http://wordpress-64002-246087.cloudwaysapps.com/wp-content/themes/fair/assets/img/preload_pattern.png) !important;}
 
 /* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/assets/custom-styles/general-custom-styles.php fair_edge_design_styles function */
 body { font-family: Roboto;}
@@ -137,6 +137,9 @@ p { font-family: Roboto;}
 
 /* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/mobile-header.php fair_edge_mobile_navigation_styles function */
 .edgtf-mobile-header .edgtf-mobile-nav a:hover, .edgtf-mobile-header .edgtf-mobile-nav h4:hover { color: #057db7;}
+
+/* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/header/custom-styles/mobile-header.php fair_edge_mobile_icon_styles function */
+.edgtf-mobile-header .edgtf-mobile-menu-opener a { color: #ffffff;}
 
 /* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/framework/modules/sidearea/custom-styles/sidearea.php fair_edge_side_area_slide_from_right_type_style function */
 .edgtf-side-menu-slide-from-right .edgtf-side-menu { right: -400px;width: 400px;}

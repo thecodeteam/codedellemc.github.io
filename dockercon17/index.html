@@ -4,18 +4,19 @@
     	
         <meta charset="UTF-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
         <link rel="profile" href="http://gmpg.org/xfn/11"/>
-        <link rel="pingback" href="/xmlrpc.php"/>
+        <link rel="pingback" href="https://fullstackdigitalllc.github.io/dockercon17/xmlrpc.php"/>
 
                 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
         
 	<title>{code} by Dell EMC at DockerCon 17</title>
-<script type="application/javascript">var edgtCoreAjaxUrl = "/wp-admin/admin-ajax.php"</script><link rel='dns-prefetch' href='//maps.googleapis.com' />
+<script type="application/javascript">var edgtCoreAjaxUrl = "https://fullstackdigitalllc.github.io/dockercon17/wp-admin/admin-ajax.php"</script><meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at DockerCon 17 &raquo; Feed" href="/feed/" />
-<link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at DockerCon 17 &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at DockerCon 17 &raquo; Feed" href="https://fullstackdigitalllc.github.io/dockercon17/feed/" />
+<link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at DockerCon 17 &raquo; Comments Feed" href="https://fullstackdigitalllc.github.io/dockercon17/comments/feed/" />
 		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\./wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/fullstackdigitalllc.github.io\/dockercon17\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.4"}};
 			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
 		<style type="text/css">
@@ -32,14 +33,15 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='rs-plugin-settings-css'  href='./wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.6' type='text/css' media='all' />
 <style id='rs-plugin-settings-inline-css' type='text/css'>
 #rs-demo-id {}
 </style>
-<link rel='stylesheet' id='fair_edge_default_style-css'  href='./wp-content/themes/fair/style.css?ver=4.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='fair_edge_modules_plugins-css'  href='./wp-content/themes/fair/assets/css/plugins.min.css?ver=4.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='fair_edge_modules-css'  href='./wp-content/themes/fair/assets/css/modules.min.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_default_style-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/style.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_modules_plugins-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/plugins.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_modules-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/modules.min.css?ver=4.7.4' type='text/css' media='all' />
 <style id='fair_edge_modules-inline-css' type='text/css'>
+ /* generated in /home/71815-64002.cloudwaysapps.com/gfycenjhtz/public_html/wp-content/themes/fair/functions.php fair_edge_page_padding function */
 .page-id-2122 .edgtf-content .edgtf-content-inner > .edgtf-container > .edgtf-container-inner, .page-id-2122 .edgtf-content .edgtf-content-inner > .edgtf-full-width > .edgtf-full-width-inner { padding: 0;}
 
     
@@ -99,36 +101,36 @@ vertical-align: middle;
 vertical-align: middle;
 }
 </style>
-<link rel='stylesheet' id='edgtf_font_awesome-css'  href='./wp-content/themes/fair/assets/css/font-awesome/css/font-awesome.min.css?ver=4.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='edgtf_font_elegant-css'  href='./wp-content/themes/fair/assets/css/elegant-icons/style.min.css?ver=4.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='edgtf_linea_icons-css'  href='./wp-content/themes/fair/assets/css/linea-icons/style.css?ver=4.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='edgtf_simple_line_icons-css'  href='./wp-content/themes/fair/assets/css/simple-line-icons/simple-line-icons.css?ver=4.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='edgtf_ico_moon-css'  href='./wp-content/themes/fair/assets/css/icomoon/css/icomoon.css?ver=4.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='fair_edge_style_dynamic-css'  href='./wp-content/themes/fair/assets/css/style_dynamic.css?ver=1492019296' type='text/css' media='all' />
-<link rel='stylesheet' id='fair_edge_modules_responsive-css'  href='./wp-content/themes/fair/assets/css/modules-responsive.min.css?ver=4.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='fair_edge_blog_responsive-css'  href='./wp-content/themes/fair/assets/css/blog-responsive.min.css?ver=4.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='fair_edge_style_dynamic_responsive-css'  href='./wp-content/themes/fair/assets/css/style_dynamic_responsive.css?ver=1492019296' type='text/css' media='all' />
-<link rel='stylesheet' id='js_composer_front-css'  href='./wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.12' type='text/css' media='all' />
-<link rel='stylesheet' id='fair_edge_google_fonts-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=1.0.0' type='text/css' media='all' />
-<script type='text/javascript' src='./wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='./wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.6'></script>
-<script type='text/javascript' src='./wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.6'></script>
-<link rel='https://api.w.org/' href='./wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.7.3" />
-<link rel="canonical" href="/" />
-<link rel='shortlink' href='/' />
-<link rel="alternate" type="application/json+oembed" href="./wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F" />
-<link rel="alternate" type="text/xml+oembed" href="./wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F&#038;format=xml" />
-
-<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="./wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="./wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-<link rel="icon" href="./wp-content/uploads/2017/04/Favicon.png" sizes="32x32" />
-<link rel="icon" href="./wp-content/uploads/2017/04/Favicon.png" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="./wp-content/uploads/2017/04/Favicon.png" />
-<meta name="msapplication-TileImage" content="./wp-content/uploads/2017/04/Favicon.png" />
-<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1492996714193{padding-top: 7% !important;padding-bottom: 6.4% !important;background-color: #f3f3f3 !important;}.vc_custom_1491959968329{padding-top: 10% !important;padding-bottom: 5% !important;background-image: url(./wp-content/uploads/2016/06/speaking-dockercon.jpg?id=10880) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1491959977598{padding-top: 10% !important;padding-bottom: 5% !important;background-color: #ffffff !important;}.vc_custom_1492014939736{padding-right: 11% !important;}.vc_custom_1491952010361{padding-right: 11% !important;}.vc_custom_1491951885460{padding-right: 11% !important;}.vc_custom_1491952273871{padding-right: 11% !important;}.vc_custom_1465378735902{padding-top: 48px !important;padding-bottom: 23px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<link rel='stylesheet' id='edgtf_font_awesome-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/font-awesome/css/font-awesome.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_font_elegant-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/elegant-icons/style.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_linea_icons-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/linea-icons/style.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_simple_line_icons-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/simple-line-icons/simple-line-icons.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_ico_moon-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/icomoon/css/icomoon.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_style_dynamic-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/style_dynamic.css?ver=1492997092' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_modules_responsive-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/modules-responsive.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_blog_responsive-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/blog-responsive.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_style_dynamic_responsive-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/style_dynamic_responsive.css?ver=1492997092' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.12' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_google_fonts-css'  href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=1.0.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.6'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.6'></script>
+<link rel='https://api.w.org/' href='https://fullstackdigitalllc.github.io/dockercon17/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://fullstackdigitalllc.github.io/dockercon17/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://fullstackdigitalllc.github.io/dockercon17/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.4" />
+<link rel="canonical" href="https://fullstackdigitalllc.github.io/dockercon17/" />
+<link rel='shortlink' href='https://fullstackdigitalllc.github.io/dockercon17/' />
+<link rel="alternate" type="application/json+oembed" href="https://fullstackdigitalllc.github.io/dockercon17/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://fullstackdigitalllc.github.io/dockercon17%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://fullstackdigitalllc.github.io/dockercon17/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://fullstackdigitalllc.github.io/dockercon17%2F&#038;format=xml" />
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/Favicon.png" sizes="32x32" />
+<link rel="icon" href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/Favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/Favicon.png" />
+<meta name="msapplication-TileImage" content="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/Favicon.png" />
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1492996714193{padding-top: 7% !important;padding-bottom: 6.4% !important;background-color: #f3f3f3 !important;}.vc_custom_1491959968329{padding-top: 10% !important;padding-bottom: 5% !important;background-image: url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/speaking-dockercon.jpg?id=10880) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1491959977598{padding-top: 10% !important;padding-bottom: 5% !important;background-color: #ffffff !important;}.vc_custom_1492014939736{padding-right: 11% !important;}.vc_custom_1491952010361{padding-right: 11% !important;}.vc_custom_1491951885460{padding-right: 11% !important;}.vc_custom_1491952273871{padding-right: 11% !important;}.vc_custom_1465378735902{padding-top: 48px !important;padding-bottom: 23px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
 
 <body class="home page-template page-template-full-width page-template-full-width-php page page-id-2122 edgt-core-1.0 fair-ver-1.0 edgtf-smooth-scroll edgtf-smooth-page-transitions edgtf-mimic-ajax edgtf-header-standard edgtf-sticky-header-on-scroll-down-up edgtf-default-mobile-header edgtf-sticky-up-mobile-header edgtf-dropdown-animate-height edgtf-light-header edgtf-header-style-on-scroll edgtf-fullscreen-search edgtf-search-fade edgtf-side-menu-slide-from-right wpb-js-composer js-comp-ver-4.12 vc_responsive">
 <section class="edgtf-side-menu right">
@@ -161,7 +163,7 @@ vertical-align: middle;
 	<div class="edgtf-fullscreen-search-table">
 		<div class="edgtf-fullscreen-search-cell">
 			<div class="edgtf-fullscreen-search-inner">
-				<form action="/" class="edgtf-fullscreen-search-form" method="get">
+				<form action="https://fullstackdigitalllc.github.io/dockercon17/" class="edgtf-fullscreen-search-form" method="get">
 					<div class="edgtf-form-holder">
 						<div class="edgtf-field-holder">
 							<input type="text"  name="s" class="edgtf-search-field" autocomplete="off" placeholder="Search"/>
@@ -181,9 +183,9 @@ vertical-align: middle;
                     <div class="edgtf-position-left-inner">
                         
 <div class="edgtf-logo-wrapper">
-    <a href="/" style="height: 401px;">
-        <img class="edgtf-normal-logo" src="./wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="logo"/>
-        <img class="edgtf-dark-logo" src="./wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="./wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-White.png" alt="light logo"/>    </a>
+    <a href="https://fullstackdigitalllc.github.io/dockercon17/" style="height: 401px;">
+        <img class="edgtf-normal-logo" src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="logo"/>
+        <img class="edgtf-dark-logo" src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-White.png" alt="light logo"/>    </a>
 </div>
 
                     </div>
@@ -210,9 +212,9 @@ vertical-align: middle;
                     <div class="edgtf-position-left-inner">
                         
 <div class="edgtf-logo-wrapper">
-    <a href="/" style="height: 125px;">
-        <img class="edgtf-normal-logo" src="./wp-content/uploads/2017/04/code-at-docker.png" alt="logo"/>
-        <img class="edgtf-dark-logo" src="./wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="./wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-White.png" alt="light logo"/>    </a>
+    <a href="https://fullstackdigitalllc.github.io/dockercon17/" style="height: 125px;">
+        <img class="edgtf-normal-logo" src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/code-at-docker.png" alt="logo"/>
+        <img class="edgtf-dark-logo" src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-White.png" alt="light logo"/>    </a>
 </div>
 
                     </div>
@@ -253,8 +255,8 @@ vertical-align: middle;
                             <div class="edgtf-position-center-inner">
                                 
 <div class="edgtf-mobile-logo-wrapper">
-    <a href="/" style="height: 125px">
-        <img src="./wp-content/uploads/2017/04/code-at-docker.png" alt="mobile logo"/>
+    <a href="https://fullstackdigitalllc.github.io/dockercon17/" style="height: 125px">
+        <img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/code-at-docker.png" alt="mobile logo"/>
     </a>
 </div>
 
@@ -291,14 +293,14 @@ vertical-align: middle;
                         <div class="edgtf-content-inner">
 <div class="edgtf-full-width">
 <div class="edgtf-full-width-inner">
-						<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_revslider_element wpb_content_element"><link href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C600" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+						<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_revslider_element wpb_content_element"><link href="http://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C600" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
 <!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
 	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
 <ul>	<!-- SLIDE  -->
-	<li data-index="rs-1" data-transition="notransition" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="./wp-content/uploads/2017/04/austin-tx-blk-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+	<li data-index="rs-1" data-transition="notransition" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/austin-tx-blk-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 		<!-- MAIN IMAGE -->
-		<img src="./wp-content/uploads/2017/04/austin-tx-blk.jpg"  alt="" title="austin-tx-blk"  width="1777" height="921" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina>
+		<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/austin-tx-blk.jpg"  alt="" title="austin-tx-blk"  width="1777" height="921" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina>
 		<!-- LAYERS -->
 
 		<!-- LAYER NR. 1 -->
@@ -317,7 +319,7 @@ vertical-align: middle;
 			data-responsive_offset="on" 
 
 			
-			style="z-index: 5;"><img src="./wp-content/uploads/2017/04/dockercon17.png" alt="" width="772" height="116" data-ww="['359px','359px','359px','359px']" data-hh="['54px','54px','54px','54px']" data-no-retina> </div>
+			style="z-index: 5;"><img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/dockercon17.png" alt="" width="772" height="116" data-ww="['359px','359px','359px','359px']" data-hh="['54px','54px','54px','54px']" data-no-retina> </div>
 
 		<!-- LAYER NR. 2 -->
 		<div class="tp-caption fair-poppins-title   tp-resizeme" 
@@ -382,7 +384,7 @@ vertical-align: middle;
 			data-responsive_offset="on" 
 
 			
-			style="z-index: 8;"><img src="./wp-content/uploads/2017/04/99-EMC_REX-TX-Solo-high-res.png" alt="" width="740" height="839" data-ww="['394px','394px','394px','394px']" data-hh="['447px','447px','447px','447px']" data-no-retina> </div>
+			style="z-index: 8;"><img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2017/04/99-EMC_REX-TX-Solo-high-res.png" alt="" width="740" height="839" data-ww="['394px','394px','394px','394px']" data-hh="['447px','447px','447px','447px']" data-no-retina> </div>
 	</li>
 </ul>
 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
@@ -424,7 +426,7 @@ vertical-align: middle;
 				}else{
 					revapi1 = tpj("#rev_slider_1_1").show().revolution({
 						sliderType:"hero",
-jsFileLocation:"./wp-content/plugins/revslider/public/assets/js/",
+jsFileLocation:"https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/js/",
 						sliderLayout:"fullwidth",
 						dottedOverlay:"none",
 						delay:5000,
@@ -470,216 +472,216 @@ jsFileLocation:"./wp-content/plugins/revslider/public/assets/js/",
 <div class="edgtf-image-gallery">
 	<div class="edgtf-image-gallery-grid edgtf-gallery-columns-4" >
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/FullSizeRender.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="FullSizeRender">
-																<img src="./wp-content/uploads/2016/06/FullSizeRender-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/FullSizeRender.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="FullSizeRender">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/FullSizeRender-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4356.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4356">
-																<img src="./wp-content/uploads/2016/06/IMG_4356-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4356.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4356">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4356-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4358.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4358">
-																<img src="./wp-content/uploads/2016/06/IMG_4358-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4358.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4358">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4358-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4359.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4359">
-																<img src="./wp-content/uploads/2016/06/IMG_4359-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4359.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4359">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4359-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4365.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4365">
-																<img src="./wp-content/uploads/2016/06/IMG_4365-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4365.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4365">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4365-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4368.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4368">
-																<img src="./wp-content/uploads/2016/06/IMG_4368-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4368.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4368">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4368-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4374.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4374">
-																<img src="./wp-content/uploads/2016/06/IMG_4374-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4374.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4374">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4374-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4375.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4375">
-																<img src="./wp-content/uploads/2016/06/IMG_4375-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4375.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4375">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4375-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4378.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4378">
-																<img src="./wp-content/uploads/2016/06/IMG_4378-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4378.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4378">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4378-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4381.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4381">
-																<img src="./wp-content/uploads/2016/06/IMG_4381-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4381.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4381">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4381-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4383.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4383">
-																<img src="./wp-content/uploads/2016/06/IMG_4383-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4383.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4383">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4383-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4386.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4386">
-																<img src="./wp-content/uploads/2016/06/IMG_4386-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4386.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4386">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4386-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4389.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4389">
-																<img src="./wp-content/uploads/2016/06/IMG_4389-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4389.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4389">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4389-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4391.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4391">
-																<img src="./wp-content/uploads/2016/06/IMG_4391-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4391.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4391">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4391-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4392.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4392">
-																<img src="./wp-content/uploads/2016/06/IMG_4392-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4392.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4392">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4392-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4396.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4396">
-																<img src="./wp-content/uploads/2016/06/IMG_4396-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4396.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4396">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4396-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4397.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4397">
-																<img src="./wp-content/uploads/2016/06/IMG_4397-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4397.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4397">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4397-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4400.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4400">
-																<img src="./wp-content/uploads/2016/06/IMG_4400-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4400.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4400">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4400-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4404.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4404">
-																<img src="./wp-content/uploads/2016/06/IMG_4404-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4404.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4404">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4404-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4405.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4405">
-																<img src="./wp-content/uploads/2016/06/IMG_4405-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4405.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4405">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4405-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4407.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4407">
-																<img src="./wp-content/uploads/2016/06/IMG_4407-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4407.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4407">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4407-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4408.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4408">
-																<img src="./wp-content/uploads/2016/06/IMG_4408-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4408.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4408">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4408-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4409.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4409">
-																<img src="./wp-content/uploads/2016/06/IMG_4409-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4409.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4409">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4409-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4410.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4410">
-																<img src="./wp-content/uploads/2016/06/IMG_4410-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4410.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4410">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4410-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4411.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4411">
-																<img src="./wp-content/uploads/2016/06/IMG_4411-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4411.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4411">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4411-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4412.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4412">
-																<img src="./wp-content/uploads/2016/06/IMG_4412-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4412.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4412">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4412-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4413.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4413">
-																<img src="./wp-content/uploads/2016/06/IMG_4413-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4413.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4413">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4413-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4414.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4414">
-																<img src="./wp-content/uploads/2016/06/IMG_4414-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4414.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4414">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4414-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4415.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4415">
-																<img src="./wp-content/uploads/2016/06/IMG_4415-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4415.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4415">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4415-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4419.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4419">
-																<img src="./wp-content/uploads/2016/06/IMG_4419-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4419.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4419">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4419-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4425.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4425">
-																<img src="./wp-content/uploads/2016/06/IMG_4425-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4425.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4425">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4425-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4426.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4426">
-																<img src="./wp-content/uploads/2016/06/IMG_4426-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4426.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4426">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4426-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4427.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4427">
-																<img src="./wp-content/uploads/2016/06/IMG_4427-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4427.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4427">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4427-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4428.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4428">
-																<img src="./wp-content/uploads/2016/06/IMG_4428-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4428.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4428">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4428-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4430.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4430">
-																<img src="./wp-content/uploads/2016/06/IMG_4430-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4430.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4430">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4430-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4434.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4434">
-																<img src="./wp-content/uploads/2016/06/IMG_4434-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4434.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4434">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4434-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4435.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4435">
-																<img src="./wp-content/uploads/2016/06/IMG_4435-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4435.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4435">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4435-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4436.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4436">
-																<img src="./wp-content/uploads/2016/06/IMG_4436-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4436.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4436">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4436-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4437.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4437">
-																<img src="./wp-content/uploads/2016/06/IMG_4437-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4437.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4437">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4437-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4438.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4438">
-																<img src="./wp-content/uploads/2016/06/IMG_4438-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4438.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4438">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4438-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4440.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4440">
-																<img src="./wp-content/uploads/2016/06/IMG_4440-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4440.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4440">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4440-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4441.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4441">
-																<img src="./wp-content/uploads/2016/06/IMG_4441-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4441.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4441">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4441-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4442.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4442">
-																<img src="./wp-content/uploads/2016/06/IMG_4442-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4442.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4442">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4442-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4443.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4443">
-																<img src="./wp-content/uploads/2016/06/IMG_4443-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4443.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4443">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4443-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4445.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4445">
-																<img src="./wp-content/uploads/2016/06/IMG_4445-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4445.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4445">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4445-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4446.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4446">
-																<img src="./wp-content/uploads/2016/06/IMG_4446-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4446.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4446">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4446-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4450.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4450">
-																<img src="./wp-content/uploads/2016/06/IMG_4450-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4450.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4450">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4450-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4454.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4454">
-																<img src="./wp-content/uploads/2016/06/IMG_4454-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4454.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4454">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4454-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4473.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4473">
-																<img src="./wp-content/uploads/2016/06/IMG_4473-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4473.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4473">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4473-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4474.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4474">
-																<img src="./wp-content/uploads/2016/06/IMG_4474-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4474.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4474">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4474-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4479.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4479">
-																<img src="./wp-content/uploads/2016/06/IMG_4479-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4479.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4479">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4479-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4502.png" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4502">
-																<img src="./wp-content/uploads/2016/06/IMG_4502-400x400.png" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4502.png" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4502">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4502-400x400.png" alt="" width="400" height="400" />														</a>
 						</div>
 					<div class="edgtf-gallery-image">
-								<a href="./wp-content/uploads/2016/06/IMG_4512.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4512">
-																<img src="./wp-content/uploads/2016/06/IMG_4512-400x400.jpg" alt="" width="400" height="400" />														</a>
+								<a href="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4512.jpg" data-rel="prettyPhoto[single_pretty_photo]" title="IMG_4512">
+																<img src="https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/IMG_4512-400x400.jpg" alt="" width="400" height="400" />														</a>
 						</div>
 			</div>
 </div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
@@ -703,13 +705,14 @@ jsFileLocation:"./wp-content/plugins/revslider/public/assets/js/",
 	<div class="wpb_text_column wpb_content_element">
 		<div class="wpb_wrapper">
 			<h4><span style="color: #ffffff;">Hands-On Docker for Raspberry Pi Workshop</span></h4>
+
 		</div>
 	</div>
 
 <div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
 	Presented By Alex Ellis, Engineer and Docker Captain	</div>
 <div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
-	Mentored By Jonas Rosland, Open Source Community Manager, {code} by Dell EMC	</div>
+	Presented By Jonas Rosland, Open Source Community Manager, {code} by Dell EMC	</div>
 <div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
 	Monday, April 17th, 2-5PM	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
 
@@ -779,8 +782,7 @@ with Docker Swarm Mode<br />
 <div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
 	Presented By Clint Kitson, Technical Director, {code} by Dell EMC	</div>
 <div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
-	Wednesday, April 19th, 1:30PM-1:50PM | Ecosystem 1<br />	
-	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+	Wednesday, April 19th, 1:30PM-1:50PM | Ecosystem 1	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
 
 	<div class="wpb_text_column wpb_content_element  vc_custom_1491951885460">
 		<div class="wpb_wrapper">
@@ -813,7 +815,7 @@ with Docker Swarm Mode<br />
 <div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
 	Presented By Aaron Spiegel, {code} Catalyst &amp; Developer Advocate, Dell EMC	</div>
 <div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
-	Wednesday, April 19th, 12:20-12:40PM | Gordon's Theater, EH-4 &amp; EH-5 	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+	Wednesday, April 19th, 12:20-12:40PM | Gordon's Theater, EH-4 &amp; EH-5	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
 
 	<div class="wpb_text_column wpb_content_element  vc_custom_1491952273871">
 		<div class="wpb_wrapper">
@@ -840,7 +842,7 @@ with Docker Swarm Mode<br />
 			<div class="edgtf-team main-info-below-image edgtf-image-rounded">
 	<div class="edgtf-team-inner">
 					<div class="edgtf-team-image" style="margin: 0 15px 0 15px;">
-                <img width="800" height="800" src="./wp-content/uploads/2016/06/aaron-spiegel.png" class="attachment-full size-full" alt="" srcset="./wp-content/uploads/2016/06/aaron-spiegel.png 800w, ./wp-content/uploads/2016/06/aaron-spiegel-150x150.png 150w, ./wp-content/uploads/2016/06/aaron-spiegel-300x300.png 300w, ./wp-content/uploads/2016/06/aaron-spiegel-768x768.png 768w, ./wp-content/uploads/2016/06/aaron-spiegel-550x550.png 550w" sizes="(max-width: 800px) 100vw, 800px">                			</div>
+                <img width="800" height="800" src="http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/aaron-spiegel.png" class="attachment-full size-full" alt="" srcset="http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/aaron-spiegel.png 800w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/aaron-spiegel-150x150.png 150w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/aaron-spiegel-300x300.png 300w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/aaron-spiegel-768x768.png 768w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/aaron-spiegel-550x550.png 550w" sizes="(max-width: 800px) 100vw, 800px">                			</div>
 		
 					<div class="edgtf-team-info">
 									<div class="edgtf-team-title-holder normal">
@@ -888,7 +890,7 @@ with Docker Swarm Mode<br />
 			<div class="edgtf-team main-info-below-image edgtf-image-rounded">
 	<div class="edgtf-team-inner">
 					<div class="edgtf-team-image" style="margin: 0 15px 0 15px;">
-                <img width="325" height="325" src="./wp-content/uploads/2016/06/laura-frank.png" class="attachment-full size-full" alt="" srcset="./wp-content/uploads/2016/06/laura-frank.png 325w, ./wp-content/uploads/2016/06/laura-frank-150x150.png 150w, ./wp-content/uploads/2016/06/laura-frank-300x300.png 300w" sizes="(max-width: 325px) 100vw, 325px">                			</div>
+                <img width="325" height="325" src="http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/laura-frank.png" class="attachment-full size-full" alt="" srcset="http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/laura-frank.png 325w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/laura-frank-150x150.png 150w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/laura-frank-300x300.png 300w" sizes="(max-width: 325px) 100vw, 325px">                			</div>
 		
 					<div class="edgtf-team-info">
 									<div class="edgtf-team-title-holder normal">
@@ -938,7 +940,7 @@ Breakout
 			<div class="edgtf-team main-info-below-image edgtf-image-rounded">
 	<div class="edgtf-team-inner">
 					<div class="edgtf-team-image" style="margin: 0 15px 0 15px;">
-                <img width="500" height="500" src="./wp-content/uploads/2016/06/mike-coleman.png" class="attachment-full size-full" alt="" srcset="./wp-content/uploads/2016/06/mike-coleman.png 500w, ./wp-content/uploads/2016/06/mike-coleman-150x150.png 150w, ./wp-content/uploads/2016/06/mike-coleman-300x300.png 300w" sizes="(max-width: 500px) 100vw, 500px">                			</div>
+                <img width="500" height="500" src="http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/mike-coleman.png" class="attachment-full size-full" alt="" srcset="http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/mike-coleman.png 500w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/mike-coleman-150x150.png 150w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/mike-coleman-300x300.png 300w" sizes="(max-width: 500px) 100vw, 500px">                			</div>
 		
 					<div class="edgtf-team-info">
 									<div class="edgtf-team-title-holder normal">
@@ -986,7 +988,7 @@ Breakout
 			<div class="edgtf-team main-info-below-image edgtf-image-rounded">
 	<div class="edgtf-team-inner">
 					<div class="edgtf-team-image" style="margin: 0 15px 0 15px;">
-                <img width="438" height="438" src="./wp-content/uploads/2016/06/Phil-estes.png" class="attachment-full size-full" alt="" srcset="./wp-content/uploads/2016/06/Phil-estes.png 438w, ./wp-content/uploads/2016/06/Phil-estes-150x150.png 150w, ./wp-content/uploads/2016/06/Phil-estes-300x300.png 300w" sizes="(max-width: 438px) 100vw, 438px">                			</div>
+                <img width="438" height="438" src="http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/Phil-estes.png" class="attachment-full size-full" alt="" srcset="http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/Phil-estes.png 438w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/Phil-estes-150x150.png 150w, http://wordpress-64002-246087.cloudwaysapps.com/wp-content/uploads/2016/06/Phil-estes-300x300.png 300w" sizes="(max-width: 438px) 100vw, 438px">                			</div>
 		
 					<div class="edgtf-team-info">
 									<div class="edgtf-team-title-holder normal">
@@ -1027,38 +1029,38 @@ Breakout
 		</div>
 	</div>
 <div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
-</div></div></div></div></div></div></div></div></div></div></div></div><div data-edgtf-anchor="party" class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  style="background-image: url(./wp-content/uploads/2016/06/docker-container-bar.jpg)">
+</div></div></div></div></div></div></div></div></div></div></div></div><div data-edgtf-anchor="party" class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  style="background-image: url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/docker-container-bar.jpg)">
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-386827" style="padding: 16.4% 30% 12.3% 26%">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-241915" style="padding: 16.4% 30% 12.3% 26%">
 						<style type="text/css" data-type="edgtf-elements-custom-padding" scoped="scoped">
 
 									@media only screen and (min-width: 1280px) and (max-width: 1440px) {
-						.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-386827 {
+						.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-241915 {
 							padding: 16.5% 18% 15.4% 16% !important;
 						}
 					}
 													@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-						.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-386827 {
+						.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-241915 {
 							padding: 20.5% 17% 16.4% 16% !important;
 						}
 					}
 												@media only screen and (min-width: 768px) and (max-width: 1024px) {
-					.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-386827 {
+					.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-241915 {
 						padding: 16.5% 12% 13.4% 13% !important;
 					}
 				}
 												@media only screen and (min-width: 600px) and (max-width: 768px) {
-					.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-386827 {
+					.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-241915 {
 						padding: 19.5% 12% 14.4% 13% !important;
 					}
 				}
 												@media only screen and (min-width: 480px) and (max-width: 600px) {
-					.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-386827 {
+					.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-241915 {
 						padding: 16.5% 11% 12.4% 14%  !important;
 					}
 				}
 													@media only screen and (max-width: 480px) {
-						.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-386827 {
+						.edgtf-elements-holder-item-content.edgtf-elements-holder-custom-241915 {
 							padding: 16.5% 11% 12.4% 14%  !important;
 						}
 					}
@@ -1081,9 +1083,9 @@ Breakout
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-495843" style="padding: 0">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-935413" style="padding: 0">
 						<div class="edgtf-google-map-holder">
-	<div class="edgtf-google-map" id="edgtf-map-207530" data-addresses='["90 Rainey St, Austin, TX 78701"]' data-custom-map-style=true data-color-overlay=#393939 data-saturation=-100 data-lightness=-50 data-zoom=16 data-pin=./wp-content/uploads/2016/06/code-PartyInvite-header.png data-unique-id=207530 data-scroll-wheel=false data-height=600></div>
+	<div class="edgtf-google-map" id="edgtf-map-1751512" data-addresses='["90 Rainey St, Austin, TX 78701"]' data-custom-map-style=true data-color-overlay=#393939 data-saturation=-100 data-lightness=-50 data-zoom=16 data-pin=https://fullstackdigitalllc.github.io/dockercon17/wp-content/uploads/2016/06/code-PartyInvite-header.png data-unique-id=1751512 data-scroll-wheel=false data-height=600></div>
 			<div class="edgtf-google-map-overlay"></div>
 	</div>
 		</div>
@@ -1171,29 +1173,29 @@ Breakout
 					jQuery(sliderID).show().html(errorMessage);
 			}
 		</script>
-		<script type='text/javascript' src='./wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='./wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='./wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='./wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+		<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Download File":"Download File","Download Video":"Download Video","Play":"Play","Pause":"Pause","Captions\/Subtitles":"Captions\/Subtitles","None":"None","Time Slider":"Time Slider","Skip back %1 seconds":"Skip back %1 seconds","Video Player":"Video Player","Audio Player":"Audio Player","Volume Slider":"Volume Slider","Mute Toggle":"Mute Toggle","Unmute":"Unmute","Mute":"Mute","Use Up\/Down Arrow keys to increase or decrease volume.":"Use Up\/Down Arrow keys to increase or decrease volume.","Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds."}};
-var _wpmejsSettings = {"pluginPath":"\./wp-includes\/js\/mediaelement\/"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='./wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.22.0'></script>
-<script type='text/javascript' src='./wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.3'></script>
-<script type='text/javascript' src='./wp-content/themes/fair/assets/js/third-party.min.js?ver=4.7.3'></script>
-<script type='text/javascript' src='./wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=4.12'></script>
-<script type='text/javascript' src='./wp-content/themes/fair/assets/js/smoothPageScroll.js?ver=4.7.3'></script>
-<script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyDriJOCCvCvkiptdfSy_m4JFLgWLN4FJd4&#038;ver=4.7.3'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.22.0'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.4'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/js/third-party.min.js?ver=4.7.4'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=4.12'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/js/smoothPageScroll.js?ver=4.7.4'></script>
+<script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyDriJOCCvCvkiptdfSy_m4JFLgWLN4FJd4&#038;ver=4.7.4'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var edgtfGlobalVars = {"vars":{"edgtfAddForAdminBar":0,"edgtfElementAppearAmount":-150,"edgtfFinishedMessage":"No more posts","edgtfMessage":"Loading new posts...","edgtfTopBarHeight":0,"edgtfStickyHeaderHeight":60,"edgtfStickyHeaderTransparencyHeight":60,"edgtfStickyScrollAmount":0,"edgtfLogoAreaHeight":0,"edgtfMenuAreaHeight":80,"edgtfMobileHeaderHeight":78}};
 var edgtfPerPageVars = {"vars":{"edgtfStickyScrollAmount":1100,"edgtfPassepartout":0,"edgtfHeaderTransparencyHeight":0}};
 /* ]]> */
 </script>
-<script type='text/javascript' src='./wp-content/themes/fair/assets/js/modules.min.js?ver=4.7.4'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/js/modules.min.js?ver=4.7.4'></script>
 <script type='text/javascript'>
 (function($) {
      landingPagePtfFilterFollowHover();
@@ -1234,13 +1236,13 @@ var edgtfPerPageVars = {"vars":{"edgtfStickyScrollAmount":1100,"edgtfPassepartou
 
 
 </script>
-<script type='text/javascript' src='./wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var edgtfLike = {"ajaxurl":"\./wp-admin\/admin-ajax.php"};
+var edgtfLike = {"ajaxurl":"https:\/\/fullstackdigitalllc.github.io\/dockercon17\/wp-admin\/admin-ajax.php"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='./wp-content/themes/fair/assets/js/like.js?ver=1.0'></script>
-<script type='text/javascript' src='./wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"46fa6ffa74","applicationID":"43632673","transactionName":"ZgQBZkJVXBVYUk1eDV9OIlFEXV0IFldMWw4cFgpWRFw=","queueTime":0,"applicationTime":417,"atts":"SkMCEApPTxs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/js/like.js?ver=1.0'></script>
+<script type='text/javascript' src='https://fullstackdigitalllc.github.io/dockercon17/wp-includes/js/wp-embed.min.js?ver=4.7.4'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"46fa6ffa74","applicationID":"43632673","transactionName":"ZgQBZkJVXBVYUk1eDV9OIlFEXV0IFldMWw4cFgpWRFw=","queueTime":0,"applicationTime":693,"atts":"SkMCEApPTxs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>

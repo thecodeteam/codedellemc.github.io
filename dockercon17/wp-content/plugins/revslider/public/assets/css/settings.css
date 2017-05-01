@@ -16,11 +16,11 @@ website:   	http://www.themepunch.com
 .rtl {	direction: rtl;}
 @font-face {
   font-family: 'revicons';
-  src: url('./wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.eot?5510888');
-  src: url('./wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.eot?5510888#iefix') format('embedded-opentype'),
-       url('./wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.woff?5510888') format('woff'),
-       url('./wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.ttf?5510888') format('truetype'),
-       url('./wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.svg?5510888#revicons') format('svg');
+  src: url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.eot?5510888');
+  src: url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.eot?5510888#iefix') format('embedded-opentype'),
+       url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.woff?5510888') format('woff'),
+       url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.ttf?5510888') format('truetype'),
+       url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.svg?5510888#revicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -212,10 +212,10 @@ website:   	http://www.themepunch.com
 	
 /* CAROUSEL FUNCTIONS */
 .tp-carousel-wrapper {
-	cursor:url(./wp-content/plugins/revslider/public/assets/css/openhand.cur), move;
+	cursor:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/css/openhand.cur), move;
 }
 .tp-carousel-wrapper.dragged {
-	cursor:url(./wp-content/plugins/revslider/public/assets/css/closedhand.cur), move;
+	cursor:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/css/closedhand.cur), move;
 }
 
 /* ADDED FOR SLIDELINK MANAGEMENT */
@@ -501,10 +501,10 @@ img.tp-slider-alternative-image	{
 	-	DOTTED OVERLAYS	-
 *********************************/
 .tp-dottedoverlay						{	background-repeat:repeat;width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:3}
-.tp-dottedoverlay.twoxtwo				{	background:url(./wp-content/plugins/revslider/public/assets/assets/gridtile.png)}
-.tp-dottedoverlay.twoxtwowhite			{	background:url(./wp-content/plugins/revslider/public/assets/assets/gridtile_white.png)}
-.tp-dottedoverlay.threexthree			{	background:url(./wp-content/plugins/revslider/public/assets/assets/gridtile_3x3.png)}
-.tp-dottedoverlay.threexthreewhite		{	background:url(./wp-content/plugins/revslider/public/assets/assets/gridtile_3x3_white.png)}
+.tp-dottedoverlay.twoxtwo				{	background:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/assets/gridtile.png)}
+.tp-dottedoverlay.twoxtwowhite			{	background:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/assets/gridtile_white.png)}
+.tp-dottedoverlay.threexthree			{	background:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/assets/gridtile_3x3.png)}
+.tp-dottedoverlay.threexthreewhite		{	background:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/assets/gridtile_3x3_white.png)}
 
 
 /******************************
@@ -896,7 +896,7 @@ img.tp-slider-alternative-image	{
 /************************************
 -	TP BANNER TIMER		-
 *************************************/
-.tp-bannertimer								{	visibility: hidden; width:100%; height:5px; /*background:url(/.wp-content/plugins/revslider/public/assets/assets/timer.png);*/ background: #fff; background: rgba(0,0,0,0.15); position:absolute; z-index:200; top:0px}
+.tp-bannertimer								{	visibility: hidden; width:100%; height:5px; /*background:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/assets/timer.png);*/ background: #fff; background: rgba(0,0,0,0.15); position:absolute; z-index:200; top:0px}
 .tp-bannertimer.tp-bottom					{	top:auto; bottom:0px !important;height:5px}
 
 
@@ -922,8 +922,8 @@ img.tp-slider-alternative-image	{
 
 /*  CAPTION SLIDELINK   **/
 .caption.slidelink a div,
-.tp-caption.slidelink a div {	width:3000px; height:1500px;  background:url(./wp-content/plugins/revslider/public/assets/assets/coloredbg.png) repeat}
-.tp-caption.slidelink a span{	background:url(./wp-content/plugins/revslider/public/assets/assets/coloredbg.png) repeat}
+.tp-caption.slidelink a div {	width:3000px; height:1500px;  background:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/assets/coloredbg.png) repeat}
+.tp-caption.slidelink a span{	background:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/assets/coloredbg.png) repeat}
 .tp-shape {	width:100%;height:100%;}
 
 
@@ -1005,7 +1005,7 @@ img.tp-slider-alternative-image	{
 	width: 40px;
 	height: 40px;
 	background-color: #fff;
-	background:url(./wp-content/plugins/revslider/public/assets/assets/loader.gif) no-repeat center center;
+	background:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/assets/loader.gif) no-repeat center center;
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 	margin-top:-20px;
@@ -1036,7 +1036,7 @@ img.tp-slider-alternative-image	{
 
 
 .tp-loader.spinner5 	{	
-	background:url(./wp-content/plugins/revslider/public/assets/assets/loader.gif) no-repeat 10px 10px;
+	background:url(https://fullstackdigitalllc.github.io/dockercon17/wp-content/plugins/revslider/public/assets/assets/loader.gif) no-repeat 10px 10px;
 	background-color:#fff;
 	margin:-22px -22px;
 	width:44px;height:44px;
