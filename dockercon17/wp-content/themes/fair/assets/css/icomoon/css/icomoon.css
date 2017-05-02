@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:    url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.eot?sbosvq');
-	src:    url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.eot?sbosvq#iefix') format('embedded-opentype'),
-	url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.ttf?sbosvq') format('truetype'),
-	url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.woff?sbosvq') format('woff'),
-	url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.svg?sbosvq#icomoon') format('svg');
+	src:    url('/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.eot?sbosvq');
+	src:    url('/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.eot?sbosvq#iefix') format('embedded-opentype'),
+	url('/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.ttf?sbosvq') format('truetype'),
+	url('/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.woff?sbosvq') format('woff'),
+	url('/dockercon17/wp-content/themes/fair/assets/css/icomoon/fonts/icomoon.svg?sbosvq#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

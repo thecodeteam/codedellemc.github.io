@@ -6,13 +6,13 @@
 	
 	>
 <channel>
-	<title>Comments for {code} by Dell EMC at DockerCon 17</title>
-	<atom:link href="https://fullstackdigitalllc.github.io/dockercon17/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://fullstackdigitalllc.github.io/dockercon17/</link>
-	<description></description>
-	<lastBuildDate>Mon, 01 May 2017 04:17:10 +0000</lastBuildDate>
+	<title>Comments for wordpress-64002-246087.cloudwaysapps.com</title>
+	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Just another WordPress site</description>
+	<lastBuildDate>Wed, 12 Apr 2017 18:37:21 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.7.4</generator>
+	<generator>https://wordpress.org/?v=4.7.3</generator>
 </channel>
 </rss>

@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'simple-line-icons';
-	src: url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.eot?-i3a2kk');
-	src: url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.eot#iefix-i3a2kk') format('embedded-opentype'), url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.ttf?-i3a2kk') format('truetype'), url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.woff2?-i3a2kk') format('woff2'), url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.woff?-i3a2kk') format('woff'), url('https://fullstackdigitalllc.github.io/dockercon17/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.svg?-i3a2kk#simple-line-icons') format('svg');
+	src: url('/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.eot?-i3a2kk');
+	src: url('/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.eot#iefix-i3a2kk') format('embedded-opentype'), url('/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.ttf?-i3a2kk') format('truetype'), url('/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.woff2?-i3a2kk') format('woff2'), url('/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.woff?-i3a2kk') format('woff'), url('/wp-content/themes/fair/assets/css/simple-line-icons/fonts/Simple-Line-Icons.svg?-i3a2kk#simple-line-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
