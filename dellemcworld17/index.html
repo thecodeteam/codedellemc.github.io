@@ -2,8 +2,8 @@
 <html lang="en-US">
 <head>
     	
-        <meta charset="UTF-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
-        <link rel="profile" href="https://gmpg.org/xfn/11"/>
+        <meta charset="UTF-8"/>
+        <link rel="profile" href="http://gmpg.org/xfn/11"/>
         <link rel="pingback" href="/dellemcworld17/xmlrpc.php"/>
 
                 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
@@ -12,7 +12,6 @@
 <script type="application/javascript">var edgtCoreAjaxUrl = "/dellemcworld17/wp-admin/admin-ajax.php"</script><meta name='robots' content='noindex,follow' />
 <link rel='dns-prefetch' href='//maps.googleapis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at Dell EMC World 17 &raquo; Feed" href="/dellemcworld17/feed/" />
 <link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at Dell EMC World 17 &raquo; Comments Feed" href="/dellemcworld17/comments/feed/" />
 <link rel='stylesheet' id='rs-plugin-settings-css'  href='/dellemcworld17/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.6' type='text/css' media='all' />
@@ -104,8 +103,8 @@ vertical-align: middle;
 <meta name="generator" content="WordPress 4.7.4" />
 <link rel="canonical" href="/dellemcworld17/" />
 <link rel='shortlink' href='/dellemcworld17/' />
-<link rel="alternate" type="application/json+oembed" href="/dellemcworld17/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F" />
-<link rel="alternate" type="text/xml+oembed" href="/dellemcworld17/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F&#038;format=xml" />
+<link rel="alternate" type="application/json+oembed" href="/dellemcworld17/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/dellemcworld17/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F&#038;format=xml" />
 <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/dellemcworld17/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="/dellemcworld17/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
 <link rel="icon" href="/dellemcworld17/wp-content/uploads/2017/05/cropped-code-icon-clear-32x32.png" sizes="32x32" />
@@ -182,7 +181,15 @@ vertical-align: middle;
                     <div class="edgtf-position-right-inner">
                         
 <nav class="edgtf-main-menu edgtf-drop-down edgtf-default-nav">
-    <ul id="menu-dockercon-menu" class="clearfix"><li id="nav-menu-item-11058" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#lab#lab"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Lab &#038; Speaking Sessions</span></span><span class="plus"></span></span></a></li>
+    <ul id="menu-dockercon-menu" class="clearfix"><li id="nav-menu-item-11058" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#lab#lab"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Lab</span></span><span class="plus"></span></span></a></li>
+<li id="nav-menu-item-11117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children edgtf-has-sub edgtf-menu-narrow edgtf-wide-background"><a href="#speaking"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Speaking Sessions</span></span><span class="plus"></span></span></a>
+<div class="edgtf-menu-second"><div class="edgtf-menu-inner"><ul>
+	<li id="nav-menu-item-11118" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-wide-background"><a href="#container-basics"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Container Basics</span></span><span class="plus"></span></span></a></li>
+	<li id="nav-menu-item-11119" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-wide-background"><a href="#infrastructure-for-containers"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Infrastructure For Containers</span></span><span class="plus"></span></span></a></li>
+	<li id="nav-menu-item-11120" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-wide-background"><a href="#containers-and-modern-applications"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Containers And Modern Applications</span></span><span class="plus"></span></span></a></li>
+	<li id="nav-menu-item-11122" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-wide-background"><a href="#open-source-and-modern-data-centers"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Open Source and Modern Data Centers</span></span><span class="plus"></span></span></a></li>
+</ul></div></div>
+</li>
 <li id="nav-menu-item-10883" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#connect#catalyst"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Connect</span></span><span class="plus"></span></span></a></li>
 <li id="nav-menu-item-10884" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#general#general"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">General Sessions</span></span><span class="plus"></span></span></a></li>
 </ul></nav>
@@ -210,7 +217,15 @@ vertical-align: middle;
                     <div class="edgtf-position-right-inner">
 						
 <nav class="edgtf-main-menu edgtf-drop-down edgtf-sticky-nav">
-    <ul id="menu-dockercon-menu-1" class="clearfix"><li id="sticky-nav-menu-item-11058" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#lab#lab"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Lab &#038; Speaking Sessions</span></span><span class="plus"></span></span></a></li>
+    <ul id="menu-dockercon-menu-1" class="clearfix"><li id="sticky-nav-menu-item-11058" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#lab#lab"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Lab</span></span><span class="plus"></span></span></a></li>
+<li id="sticky-nav-menu-item-11117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children edgtf-has-sub edgtf-menu-narrow edgtf-wide-background"><a href="#speaking"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Speaking Sessions</span></span><span class="plus"></span></span></a>
+<div class="edgtf-menu-second"><div class="edgtf-menu-inner"><ul>
+	<li id="sticky-nav-menu-item-11118" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-wide-background"><a href="#container-basics"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Container Basics</span></span><span class="plus"></span></span></a></li>
+	<li id="sticky-nav-menu-item-11119" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-wide-background"><a href="#infrastructure-for-containers"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Infrastructure For Containers</span></span><span class="plus"></span></span></a></li>
+	<li id="sticky-nav-menu-item-11120" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-wide-background"><a href="#containers-and-modern-applications"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Containers And Modern Applications</span></span><span class="plus"></span></span></a></li>
+	<li id="sticky-nav-menu-item-11122" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-wide-background"><a href="#open-source-and-modern-data-centers"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Open Source and Modern Data Centers</span></span><span class="plus"></span></span></a></li>
+</ul></div></div>
+</li>
 <li id="sticky-nav-menu-item-10883" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#connect#catalyst"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Connect</span></span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-10884" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#general#general"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">General Sessions</span></span><span class="plus"></span></span></a></li>
 </ul></nav>
@@ -258,7 +273,15 @@ vertical-align: middle;
         
 <nav class="edgtf-mobile-nav">
     <div class="edgtf-grid">
-        <ul id="menu-dockercon-menu-2" class=""><li id="mobile-menu-item-11058" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#lab#lab" class=""><span>Lab &#038; Speaking Sessions</span></a></li>
+        <ul id="menu-dockercon-menu-2" class=""><li id="mobile-menu-item-11058" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#lab#lab" class=""><span>Lab</span></a></li>
+<li id="mobile-menu-item-11117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  edgtf-has-sub"><a href="#speaking" class=""><span>Speaking Sessions</span></a><span class="mobile_arrow"><i class="edgtf-sub-arrow fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+	<li id="mobile-menu-item-11118" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#container-basics" class=""><span>Container Basics</span></a></li>
+	<li id="mobile-menu-item-11119" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#infrastructure-for-containers" class=""><span>Infrastructure For Containers</span></a></li>
+	<li id="mobile-menu-item-11120" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#containers-and-modern-applications" class=""><span>Containers And Modern Applications</span></a></li>
+	<li id="mobile-menu-item-11122" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#open-source-and-modern-data-centers" class=""><span>Open Source and Modern Data Centers</span></a></li>
+</ul>
+</li>
 <li id="mobile-menu-item-10883" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#connect#catalyst" class=""><span>Connect</span></a></li>
 <li id="mobile-menu-item-10884" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#general#general" class=""><span>General Sessions</span></a></li>
 </ul>    </div>
@@ -278,7 +301,7 @@ vertical-align: middle;
                         <div class="edgtf-content-inner">
 <div class="edgtf-full-width">
 <div class="edgtf-full-width-inner">
-						<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_revslider_element wpb_content_element"><link href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C600" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+						<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_revslider_element wpb_content_element"><link href="http://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C600" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
 <!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
 	<div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
@@ -522,7 +545,7 @@ jsFileLocation:"/dellemcworld17/wp-content/plugins/revslider/public/assets/js/",
 				}
 			});	/*ready*/
 		</script>
-		</div><!-- END REVOLUTION SLIDER --></div></div></div></div></div></div><div data-edgtf-anchor="photos" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1492996714193 edgtf-content-aligment-center edgtf-grid-section" style=""><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-countdown"  id="countdown3613" data-year="2017" data-month="5" data-day="8" data-hour="0" data-minute="0" data-timezone="0" data-month-label="Months" data-day-label="Days" data-hour-label="Hours" data-minute-label="Minutes" data-second-label="Seconds" data-digit-size="" data-label-size="" data-label-color=""></div></div></div></div></div></div></div><div data-edgtf-anchor="lab" data-edgtf-parallax-speed="1" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1493694023835 edgtf-content-aligment-center edgtf-parallax-section-holder edgtf-parallax-section-holder-touch-disabled edgtf-grid-section edgtf-full-screen-height-parallax edgtf-vertical-middle-align" style="background-image:url();"><div class="edgtf-parallax-content-outer"><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493689527924"><div class="wpb_wrapper">
+		</div><!-- END REVOLUTION SLIDER --></div></div></div></div></div></div><div data-edgtf-anchor="photos" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1492996714193 edgtf-content-aligment-center edgtf-grid-section" style=""><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-countdown"  id="countdown9806" data-year="2017" data-month="5" data-day="8" data-hour="0" data-minute="0" data-timezone="0" data-month-label="Months" data-day-label="Days" data-hour-label="Hours" data-minute-label="Minutes" data-second-label="Seconds" data-digit-size="" data-label-size="" data-label-color=""></div></div></div></div></div></div></div><div data-edgtf-anchor="lab" data-edgtf-parallax-speed="1" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1493694023835 edgtf-content-aligment-center edgtf-parallax-section-holder edgtf-parallax-section-holder-touch-disabled edgtf-grid-section edgtf-full-screen-height-parallax edgtf-vertical-middle-align" style="background-image:url();"><div class="edgtf-parallax-content-outer"><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493689527924"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element">
 		<div class="wpb_wrapper">
 			<h1 style="text-align: left;"><span style="color: #ffffff;">Hands on Lab</span></h1>
@@ -562,7 +585,7 @@ Thursday 7:00am - 1:00pm<br />
 			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="800" height="557" src="/dellemcworld17/wp-content/uploads/2017/04/code-Labs.png" class="vc_single_image-img attachment-full" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/code-Labs.png 800w, /dellemcworld17/wp-content/uploads/2017/04/code-Labs-300x209.png 300w, /dellemcworld17/wp-content/uploads/2017/04/code-Labs-768x535.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></div>
 		</figure>
 	</div>
-</div></div></div></div></div><div class="vc_empty_space"  style="height: 150px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div id="speaking" class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"  style="height: 150px" ><span class="vc_empty_space_inner"></span></div>
 
 	<div class="wpb_text_column wpb_content_element">
 		<div class="wpb_wrapper">
@@ -571,7 +594,7 @@ Thursday 7:00am - 1:00pm<br />
 		</div>
 	</div>
 <div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
-<div id="Speaking" class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+</div></div></div></div></div><div id="container-basics" class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element">
 		<div class="wpb_wrapper">
 			<h2 style="text-align: left;"><span style="color: #ffffff;">Container Basics</span></h2>
@@ -584,7 +607,7 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686933974"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-186526" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-684163" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -596,7 +619,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-105040" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-351852" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -626,7 +649,7 @@ Thursday 7:00am - 1:00pm<br />
     </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
 </div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686765865"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-940844" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-186168" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -638,7 +661,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-168330" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-891229" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -669,7 +692,7 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686941343"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-684715" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-576926" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -681,7 +704,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-645585" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-768280" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -711,7 +734,7 @@ Thursday 7:00am - 1:00pm<br />
     </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
 </div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686759282"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-382786" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-567762" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -723,7 +746,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-107116" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-310078" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -755,7 +778,7 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section vc_custom_1493686682838 edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686722584"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-674334" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-367906" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -781,8 +804,8 @@ Thursday 7:00am - 1:00pm<br />
 <a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3413" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
     <span class="edgtf-btn-text">View Session Details</span>
     </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
-</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
-<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+</div></div></div></div></div><div id="infrastructure-for-containers" class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element">
 		<div class="wpb_wrapper">
 			<h2 style="text-align: left;"><span style="color: #ffffff;">Infrastructure for Containers</span></h2>
@@ -795,7 +818,7 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686955620"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-816694" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-927394" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -807,7 +830,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-437792" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-806377" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -837,7 +860,7 @@ Thursday 7:00am - 1:00pm<br />
     </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
 </div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493687062451"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-502558" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-388759" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -849,7 +872,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-408546" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-492078" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -880,7 +903,7 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686961684"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-722964" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-882014" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -911,7 +934,7 @@ Thursday 7:00am - 1:00pm<br />
     </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
 </div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493687055937"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-140665" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-888434" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -923,7 +946,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-265559" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-162840" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -958,7 +981,7 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686970830"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-917564" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-663617" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -987,7 +1010,7 @@ Thursday 7:00am - 1:00pm<br />
     </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
 </div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493687049220"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-861332" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-652780" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -999,12 +1022,12 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-696020" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-172746" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
 		<figure class="wpb_wrapper vc_figure">
-			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/josh-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/josh-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/josh-550x550.jpg 550w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/josh-portrait-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/josh-portrait-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/josh-portrait-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/josh-portrait.jpg 512w" sizes="(max-width: 150px) 100vw, 150px" /></div>
 		</figure>
 	</div>
 		</div>
@@ -1030,7 +1053,7 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686977400"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-three-columns edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-956423" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-895306" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -1042,7 +1065,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-625789" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-116126" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -1054,7 +1077,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-352323" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-940061" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -1086,8 +1109,8 @@ Thursday 7:00am - 1:00pm<br />
 <a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3531" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
     <span class="edgtf-btn-text">View Session Details</span>
     </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
-</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
-<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner"><div class="wpb_wrapper">
+</div></div></div></div></div><div id="containers-and-modern-applications" class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element">
 		<div class="wpb_wrapper">
 			<h2 style="text-align: left;"><span style="color: #ffffff;">Containers and Modern Applications</span></h2>
@@ -1100,7 +1123,7 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686984688"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-188523" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-169472" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -1112,7 +1135,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-358528" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-778799" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -1143,7 +1166,7 @@ Thursday 7:00am - 1:00pm<br />
     </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
 </div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493687040165"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-815245" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-514608" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -1155,7 +1178,7 @@ Thursday 7:00am - 1:00pm<br />
 	</div>
 	</div><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-270491" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-178957" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -1188,7 +1211,7 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686991889"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-608886" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-854794" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
@@ -1215,8 +1238,8 @@ Thursday 7:00am - 1:00pm<br />
 <a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3411" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
     <span class="edgtf-btn-text">View Session Details</span>
     </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
-</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
-<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner"><div class="wpb_wrapper">
+</div></div></div></div></div><div id="open-source-and-modern-data-centers" class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element">
 		<div class="wpb_wrapper">
 			<h2 style="text-align: left;"><span style="color: #ffffff;">Open Source and Modern Data Centers</span></h2>
@@ -1229,12 +1252,12 @@ Thursday 7:00am - 1:00pm<br />
 </div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686998089"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
 		<div class="edgtf-elements-holder-item-inner">
-		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-471830" style="padding: 0px 0px 0px 0px">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-679756" style="padding: 0px 0px 0px 0px">
 						
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 		
 		<figure class="wpb_wrapper vc_figure">
-			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/josh-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/josh-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/josh-550x550.jpg 550w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/josh-portrait-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/josh-portrait-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/josh-portrait-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/josh-portrait.jpg 512w" sizes="(max-width: 150px) 100vw, 150px" /></div>
 		</figure>
 	</div>
 		</div>
@@ -1394,11 +1417,11 @@ Thursday 7:00am - 1:00pm<br />
 		</div>
 	</div>
 <div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
-<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section vc_custom_1493694978174 edgtf-content-aligment-center" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><a href="http://www.dellemcworld.com/general-sessions.htm%20" target="_self"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section vc_custom_1493694978174 edgtf-content-aligment-center" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner"><div class="wpb_wrapper"><a href="http://www.dellemcworld.com/general-sessions.htm" target="_self"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
     <span class="edgtf-btn-text">General Sessions at Dell EMC World</span>
-    </a></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><a href="https://emcworldonline.com/2017/connect/search.ww#loadSearch-searchPhrase=&#038;searchType=session&#038;tc=0&#038;sortBy=&#038;p=&#038;i(10442)=12468%20" target="_self"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
-    <span class="edgtf-btn-text">{code} in Modern Operations</span>
-    </a></div></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div>
+    </a></div></div></div><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner"><div class="wpb_wrapper"><a href="https://emcworldonline.com/2017/connect/search.ww#loadSearch-searchPhrase=&#038;searchType=session&#038;tc=0&#038;sortBy=&#038;p=&#038;i(10442)=12468%20" target="_self"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">Code &amp; Modern Operation Talks Track</span>
+    </a></div></div></div><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div>
 			
 				</div>
 </div>
@@ -1455,7 +1478,6 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
 <script type='text/javascript' src='/dellemcworld17/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.4'></script>
 <script type='text/javascript' src='/dellemcworld17/wp-content/themes/fair/assets/js/third-party.min.js?ver=4.7.4'></script>
 <script type='text/javascript' src='/dellemcworld17/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=4.12'></script>
-<script type='text/javascript' src='/dellemcworld17/wp-content/themes/fair/assets/js/smoothPageScroll.js?ver=4.7.4'></script>
 <script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyDriJOCCvCvkiptdfSy_m4JFLgWLN4FJd4&#038;ver=4.7.4'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
@@ -1512,5 +1534,5 @@ var edgtfLike = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
 </script>
 <script type='text/javascript' src='/dellemcworld17/wp-content/themes/fair/assets/js/like.js?ver=1.0'></script>
 <script type='text/javascript' src='/dellemcworld17/wp-includes/js/wp-embed.min.js?ver=4.7.4'></script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"46fa6ffa74","applicationID":"47479192","transactionName":"ZgQBZkJVXBVYUk1eDV9OIlFEXV0IFldMWw4cFgpWRFw=","queueTime":0,"applicationTime":505,"atts":"SkMCEApPTxs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</body>
 </html>
