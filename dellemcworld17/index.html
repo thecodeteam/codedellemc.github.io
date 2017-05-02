@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    	
+        <meta charset="UTF-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+        <link rel="profile" href="https://gmpg.org/xfn/11"/>
+        <link rel="pingback" href="/dellemcworld17/xmlrpc.php"/>
+
+                <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        
+	<title>{code} by Dell EMC at Dell EMC World 17</title>
+<script type="application/javascript">var edgtCoreAjaxUrl = "/dellemcworld17/wp-admin/admin-ajax.php"</script><meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at Dell EMC World 17 &raquo; Feed" href="/dellemcworld17/feed/" />
+<link rel="alternate" type="application/rss+xml" title="{code} by Dell EMC at Dell EMC World 17 &raquo; Comments Feed" href="/dellemcworld17/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.4"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='/dellemcworld17/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.6' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='fair_edge_default_style-css'  href='/dellemcworld17/wp-content/themes/fair/style.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_modules_plugins-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/plugins.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_modules-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/modules.min.css?ver=4.7.4' type='text/css' media='all' />
+<style id='fair_edge_modules-inline-css' type='text/css'>
+ /* generated in /home/71815-64002.cloudwaysapps.com/xzztdxmkcv/public_html/wp-content/themes/fair/functions.php fair_edge_page_padding function */
+.page-id-11061 .edgtf-content .edgtf-content-inner > .edgtf-container > .edgtf-container-inner, .page-id-11061 .edgtf-content .edgtf-content-inner > .edgtf-full-width > .edgtf-full-width-inner { padding: 0;}
+
+    
+.edgtf-header-standard .edgtf-right-from-main-menu-widget{
+    display: none;
+}
+
+.edgtf-home-holder .edgtf-ptf-filter-follow-hover {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    bottom: -2px;
+    border-top: 2px solid #387ce0;
+    -webkit-transition: width .4s,left .9s cubic-bezier(.19,.65,.02,.93);
+    transition: width .4s,left .9s cubic-bezier(.19,.65,.02,.93);
+}
+
+.edgtf-home-holder .vc_column-inner {
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 601px) {
+     .edgtf-home-holder .edgtf-portfolio-filter-holder-inner > ul {
+        position: relative;
+        padding-bottom: 2px;
+    }
+
+    .edgtf-home-holder .edgtf-portfolio-filter-holder .edgtf-portfolio-filter-holder-inner ul li span:after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .edgtf-home-holder .edgtf-ptf-filter-follow-hover {
+        display: none !important;
+    }
+}
+
+.edgtf-btn {
+    border-radius: 0px;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Roboto !important;
+}
+.fa-slack {
+vertical-align: middle;
+}
+.fa-slideshare {
+vertical-align: middle;
+}
+</style>
+<link rel='stylesheet' id='edgtf_font_awesome-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/font-awesome/css/font-awesome.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_font_elegant-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/elegant-icons/style.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_linea_icons-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/linea-icons/style.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_simple_line_icons-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/simple-line-icons/simple-line-icons.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edgtf_ico_moon-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/icomoon/css/icomoon.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_style_dynamic-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/style_dynamic.css?ver=1493693829' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_modules_responsive-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/modules-responsive.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_blog_responsive-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/blog-responsive.min.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_style_dynamic_responsive-css'  href='/dellemcworld17/wp-content/themes/fair/assets/css/style_dynamic_responsive.css?ver=1493693829' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='/dellemcworld17/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.12' type='text/css' media='all' />
+<link rel='stylesheet' id='fair_edge_google_fonts-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=1.0.0' type='text/css' media='all' />
+<script type='text/javascript' src='/dellemcworld17/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.6'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.6'></script>
+<link rel='https://api.w.org/' href='/dellemcworld17/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/dellemcworld17/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/dellemcworld17/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.4" />
+<link rel="canonical" href="/dellemcworld17/" />
+<link rel='shortlink' href='/dellemcworld17/' />
+<link rel="alternate" type="application/json+oembed" href="/dellemcworld17/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/dellemcworld17/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F&#038;format=xml" />
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/dellemcworld17/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="/dellemcworld17/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="/dellemcworld17/wp-content/uploads/2017/05/cropped-code-icon-clear-32x32.png" sizes="32x32" />
+<link rel="icon" href="/dellemcworld17/wp-content/uploads/2017/05/cropped-code-icon-clear-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="/dellemcworld17/wp-content/uploads/2017/05/cropped-code-icon-clear-180x180.png" />
+<meta name="msapplication-TileImage" content="/dellemcworld17/wp-content/uploads/2017/05/cropped-code-icon-clear-270x270.png" />
+<style type="text/css" data-type="vc_custom-css">.edgtf-elements-holder {
+    width: 0%;
+}
+
+.edgtf-elements-holder.edgtf-two-columns .edgtf-elements-holder-item {
+    width: 0%;
+}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1492996714193{padding-top: 7% !important;padding-bottom: 6.4% !important;background-color: #f3f3f3 !important;}.vc_custom_1493694023835{padding-top: 10% !important;padding-bottom: 5% !important;background-image: url(/dellemcworld17/wp-content/uploads/2017/04/realize-home-hero.jpg?id=11071) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1493694136313{padding-top: 10% !important;padding-bottom: 10% !important;background-color: #ffffff !important;}.vc_custom_1493694929901{padding-top: 12% !important;padding-bottom: 12% !important;background-image: url(/dellemcworld17/wp-content/uploads/2017/04/program-holz-sleeves-code.jpg?id=11103) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1493686682838{padding-right: 5% !important;}.vc_custom_1493689527924{padding-right: 20% !important;}.vc_custom_1493686933974{padding-right: 15% !important;}.vc_custom_1493686765865{padding-right: 15% !important;}.vc_custom_1493686941343{padding-right: 15% !important;}.vc_custom_1493686759282{padding-right: 15% !important;}.vc_custom_1493686722584{padding-right: 20% !important;}.vc_custom_1493686955620{padding-right: 15% !important;}.vc_custom_1493687062451{padding-right: 15% !important;}.vc_custom_1493686961684{padding-right: 15% !important;}.vc_custom_1493687055937{padding-right: 15% !important;}.vc_custom_1493686970830{padding-right: 15% !important;}.vc_custom_1493687049220{padding-right: 15% !important;}.vc_custom_1493686977400{padding-right: 15% !important;}.vc_custom_1493686984688{padding-right: 15% !important;}.vc_custom_1493687040165{padding-right: 15% !important;}.vc_custom_1493686991889{padding-right: 15% !important;}.vc_custom_1493686998089{padding-right: 15% !important;}.vc_custom_1493694978174{padding-top: 3% !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="home page-template page-template-full-width page-template-full-width-php page page-id-11061 edgt-core-1.0 fair-ver-1.0 edgtf-smooth-scroll edgtf-smooth-page-transitions edgtf-mimic-ajax edgtf-header-standard edgtf-sticky-header-on-scroll-down-up edgtf-default-mobile-header edgtf-sticky-up-mobile-header edgtf-dropdown-animate-height edgtf-light-header edgtf-header-style-on-scroll edgtf-fullscreen-search edgtf-search-fade edgtf-side-menu-slide-from-right wpb-js-composer js-comp-ver-4.12 vc_responsive">
+<section class="edgtf-side-menu right">
+		<div class="edgtf-close-side-menu-holder">
+		<div class="edgtf-close-side-menu-holder-inner">
+			<a href="#" target="_self" class="edgtf-close-side-menu">
+				<span aria-hidden="true" class="icon_close"></span>
+			</a>
+		</div>
+	</div>
+	</section>
+
+<div class="edgtf-smooth-transition-loader edgtf-mimic-ajax">
+    <div class="edgtf-st-loader">
+        <div class="edgtf-st-loader1">
+            <div class="pulse"></div>        </div>
+    </div>
+</div>
+
+<div class="edgtf-wrapper">
+	    <div class="edgtf-wrapper-inner">
+        <div class="edgtf-fullscreen-search-holder">
+	<div class="edgtf-fullscreen-search-close-container">
+		<div class="edgtf-search-close-holder">
+			<a class="edgtf-fullscreen-search-close" href="javascript:void(0)">
+				<span class="icon_close"></span>
+			</a>
+		</div>
+	</div>
+	<div class="edgtf-fullscreen-search-table">
+		<div class="edgtf-fullscreen-search-cell">
+			<div class="edgtf-fullscreen-search-inner">
+				<form action="/dellemcworld17/" class="edgtf-fullscreen-search-form" method="get">
+					<div class="edgtf-form-holder">
+						<div class="edgtf-field-holder">
+							<input type="text"  name="s" class="edgtf-search-field" autocomplete="off" placeholder="Search"/>
+							<div class="edgtf-line"></div>
+							<input type="submit" class="edgtf-search-submit" value="&#xe986;" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="edgtf-page-header">
+        <div class="edgtf-menu-area" style=";">
+        			            <div class="edgtf-vertical-align-containers">
+                <div class="edgtf-position-left">
+                    <div class="edgtf-position-left-inner">
+                        
+<div class="edgtf-logo-wrapper">
+    <a href="/dellemcworld17/" style="height: 401px;">
+        <img class="edgtf-normal-logo" src="/dellemcworld17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="logo"/>
+        <img class="edgtf-dark-logo" src="/dellemcworld17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="/dellemcworld17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-White.png" alt="light logo"/>    </a>
+</div>
+
+                    </div>
+                </div>
+                <div class="edgtf-position-right">
+                    <div class="edgtf-position-right-inner">
+                        
+<nav class="edgtf-main-menu edgtf-drop-down edgtf-default-nav">
+    <ul id="menu-dockercon-menu" class="clearfix"><li id="nav-menu-item-11058" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#lab#lab"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Lab &#038; Speaking Sessions</span></span><span class="plus"></span></span></a></li>
+<li id="nav-menu-item-10883" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#connect#catalyst"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Connect</span></span><span class="plus"></span></span></a></li>
+<li id="nav-menu-item-10884" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#general#general"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">General Sessions</span></span><span class="plus"></span></span></a></li>
+</ul></nav>
+
+                                            </div>
+                </div>
+            </div>
+            </div>
+        
+<div class="edgtf-sticky-header">
+        <div class="edgtf-sticky-holder">
+                <div class="edgtf-vertical-align-containers">
+                <div class="edgtf-position-left">
+                    <div class="edgtf-position-left-inner">
+                        
+<div class="edgtf-logo-wrapper">
+    <a href="/dellemcworld17/" style="height: 125px;">
+        <img class="edgtf-normal-logo" src="/dellemcworld17/wp-content/uploads/2017/05/code-at-dew.png" alt="logo"/>
+        <img class="edgtf-dark-logo" src="/dellemcworld17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-Black.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="/dellemcworld17/wp-content/uploads/2017/04/Dell-EMC-Logo_Horizontal_web_RGB-White.png" alt="light logo"/>    </a>
+</div>
+
+                    </div>
+                </div>
+                <div class="edgtf-position-right">
+                    <div class="edgtf-position-right-inner">
+						
+<nav class="edgtf-main-menu edgtf-drop-down edgtf-sticky-nav">
+    <ul id="menu-dockercon-menu-1" class="clearfix"><li id="sticky-nav-menu-item-11058" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#lab#lab"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Lab &#038; Speaking Sessions</span></span><span class="plus"></span></span></a></li>
+<li id="sticky-nav-menu-item-10883" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#connect#catalyst"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">Connect</span></span><span class="plus"></span></span></a></li>
+<li id="sticky-nav-menu-item-10884" class="menu-item menu-item-type-custom menu-item-object-custom edgtf-menu-narrow edgtf-wide-background anchor-item"><a href="#general#general"><span class="edgtf-item-outer"><span class="edgtf-item-inner"><span class="edgtf-item-text">General Sessions</span></span><span class="plus"></span></span></a></li>
+</ul></nav>
+
+						<div class="edgtf-sticky-right-from-main-menu-holder">
+												</div>
+                    </div>
+                </div>
+            </div>
+                </div>
+</div>
+
+</header>
+
+
+<header class="edgtf-mobile-header">
+    <div class="edgtf-mobile-header-inner">
+                <div class="edgtf-mobile-header-holder">
+            <div class="edgtf-grid">
+                <div class="edgtf-vertical-align-containers">
+                                            <div class="edgtf-mobile-menu-opener">
+                            <a href="javascript:void(0)">
+                    <span class="edgtf-mobile-opener-icon-holder">
+                        <i class="edgtf-icon-font-awesome fa fa-bars" ></i>                    </span>
+                            </a>
+                        </div>
+                                                                <div class="edgtf-position-center">
+                            <div class="edgtf-position-center-inner">
+                                
+<div class="edgtf-mobile-logo-wrapper">
+    <a href="/dellemcworld17/" style="height: 125px">
+        <img src="/dellemcworld17/wp-content/uploads/2017/05/code-at-dew.png" alt="mobile logo"/>
+    </a>
+</div>
+
+                            </div>
+                        </div>
+                                        <div class="edgtf-position-right">
+                        <div class="edgtf-position-right-inner">
+                                                    </div>
+                    </div>
+                </div> <!-- close .edgtf-vertical-align-containers -->
+            </div>
+        </div>
+        
+<nav class="edgtf-mobile-nav">
+    <div class="edgtf-grid">
+        <ul id="menu-dockercon-menu-2" class=""><li id="mobile-menu-item-11058" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#lab#lab" class=""><span>Lab &#038; Speaking Sessions</span></a></li>
+<li id="mobile-menu-item-10883" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#connect#catalyst" class=""><span>Connect</span></a></li>
+<li id="mobile-menu-item-10884" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#general#general" class=""><span>General Sessions</span></a></li>
+</ul>    </div>
+</nav>
+
+    </div>
+</header> <!-- close .edgtf-mobile-header -->
+
+
+
+                    <a id='edgtf-back-to-top'  href='#'>
+                <span class="edgtf-icon-stack">
+                     <span aria-hidden="true" class="edgtf-icon-font-elegant arrow_carrot-up" ></span>                </span>
+            </a>
+                
+        <div class="edgtf-content" style="margin-top: -80px">
+                        <div class="edgtf-content-inner">
+<div class="edgtf-full-width">
+<div class="edgtf-full-width-inner">
+						<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_revslider_element wpb_content_element"><link href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C600" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+<div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
+	<div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
+<ul>	<!-- SLIDE  -->
+	<li data-index="rs-2" data-transition="notransition" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="/dellemcworld17/wp-content/uploads/2017/04/las-vegas-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="/dellemcworld17/wp-content/uploads/2017/04/las-vegas.jpg"  alt="" title="las-vegas"  width="1500" height="1034" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-2-layer-4" 
+			 data-x="['left','left','left','left']" data-hoffset="['1','12','40','23']" 
+			 data-y="['top','top','top','top']" data-voffset="['282','112','170','110']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:1200;e:Power3.easeOut;" 
+			 data-transform_out="s:2;" 
+			data-start="230" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 5;"><img src="/dellemcworld17/wp-content/uploads/2017/04/dew-logo.png" alt="" width="426" height="72" data-ww="['320px','359px','359px','359px']" data-hh="54px" data-no-retina> </div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption fair-poppins-title   tp-resizeme" 
+			 id="slide-2-layer-1" 
+			 data-x="['left','left','left','left']" data-hoffset="['-4','13','40','23']" 
+			 data-y="['top','top','top','top']" data-voffset="['354','163','252','167']" 
+						data-fontsize="['80','100','75','48']"
+			data-lineheight="['100','110','90','60']"
+			data-fontweight="['300','400','400','600']"
+			data-width="['717','706','526','331']"
+			data-height="['207','332','272','none']"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:1200;e:Power3.easeOut;" 
+			 data-transform_out="s:30;" 
+			data-start="700" 
+			data-splitin="words" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			data-elementdelay="0.1" 
+			
+			style="z-index: 6; min-width: 717px; max-width: 717px; max-width: 207px; max-width: 207px; white-space: normal; font-size: 80px; line-height: 100px; font-weight: 300;font-family:Roboto;text-align:left;letter-spacing:-2px;">Join REX-Ray and the {code} team </div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption fair-subtitle   tp-resizeme" 
+			 id="slide-2-layer-2" 
+			 data-x="['left','left','left','left']" data-hoffset="['2','13','45','24']" 
+			 data-y="['top','top','top','top']" data-voffset="['581','500','526','368']" 
+						data-fontsize="['20','20','20','18']"
+			data-fontweight="['300','400','400','400']"
+			data-width="['682','477','482','437']"
+			data-height="['92','none','61','none']"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:1000;e:Power3.easeOut;" 
+			 data-transform_out="s:1.875;" 
+			data-start="1230" 
+			data-splitin="lines" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			data-elementdelay="0.1" 
+			
+			style="z-index: 7; min-width: 682px; max-width: 682px; max-width: 92px; max-width: 92px; white-space: normal; font-size: 20px; font-weight: 300;font-family:Roboto;">May 8-11, 2017 join REX-Ray, the leading container storage orchestration engine for cloud native workloads at Dell EMC World in Las Vegas! </div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-2-layer-6" 
+			 data-x="['left','left','left','left']" data-hoffset="['831','831','831','831']" 
+			 data-y="['top','top','top','top']" data-voffset="['423','423','423','423']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="y:50px;opacity:0;s:900;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:2;" 
+			data-start="1620" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 8;"><img src="/dellemcworld17/wp-content/uploads/2017/04/EMC_REX-Elvis.png" alt="" width="495" height="839" data-ww="['261px','261px','261px','261px']" data-hh="['447px','447px','447px','447px']" data-no-retina> </div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-2-layer-7" 
+			 data-x="['left','left','left','left']" data-hoffset="['1095','1095','1095','1095']" 
+			 data-y="['top','top','top','top']" data-voffset="['355','355','355','355']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:100;e:Power1.easeIn;" 
+			 data-transform_out="opacity:0;s:100;e:Power1.easeOut;" 
+			data-start="2870" 
+			data-responsive_offset="on" 
+
+			 data-end="2970" 
+
+			style="z-index: 9;"><img src="/dellemcworld17/wp-content/uploads/2017/04/flash.png" alt="" width="958" height="996" data-ww="['61px','61px','61px','61px']" data-hh="['64px','64px','64px','64px']" data-no-retina> </div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-2-layer-8" 
+			 data-x="['left','left','left','left']" data-hoffset="['773','773','773','773']" 
+			 data-y="['top','top','top','top']" data-voffset="['445','445','445','445']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:100;e:Power1.easeIn;" 
+			 data-transform_out="opacity:0;s:100;e:Power1.easeOut;" 
+			data-start="3440" 
+			data-responsive_offset="on" 
+
+			 data-end="3540" 
+
+			style="z-index: 10;"><img src="/dellemcworld17/wp-content/uploads/2017/04/flash.png" alt="" width="958" height="996" data-ww="['33px','33px','33px','33px']" data-hh="['35px','35px','35px','35px']" data-no-retina> </div>
+
+		<!-- LAYER NR. 7 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-2-layer-9" 
+			 data-x="['left','left','left','left']" data-hoffset="['751','751','751','751']" 
+			 data-y="['top','top','top','top']" data-voffset="['579','579','579','579']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:100;e:Power1.easeIn;" 
+			 data-transform_out="opacity:0;s:1.875;e:Power1.easeOut;" 
+			data-start="3870" 
+			data-responsive_offset="on" 
+
+			 data-end="4078.125" 
+
+			style="z-index: 11;"><img src="/dellemcworld17/wp-content/uploads/2017/04/flash.png" alt="" width="958" height="996" data-ww="['50px','50px','50px','50px']" data-hh="['53px','53px','53px','53px']" data-no-retina> </div>
+
+		<!-- LAYER NR. 8 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-2-layer-10" 
+			 data-x="['left','left','left','left']" data-hoffset="['1090','1090','1090','1090']" 
+			 data-y="['top','top','top','top']" data-voffset="['565','565','565','565']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:100;e:Power1.easeIn;" 
+			 data-transform_out="opacity:0;s:100;e:Power1.easeOut;" 
+			data-start="3500" 
+			data-responsive_offset="on" 
+
+			 data-end="3670" 
+
+			style="z-index: 12;"><img src="/dellemcworld17/wp-content/uploads/2017/04/flash.png" alt="" width="958" height="996" data-ww="['33px','33px','33px','33px']" data-hh="['35px','35px','35px','35px']" data-no-retina> </div>
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss=".tp-caption.fair-poppins-title,.fair-poppins-title{color:rgba(255,255,255,1.00);font-size:120px;line-height:130px;font-weight:500;font-style:normal;font-family:Poppins;padding:0 0 0 0px;text-decoration:none;text-align:center;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}.tp-caption.fair-subtitle,.fair-subtitle{color:rgba(255,255,255,1.00);font-size:17px;line-height:30px;font-weight:400;font-style:normal;font-family:Open Sans;padding:0 0 0 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+						/******************************************
+				-	PREPARE PLACEHOLDER FOR SLIDER	-
+			******************************************/
+
+			var setREVStartSize=function(){
+				try{var e=new Object,i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+					e.c = jQuery('#rev_slider_2_1');
+					e.responsiveLevels = [1240,1024,778,480];
+					e.gridwidth = [1300,1100,778,480];
+					e.gridheight = [868,768,960,720];
+							
+					e.sliderLayout = "fullwidth";
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};
+			
+			setREVStartSize();
+			
+						var tpj=jQuery;
+			
+			var revapi2;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_2_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_2_1");
+				}else{
+					revapi2 = tpj("#rev_slider_2_1").show().revolution({
+						sliderType:"hero",
+jsFileLocation:"/dellemcworld17/wp-content/plugins/revslider/public/assets/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:5000,
+						navigation: {
+						},
+						responsiveLevels:[1240,1024,778,480],
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:[1300,1100,778,480],
+						gridheight:[868,768,960,720],
+						lazyType:"none",
+						parallax: {
+							type:"mouse",
+							origo:"enterpoint",
+							speed:6000,
+							levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+							type:"mouse",
+						},
+						shadow:0,
+						spinner:"off",
+						autoHeight:"off",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+		</script>
+		</div><!-- END REVOLUTION SLIDER --></div></div></div></div></div></div><div data-edgtf-anchor="photos" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1492996714193 edgtf-content-aligment-center edgtf-grid-section" style=""><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-countdown"  id="countdown3613" data-year="2017" data-month="5" data-day="8" data-hour="0" data-minute="0" data-timezone="0" data-month-label="Months" data-day-label="Days" data-hour-label="Hours" data-minute-label="Minutes" data-second-label="Seconds" data-digit-size="" data-label-size="" data-label-color=""></div></div></div></div></div></div></div><div data-edgtf-anchor="lab" data-edgtf-parallax-speed="1" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1493694023835 edgtf-content-aligment-center edgtf-parallax-section-holder edgtf-parallax-section-holder-touch-disabled edgtf-grid-section edgtf-full-screen-height-parallax edgtf-vertical-middle-align" style="background-image:url();"><div class="edgtf-parallax-content-outer"><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493689527924"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h1 style="text-align: left;"><span style="color: #ffffff;">Hands on Lab</span></h1>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">HOL01 Use REX-Ray &amp; ScaleIO with Docker, Mesos, and Kubernetes</span></h4>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">Containers are rapidly being adopted by companies large and small. Yet, how do you know which container platform is right for you? Use REX-Ray, an open source storage orchestration engine from {code} by Dell EMC, along with ScaleIO and learn how to run stateful and persistent applications on the most popular cloud native platforms: Docker, Mesos and Kubernetes.</span></p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Monday 8:30am - 9:00 pm<br />
+Tuesday 7:00am - 5:30pm<br />
+Wednesday 7:00am - 5:30pm<br />
+Thursday 7:00am - 1:00pm<br />
+	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3573" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="800" height="557" src="/dellemcworld17/wp-content/uploads/2017/04/code-Labs.png" class="vc_single_image-img attachment-full" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/code-Labs.png 800w, /dellemcworld17/wp-content/uploads/2017/04/code-Labs-300x209.png 300w, /dellemcworld17/wp-content/uploads/2017/04/code-Labs-768x535.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></div>
+		</figure>
+	</div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 150px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h1 style="text-align: left;"><span style="color: #ffffff;">Speaking Sessions</span></h1>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div id="Speaking" class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h2 style="text-align: left;"><span style="color: #ffffff;">Container Basics</span></h2>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-separator-holder clearfix  edgtf-separator-left">
+	<div class="edgtf-separator" style="border-color: #057db7;width: 100%;border-bottom-width: 2px;margin-top: 2.5%"></div>
+</div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686933974"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-186526" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/brian-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-105040" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-768x768.jpg 768w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-550x550.jpg 550w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman.jpg 864w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Containers &amp; Their Ecosystem</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Brian Verkley {code} Catalyst, dotNEXT team at Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Kendrick Coleman, Technical Marketing, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Monday, 1:30PM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3411" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686765865"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-940844" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/fabio-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-168330" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-768x768.jpg 768w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-550x550.jpg 550w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman.jpg 864w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">There&#8217;s More To Docker Than The Container: The Docker Platform</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Fabio Chodini {code} Catalyst, dotNEXT team at Dell EMC 	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Kendrick Coleman, Technical Marketing, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Monday 3:00PM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3412" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686941343"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-684715" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/vlad-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/vlad-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/vlad.jpg 240w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-645585" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/steve.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Google Does Containers: Hello Kubernetes</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Vladimir Vivien, Open Source Engineer, {code} by Dell EMC 	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Steve Wong, Open Source Engineer, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Tuesday, 8:30AM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3414" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686759282"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-382786" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/jonah-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/jonah-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/jonah-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/jonah.jpg 512w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-107116" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-768x768.jpg 768w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-550x550.jpg 550w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman.jpg 864w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Reduce Your Configuration Management Nightmare with Docker</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Jonah Horowitz, Site Reliability Engineer, Stripe	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Kendrick Coleman, Technical Marketing, {code} by Dell EMC<br />
+	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Tuesday, 1:30PM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3402" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section vc_custom_1493686682838 edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686722584"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-674334" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/steve.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Mesosphere &amp; The Enterprise: Run Your Applications On Apache Mesos</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Steve Wong, Open Source Engineer, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Wednesday, 8:30AM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3413" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h2 style="text-align: left;"><span style="color: #ffffff;">Infrastructure for Containers</span></h2>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-separator-holder clearfix  edgtf-separator-left">
+	<div class="edgtf-separator" style="border-color: #057db7;width: 100%;border-bottom-width: 2px;margin-top: 3%"></div>
+</div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686955620"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-816694" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/chris.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-437792" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/clint-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/clint-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/clint-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/clint.jpg 512w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Deep Dive On Container Storage Architectures</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Chris Duchesne, Open Source Engineer, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Clint Kitson, Technical Director, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Monday, 8:30AM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3407" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493687062451"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-502558" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/justin-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/justin-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/justin.jpg 256w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-408546" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-150x150.png 150w, /dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-300x300.png 300w, /dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-768x768.png 768w, /dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-550x550.png 550w, /dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel.png 800w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Docker For Private Clouds With RackHD</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Justin Kenney, RackHD Technical Product Manager, Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Aaron Spiegel, {code} Catalyst, Developer Advocate at Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Monday, 4:30PM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3401" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686961684"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-722964" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/clint-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/clint-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/clint-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/clint.jpg 512w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Deep Dive On REX-Ray, libStorage &amp; The Container Storage Interface</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Clint Kitson, Technical Director, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Wednesday, 8:30AM, Room Lido 3005	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Tuesday, 12PM, Room Galileo 901<br />
+	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3440" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493687055937"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-140665" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-768x768.jpg 768w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-550x550.jpg 550w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman.jpg 864w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-265559" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/b-dean-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Realize The Power Of Containers With ScaleIO &amp; REX-Ray: Software For Storage &amp; Infrastructure</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Kendrick Coleman, Technical Marketing, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Brian Dean, ScaleIO Technical Marketing, Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Tuesday, 3PM, Room Delfino 4003<br />
+	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Thursday, 11:30AM, Room Murano 3205<br />
+	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3411" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686970830"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-917564" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/clint-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/clint-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/clint-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/clint.jpg 512w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Kubernetes and ScaleIO Demo</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Clint Kitson, Technical Director, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Tuesday, 2:15PM, Show Floor - Mid Range Theater<br />
+	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="#" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493687049220"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-861332" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/frans-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/frans-150x150.png 150w, /dellemcworld17/wp-content/uploads/2017/04/frans.png 256w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-696020" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/josh-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/josh-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/josh-550x550.jpg 550w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Deep-Dive On Container Networking Architectures</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Frans Van Rooyen, Infrastructure Architect, Adobe	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Josh Bernstein, VP of Technology, Dell 	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Tuesday, 3PM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3411" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686977400"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-three-columns edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-956423" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/travis.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-625789" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/david.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-352323" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/vlad-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/vlad-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/vlad.jpg 240w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Demos Demos Demos! Containers &amp; {code}</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Travis Rhoden, Open Source Engineer, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	David vonThenen, Open Source Engineer, {code} by Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Vladimir Vivien, Open Source Engineer, {code} by Dell EMC<br />
+	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Wednesday, 1:30PM, Room Zeno 3602<br />
+	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3531" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h2 style="text-align: left;"><span style="color: #ffffff;">Containers and Modern Applications</span></h2>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-7"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-separator-holder clearfix  edgtf-separator-left">
+	<div class="edgtf-separator" style="border-color: #057db7;width: 100%;border-bottom-width: 2px;margin-top: 3%"></div>
+</div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686984688"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-188523" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-150x150.png 150w, /dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-300x300.png 300w, /dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-768x768.png 768w, /dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel-550x550.png 550w, /dellemcworld17/wp-content/uploads/2016/06/aaron-spiegel.png 800w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-358528" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/chris.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Large Scale Cassandra Made Better In Containers</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Aaron Spiegel, {code} Catalyst, Developer Advocate at Dell EMC	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Chris Duchesne, Open Source Engineer, {code} by Dell EMC<br />
+	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Thursday, 8:30AM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3409" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493687040165"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-815245" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/many-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/many-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/many-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/many.jpg 400w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-270491" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-300x300.jpg 300w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-768x768.jpg 768w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman-550x550.jpg 550w, /dellemcworld17/wp-content/uploads/2017/04/Kendrick-Coleman.jpg 864w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Data Analytics Using Container Persistence Through SMACK</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Manny RodriguezPerez, {code} Catalyst, Digital Transformation Lead at Dell EMC<br />
+	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Kendrick Coleman, Technical Marketing, {code} by Dell EMC<br />
+	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Thursday, 11AM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3410" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686991889"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-608886" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/david.jpg" class="vc_single_image-img attachment-thumbnail" alt="" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Managing ScaleIO As Software On Mesos</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	David von Thenen, Open Source Engineer, {code} by Dell EMC<br />
+	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Thursday, 11:30AM, Room Zeno 4602	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3411" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h2 style="text-align: left;"><span style="color: #ffffff;">Open Source and Modern Data Centers</span></h2>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-7"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-separator-holder clearfix  edgtf-separator-left">
+	<div class="edgtf-separator" style="border-color: #057db7;width: 100%;border-bottom-width: 2px;margin-top: 3%"></div>
+</div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493686998089"><div class="wpb_wrapper"><div class="edgtf-elements-holder edgtf-two-columns-grid-33-66 edgtf-responsive-mode-768" ><div class="edgtf-elements-holder-item"  >
+		<div class="edgtf-elements-holder-item-inner">
+		<div class="edgtf-elements-holder-item-content edgtf-elements-holder-custom-471830" style="padding: 0px 0px 0px 0px">
+						
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="150" height="150" src="/dellemcworld17/wp-content/uploads/2017/04/josh-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" srcset="/dellemcworld17/wp-content/uploads/2017/04/josh-150x150.jpg 150w, /dellemcworld17/wp-content/uploads/2017/04/josh-550x550.jpg 550w" sizes="(max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+		</div>
+	</div>
+	</div></div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h4><span style="color: #ffffff;">Open Source Effect on Dell EMC</span></h4>
+
+		</div>
+	</div>
+
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Josh Bernstein, VP of Technology, Dell	</div>
+<div class="edgtf-custom-font-holder" style="font-family: Roboto;font-size: 14px;line-height: 27px;font-weight: 300;letter-spacing: 0px;color: #ffffff" data-font-size= 14 data-line-height= 27>
+	Tuesday, 1:30PM, Room Murano 3201A	</div><div class="vc_empty_space"  style="height: 15px" ><span class="vc_empty_space_inner"></span></div>
+<a href="https://emcworldonline.com/2017/connect/sessionDetail.ww?SESSION_ID=3450" target="_blank"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">View Session Details</span>
+    </a><div class="vc_empty_space"  style="height: 40px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div><div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+</div></div></div></div></div></div></div><div data-edgtf-anchor="connect" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1493694136313 edgtf-content-aligment-center edgtf-grid-section" style=""><div class="clearfix edgtf-section-inner"><div class="edgtf-section-inner-margin clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h1 style="text-align: left;">Connect With {code}</h1>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-iwt clearfix edgtf-iwt-icon-top edgtf-iwt-icon-huge">
+    <div class="edgtf-iwt-icon-holder">
+                    
+    <span class="edgtf-icon-shortcode normal"  data-color="#007bb5">
+                    <a href="https://blog.codedellemc.com/" target="_self" >
+        
+        <i class="edgtf-icon-font-awesome fa fa-comment edgtf-icon-element" style="color: #007bb5;font-size:130px" ></i>
+                    </a>
+            </span>
+
+            </div>
+    <div class="edgtf-iwt-content-holder" >
+        <div class="edgtf-iwt-title-holder">
+            <h3 style="color: #000000">Blog</h3>
+        </div>
+        <div class="edgtf-iwt-text-holder">
+            <p ></p>
+
+                    </div>
+    </div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-iwt clearfix edgtf-iwt-icon-top edgtf-iwt-icon-huge">
+    <div class="edgtf-iwt-icon-holder">
+                    
+    <span class="edgtf-icon-shortcode normal"  data-color="#55acee">
+                    <a href="https://twitter.com/codedellemc" target="_self" >
+        
+        <i class="edgtf-icon-font-awesome fa fa-twitter edgtf-icon-element" style="color: #55acee;font-size:130px" ></i>
+                    </a>
+            </span>
+
+            </div>
+    <div class="edgtf-iwt-content-holder" >
+        <div class="edgtf-iwt-title-holder">
+            <h3 style="color: #000000">@codeDellEMC</h3>
+        </div>
+        <div class="edgtf-iwt-text-holder">
+            <p ></p>
+
+                    </div>
+    </div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-iwt clearfix edgtf-iwt-icon-top edgtf-iwt-icon-medium">
+    <div class="edgtf-iwt-icon-holder">
+                    
+    <span class="edgtf-icon-shortcode normal" style="margin: 0 20 0 20 " data-color="#000000">
+                    <a href="https://community.codedellemc.com/" target="_blank" >
+        
+        <i class="edgtf-icon-font-awesome fa fa-slack edgtf-icon-element" style="color: #000000;font-size:130px" ></i>
+                    </a>
+            </span>
+
+            </div>
+    <div class="edgtf-iwt-content-holder" >
+        <div class="edgtf-iwt-title-holder">
+            <h3 style="color: #000000"> #project-rexray</h3>
+        </div>
+        <div class="edgtf-iwt-text-holder">
+            <p ></p>
+
+                    </div>
+    </div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-iwt clearfix edgtf-iwt-icon-top edgtf-iwt-icon-huge">
+    <div class="edgtf-iwt-icon-holder">
+                    
+    <span class="edgtf-icon-shortcode normal"  data-color="#383838">
+                    <a href="https://github.com/codedellemc" target="_self" >
+        
+        <i class="edgtf-icon-font-awesome fa fa-github edgtf-icon-element" style="color: #383838;font-size:130px" ></i>
+                    </a>
+            </span>
+
+            </div>
+    <div class="edgtf-iwt-content-holder" >
+        <div class="edgtf-iwt-title-holder">
+            <h3 style="color: #000000">codeDellEMC</h3>
+        </div>
+        <div class="edgtf-iwt-text-holder">
+            <p ></p>
+
+                    </div>
+    </div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-iwt clearfix edgtf-iwt-icon-top edgtf-iwt-icon-huge">
+    <div class="edgtf-iwt-icon-holder">
+                    
+    <span class="edgtf-icon-shortcode normal"  data-color="#bb0000">
+                    <a href="https://www.youtube.com/playlist?list=PLbssOJyyvHuWiBQAg9EFWH570timj2fxt" target="_self" >
+        
+        <span aria-hidden="true" class="edgtf-icon-font-elegant social_youtube edgtf-icon-element" style="color: #bb0000;font-size:130px" ></span>
+                    </a>
+            </span>
+
+            </div>
+    <div class="edgtf-iwt-content-holder" >
+        <div class="edgtf-iwt-title-holder">
+            <h3 style="color: #000000">YouTube</h3>
+        </div>
+        <div class="edgtf-iwt-text-holder">
+            <p ></p>
+
+                    </div>
+    </div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="edgtf-iwt clearfix edgtf-iwt-icon-top edgtf-iwt-icon-huge">
+    <div class="edgtf-iwt-icon-holder">
+                    
+    <span class="edgtf-icon-shortcode normal"  data-color="#007bb5">
+                    <a href="http://slideshare.net/codedellemc" target="_self" >
+        
+        <i class="edgtf-icon-font-awesome fa fa-slideshare edgtf-icon-element" style="color: #007bb5;font-size:130px" ></i>
+                    </a>
+            </span>
+
+            </div>
+    <div class="edgtf-iwt-content-holder" >
+        <div class="edgtf-iwt-title-holder">
+            <h3 style="color: #000000">SlideShare</h3>
+        </div>
+        <div class="edgtf-iwt-text-holder">
+            <p ></p>
+
+                    </div>
+    </div>
+</div></div></div></div></div></div></div></div></div></div></div></div><div data-edgtf-anchor="general" class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1493694929901 edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<h1 style="text-align: center;"><span style="color: #ffffff;">Everything {code} at Dell EMC World 2017!</span></h1>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #ffffff;">The {code} team will be at Dell EMC World in full force! The conference is tailored for hands-on strategies, and that is just what you’ll get from the {code} team. We won’t have a booth, but you will find us in plenty of sessions (15+). And our own Josh Bernstein will be on the main stage with Jeremy Burton and others to give an update on {code} with a demo.</span></p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid edgtf-section vc_custom_1493694978174 edgtf-content-aligment-center" style=""><div class="edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><a href="http://www.dellemcworld.com/general-sessions.htm%20" target="_self"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">General Sessions at Dell EMC World</span>
+    </a></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><a href="https://emcworldonline.com/2017/connect/search.ww#loadSearch-searchPhrase=&#038;searchType=session&#038;tc=0&#038;sortBy=&#038;p=&#038;i(10442)=12468%20" target="_self"  class="edgtf-btn edgtf-btn-medium edgtf-btn-solid"  >
+    <span class="edgtf-btn-text">{code} in Modern Operations</span>
+    </a></div></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div>
+			
+				</div>
+</div>
+</div> <!-- close div.content_inner -->
+</div>  <!-- close div.content -->
+
+<footer >
+	<div class="edgtf-footer-inner clearfix">
+
+		
+<div class="edgtf-footer-bottom-holder">
+	<div class="edgtf-footer-bottom-holder-inner">
+					<div class="edgtf-container">
+				<div class="edgtf-container-inner">
+
+		<div class="edgtf-column-inner">
+	<div id="text-23" class="widget edgtf-footer-text widget_text">			<div class="textwidget"><br/>
+<br/>
+{code} by Dell EMC is an open source initiative focused on building a community around software-based infrastructure.</div>
+		</div><div id="text-7" class="widget edgtf-footer-text widget_text">			<div class="textwidget">© Copyright 2017 Dell Inc. or its subsidiaries. All Rights Reserved.
+<br/>
+<br/></div>
+		</div></div>				</div>
+			</div>
+				</div>
+	</div>
+
+	</div>
+</footer>
+
+</div> <!-- close div.edgtf-wrapper-inner  -->
+</div> <!-- close div.edgtf-wrapper -->
+		<script type="text/javascript">
+			function revslider_showDoubleJqueryError(sliderID) {
+				var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+				errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+				errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+				errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+				errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+					jQuery(sliderID).show().html(errorMessage);
+			}
+		</script>
+		<script type='text/javascript' src='/dellemcworld17/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Download File":"Download File","Download Video":"Download Video","Play":"Play","Pause":"Pause","Captions\/Subtitles":"Captions\/Subtitles","None":"None","Time Slider":"Time Slider","Skip back %1 seconds":"Skip back %1 seconds","Video Player":"Video Player","Audio Player":"Audio Player","Volume Slider":"Volume Slider","Mute Toggle":"Mute Toggle","Unmute":"Unmute","Mute":"Mute","Use Up\/Down Arrow keys to increase or decrease volume.":"Use Up\/Down Arrow keys to increase or decrease volume.","Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds."}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/dellemcworld17/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.22.0'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.4'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-content/themes/fair/assets/js/third-party.min.js?ver=4.7.4'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=4.12'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-content/themes/fair/assets/js/smoothPageScroll.js?ver=4.7.4'></script>
+<script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyDriJOCCvCvkiptdfSy_m4JFLgWLN4FJd4&#038;ver=4.7.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var edgtfGlobalVars = {"vars":{"edgtfAddForAdminBar":0,"edgtfElementAppearAmount":-150,"edgtfFinishedMessage":"No more posts","edgtfMessage":"Loading new posts...","edgtfTopBarHeight":0,"edgtfStickyHeaderHeight":60,"edgtfStickyHeaderTransparencyHeight":60,"edgtfStickyScrollAmount":0,"edgtfLogoAreaHeight":0,"edgtfMenuAreaHeight":80,"edgtfMobileHeaderHeight":78}};
+var edgtfPerPageVars = {"vars":{"edgtfStickyScrollAmount":1100,"edgtfPassepartout":0,"edgtfHeaderTransparencyHeight":0}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/dellemcworld17/wp-content/themes/fair/assets/js/modules.min.js?ver=4.7.4'></script>
+<script type='text/javascript'>
+(function($) {
+     landingPagePtfFilterFollowHover();
+
+    function landingPagePtfFilterFollowHover() {
+    	if ($('.edgtf-home-holder').length) {
+    		var ptfFilter = $('.edgtf-home-holder').find('.edgtf-portfolio-filter-holder ul');
+
+			ptfFilter.append('<li class="edgtf-ptf-filter-follow-hover"></li>');
+
+
+			var ptfLine = ptfFilter.find('.edgtf-ptf-filter-follow-hover'),
+			    filterItems = ptfFilter.find('> li:not(.edgtf-ptf-filter-follow-hover)');
+
+			ptfLine.css('left', filterItems.first().offset().left - ptfFilter.offset().left);
+			ptfLine.css('width', filterItems.first().outerWidth());
+
+			filterItems.each(function(){
+			    var filterItem = $(this),
+			        filterItemWidth = filterItem.outerWidth(),
+			        ptfFilterOffset = ptfFilter.offset().left,
+			        filterItemOffset = filterItem.offset().left - ptfFilterOffset;
+
+			    filterItem.mouseenter(function(){
+			        ptfLine.css('width', filterItemWidth);
+			        ptfLine.css('left', filterItemOffset);
+			    });
+			});
+
+			ptfFilter.mouseleave(function(){
+			    ptfLine.css('width', ptfFilter.find('.active').outerWidth());
+			    ptfLine.css('left', ptfFilter.find('.active').offset().left - ptfFilter.offset().left);
+			});
+
+    	}
+	}
+})(jQuery);
+
+
+</script>
+<script type='text/javascript' src='/dellemcworld17/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var edgtfLike = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/dellemcworld17/wp-content/themes/fair/assets/js/like.js?ver=1.0'></script>
+<script type='text/javascript' src='/dellemcworld17/wp-includes/js/wp-embed.min.js?ver=4.7.4'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"46fa6ffa74","applicationID":"47479192","transactionName":"ZgQBZkJVXBVYUk1eDV9OIlFEXV0IFldMWw4cFgpWRFw=","queueTime":0,"applicationTime":505,"atts":"SkMCEApPTxs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
